@@ -68,26 +68,68 @@ function mostrarFlecha() {
     }
 }
 
-var logoBlanco = document.getElementById('logoBlanco');
-var logoNegro = document.getElementById('logoNegro');
 
-//Cambio de fondo header
 
-window.addEventListener("DOMContentLoaded", function () {
-    logoNegro.style.display = "none";
-})
+/*Adquirimos el logo para cambiarlo de color cuando queramos*/ 
+
+var logo= document.querySelector('.logoColor');
+
+/*entramos aqui cuando usa el scroll*/
 
 window.addEventListener("scroll", function () {
+
+    /*adquirimos el header para cambiarlo de color cuando lo necesitemos*/
+
     var header = document.querySelector("header");
     header.classList.toggle("abajo", window.scrollY > 800);
- 
-    if (window.scrollY > 800) {
-        logoBlanco.style.display = "none";
-        logoNegro.style.display = "block";    
-    } else  {
-        logoNegro.style.display = "none";
-        logoBlanco.style.display = "block";
+
+    /*Si no esta el scroll en 0 (arriba) le ponemos que tenga un 
+    color negro pero con transparencia para que se pueda leer las opciones,
+    esto hasta llegar al borde de la portada, ahi se cambiaria a blanco */
+    console.log(window.innerWidth)
+    if (window.scrollY > 0) {
+        header.style.backgroundColor = "#0008";
+          
+    }else{
+
+        /*Si entra aqui significa que esta arriba, si esta en movil no
+        lo dejamos transparente si esta en pc si */
+
+        if(window.innerWidth > 900){
+            header.style.backgroundColor = "transparent";  
+        }
+       
     } 
+
+    if (window.scrollY > 800) {
+
+        /*Si esta en el borde de la portada lo cambiamos a negro el logo
+        y el header a blanco */
+
+        header.style.backgroundColor = "#fff";
+        logo.style.fill = "#000";    
+
+    }else{
+        /*si no esta debajo de la portada el logo seguira blanco */
+        logo.style.fill = "#fff";
+    } 
+
+
+   
 
 })
 
+
+
+// Menu hamburguesa
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    var menuIcon = document.getElementById('burger');
+    var nav = document.getElementById('nav');
+
+    menuIcon.addEventListener('click', function() {
+        nav.classList.toggle('open');
+    });
+    
+});

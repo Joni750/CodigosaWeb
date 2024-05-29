@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+    background-color: #141414;
+    /* background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+/* Menú */
+
+
+.burger {
+
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 115%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform: translateY(-100%);
+    transform-origin: left center;
+}
+
+.burger input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.burger input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.burger input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav ul {
+    flex-direction: column;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 1em 0;
+}
+
+nav ul li a {
+    width: 100%;
+    display: block;
+}
+
+nav.open {
+    display: flex;
+}
+
+.contain {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#burgerLogo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding-inline: 5%;
+
+
+}
+
+.logo {
+    width: 85px;
+}
+
+.logos {
+    padding: 20px 0;
+    padding-right: 9%;
+}
+
+.contain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    padding: 0;
+}
+
+#headerMv {
+    display: flex;
+    justify-content: center;
+
+}
+
+header {
+    background-color: rgb(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: 0.5s;
+}
+
+header.abajo {
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header.abajo .burger span {
+    background: black;
+}
+
+header.abajo ul li a {
+    color: #000;
+}
+
+header.abajo span {
+    color: #000;
+}
+
+.menu {
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    transition: all 0.3s;
+}
+
+.menu div {
+    display: block;
+    padding: 6px 0px;
+    cursor: pointer;
+}
+
+.menu img {
+    width: 100px;
+}
+
+.menu a:hover {
+    font-size: 1.2em;
+}
+
+/* Portada */
+
+.portada {
+    background-image: url(../img/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding-top: 13%;
+    padding-bottom: 8%;
+    height: 50rem;
+}
+
+.content-portada {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content-portada h1 {
+    font-size: 3em;
+    max-width: 100%;
+}
+
+.content-portada img {
+    max-width: 50%;
+    width: 500px;
+}
+
+.bernadette {
+    font-family: 'bernadette';
+    font-weight: lighter;
+}
+
+.amarillo {
+    color: #FFDC84;
+}
+
+/* Precios */
+
+#titulo {
+    margin-top: 5%;
+    height: 380px;
+}
+
+#p1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 244px;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+    margin: 0;
+    color: #FFDC84;
+    filter: blur(3.7px);
+}
+
+#p2 {
+    position: relative;
+    left: calc(50% - 13rem/2);
+    top: -11rem;
+    margin: 0;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #000000;
+}
+
+
+
+#precios {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFDC84;
+
+
+}
+
+
+
+#precios-cartas {
+    margin-bottom: 10%;
+    width: 100%;
+    display: flex;
+
+    justify-content: space-evenly;
+
+}
+
+
+.carta {
+    width: 20%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #141414;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.content-carta {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.beneficios p {
+    font-size: 25px;
+}
+
+#precio {
+    font-size: 40px;
+}
+
+.carta h3 {
+    font-weight: 400;
+    font-size: 55px;
+    margin: 0;
+}
+
+#button-carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    padding-top: 0;
+    text-decoration: none;
+}
+
+#button-carta button {
+    width: 100%;
+    height: 50px;
+    color: #141414;
+    border-radius: 20px;
+    background-color: #FFDC84;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: large;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#cajaRobot {
+    display: none;
+}
+
+.triangle {
+    width: 100%;
+    /*que ocupe el 100% de la pantalla en ancho*/
+    height: 3rem;
+    /*Altura del triangulo*/
+    background-color: #141414;
+    /* Cambia el color a tu gusto */
+    clip-path: polygon(37% 0%, -4.5% 101%, 102% 101%);
+    /*
+    1 y 2 parametro = vertice superior, el 1 de los dos es posicion ejeX
+    2 eje Y
+
+    3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y
+    */
+}
+
+
+/*DESTACADOS*/
+#destacado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFDC84;
+}
+
+h2 {
+    font-size: 3.5rem;
+
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+#destacado article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.proyectoDestacado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.proyectoDestacado img,
+.proyectoDestacado div {
+
+    color: #fff;
+    width: 80%;
+}
+
+
+
+
+@media only screen and (min-width:900px) {
+    .burger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header {
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3%;
+        font-size: 0.8em;
+    }
+
+    header section {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+
+    #burgerLogo {
+        padding-inline: 0;
+    }
+
+}
+
+
+@media only screen and (min-width:1200px) {
+
+
+    .triangle {
+
+        height: 7.5rem;
+
+    }
+
+    .portada {
+
+        height: 32rem;
+    }
+
+    .content-portada h1 {
+        font-size: 5em;
+        max-width: 50%;
+    }
+
+    header {
+
+        padding-inline: 4%;
+        font-size: 1em;
+    }
+
+    .content-portada {
+        justify-content: flex-start;
+
+    }
+
+    .content-portada h1 {
+        margin-left: 6%;
+        width: 100%;
+    }
+
+    #cajaRobot {
+        display: flex;
+        transform: translate(50%, -17%);
+        position: absolute;
+        width: 65rem;
+
+        /* Ajusta según sea necesario */
+        height: 45rem;
+        /* Ajusta según sea necesario */
+
+    }
+
+
+
+    /*PROYECTOS DESTACADOS*/
+
+    #destacado {
+
+        margin-block: 9rem;
+    }
+
+    #destacado h2 {
+        position: absolute;
+        transform: rotate(-90deg) translate(60%, -430%);
+
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 5em;
+
+
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .proyectoDestacado {
+
+        margin-left: 25%;
+    }
+
+
+}
+
+@media only screen and (min-width:1300px) {
+
+    #cajaRobot {
+        transform: translate(45%, -17%);
+        width: 70rem;
+        height: 45rem;
+    }
+
+    /*PROYECTOS DESTACADOS*/
+    #destacado h2 {
+        position: absolute;
+        transform: rotate(-90deg) translate(57%, -390%);
+
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 5.8rem;
+
+
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (min-width:1400px) {
+
+    #cajaRobot {
+        transform: translate(45%, -17%);
+        width: 75rem;
+        height: 45rem;
+    }
+
+    /*PROYECTOS DESTACADOS*/
+    #destacado h2 {
+        transform: rotate(-90deg) translate(58%, -430%);
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+
+    #cajaRobot {
+        transform: translate(45%, -17%);
+        width: 80rem;
+        height: 45rem;
+    }
+
+    /*PROYECTOS DESTACADOS*/
+    #destacado h2 {
+        transform: rotate(-90deg) translate(58%, -435%);
+    }
+}
+
+@media only screen and (min-width:1600px) {
+
+    #cajaRobot {
+        transform: translate(45%, -17%);
+        width: 85rem;
+        height: 45rem;
+    }
+
+    /*PROYECTOS DESTACADOS*/
+    #destacado h2 {
+        transform: rotate(-90deg) translate(58%, -450%);
+    }
+}
+
+@media only screen and (min-width:1700px) {
+
+    #cajaRobot {
+
+        width: 95rem;
+        height: 45rem;
+    }
+
+    /*PROYECTOS DESTACADOS*/
+    #destacado h2 {
+        transform: rotate(-90deg) translate(58%, -465%);
+    }
+}
+
+@media only screen and (min-width:1800px) {
+
+    #cajaRobot {
+        transform: translate(40%, -17%);
+        width: 105rem;
+        height: 45rem;
+    }
+
+    #destacado h2 {
+        transform: rotate(-90deg) translate(58%, -505%);
+    }
+}
+
+@media only screen and (min-width:1900px) {
+
+
+    #destacado h2 {
+        transform: rotate(-90deg) translate(58%, -535%);
+    }
+}
