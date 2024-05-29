@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat';    
+    scroll-behavior: smooth;
+    background-color: #141414;                 
+}
+
+/* Menú */
+
+header {
+    background-color: rgb(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    top: 0;
+    transition: 0.5s;
+}
+
+header.abajo{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header.abajo ul li a{
+    color: #000;
+}
+
+header.abajo span{
+    color: #000;
+}
+
+.menu {
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    transition: all 0.3s;
+}
+
+.menu div{
+    display: block;
+    padding: 6px 0px;
+    cursor: pointer;
+}
+
+.menu img{
+    width: 100px;
+}
+
+.menu a:hover {
+    font-size: 1.2em;
+}
+
+/* INICIO */
+
+/* Portada */
+
+.portada {
+    background-image: url(../img/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding-top: 13%;
+    padding-bottom: 8%;
+}
+
+.content-portada {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content-portada .h1{
+   font-size: 5em;
+   max-width: 50%;
+}
+
+.content-portada img{
+    max-width: 50%;
+    width: 500px;
+}
+
+.bernadette{
+    font-family: 'bernadette';
+    font-weight: lighter;
+}
+
+.amarillo{
+    color: #FFDC84;
+}
+
+/* Precios */
+
+#titulo{
+    height: 380px;
+    margin-top: 5%;
+}
+
+#p1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 244px;
+    text-align: center;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+
+    margin: 0;
+    color: #FFDC84;
+    filter: blur(3.7px);
+}
+
+#p2{
+    position: relative;
+    left: calc(50% - 443px/2 - 14.5px);
+    top: -210px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 150px;
+    color: #000000;
+}
+
+#precios-cartas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15%;
+}
+
+#precios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/fondoPrecios.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carta{
+    width: 25%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #141414;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.content-carta{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.beneficios p{
+    font-size: 25px;
+}
+
+#precio{
+    font-size: 40px;
+}
+
+.carta h3{
+    font-weight: 400;
+    font-size: 55px;
+    margin: 0;
+}
+
+#button-carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    padding-top: 0;
+    text-decoration: none;
+}
+
+#button-carta button{
+    width: 100%;
+    height: 50px;
+    color: #141414;
+    border-radius: 20px;
+    background-color: #FFDC84;
+    border: none;
+    font-family: 'Montserrat';    
+    font-size: large;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Destacados */
+
+#destacados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141414;
+}
+
+/* PROYECTOS */
+
+/* Portada */
+
+.portada-proyectos {
+    background-image: url(../img/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding-top: 19%;
+    padding-bottom: 13%;
+}
+
+.content-portada-proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content-portada-proyectos h1{
+   font-size: 5em;
+}
+
+/* Proyectos */
+
+#proyectos{
+    background-image: url(../img/fondoProyectos.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#proyecto{
+    display: flex;
+    flex-direction: column;
+    padding-top: 14%;
+    padding-bottom: 14%;
+    margin-left: 6%;
+}
+
+#proyecto img{
+    width: 75%;
+    margin-top: 5%;
+}
+
+#proyecto p{
+    width: 75%;
+    margin-top: 5%;
+}
+
+.container-proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 9em;
+    margin-right: 6%;
+    font-weight: bold;
+}
+
+.content img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.content p {
+    margin: 10px 0 0 0;
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+}
