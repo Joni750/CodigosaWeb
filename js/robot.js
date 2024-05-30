@@ -2,7 +2,7 @@
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ alpha: true });
-renderer.setSize(document.getElementById('cajaRobot').clientWidth, document.getElementById('cajaRobot').clientHeight);
+renderer.setSize(document.getElementById('cajaRobot').clientWidth/1.05, document.getElementById('cajaRobot').clientHeight/1.05);
 renderer.setClearColor(0x000000, 0); // Fondo transparente
 document.getElementById('cajaRobot').appendChild(renderer.domElement);
 
@@ -123,7 +123,7 @@ animate();
 
 // Hacer que la cabeza del robot siga el cursor
 document.addEventListener('mousemove', (event) => {
-    const mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+    const mouseX = (event.clientX / window.innerWidth) *1.5 - 1;
     const mouseY = - (event.clientY / window.innerHeight) * 2 + 1;
 
     const maxRotationX = Math.PI / 6; // 30 grados

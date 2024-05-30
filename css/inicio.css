@@ -220,7 +220,7 @@ header.abajo span {
     color: #fff;
     text-align: center;
     padding-top: 13%;
-    padding-bottom: 8%;
+    padding-bottom: 11%;
     height: 50rem;
 }
 
@@ -479,6 +479,8 @@ h3 {
 
     #cajaRobot {
         display: flex;
+        align-items: center;
+        justify-content: flex-end;
         transform: translate(50%, -17%);
         position: absolute;
         width: 65rem;
@@ -592,15 +594,14 @@ h3 {
 @media only screen and (min-width:1700px) {
 
     #cajaRobot {
-
-        width: 95rem;
+        width: 65rem;
         height: 45rem;
     }
 
     /*PROYECTOS DESTACADOS*/
 
     #destacado h2 {
-        transform: rotate(-90deg) translate(58%, -465%);
+        transform: rotate(-90deg) translate(88%, -465%);
     }
 
 }
@@ -608,8 +609,8 @@ h3 {
 @media only screen and (min-width:1800px) {
 
     #cajaRobot {
-        transform: translate(40%, -17%);
-        width: 105rem;
+        transform: translate(80%, -17%);
+        width: 65rem;
         height: 45rem;
     }
 
