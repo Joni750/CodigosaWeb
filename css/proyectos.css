@@ -9,87 +9,13 @@ body {
 
 /* Menú */
 
-header {
-    background-color: rgb(0, 0, 0, 0.8);
-    color: rgb(255, 255, 255);
-    width: 100%;
-    padding: 0rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
-    transition: 0.5s;
-}
-
-header.abajo {
-    /* background-color: rgb(255, 255, 255); */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-header.abajo .burger span {
-    background: black;
-}
-
-header.abajo ul li a {
-    color: #000;
-}
-
-header.abajo span {
-    color: #000;
-}
-
-.menu {
-    top: 60px;
-    left: 0;
-    width: 100%;
-}
-
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.menu li {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.menu a {
-    display: block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 15px 20px;
-    transition: all 0.3s;
-}
-
-.menu div {
-    display: block;
-    padding: 6px 0px;
-    cursor: pointer;
-}
-
-.menu img {
-    width: 100px;
-}
-
-.menu a:hover {
-    font-size: 1.2em;
-}
-
 .burger {
-
     position: relative;
     width: 40px;
     height: 30px;
     background: transparent;
     cursor: pointer;
     display: block;
-
 }
 
 .burger input {
@@ -176,8 +102,6 @@ nav.open {
     position: relative;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 #burgerLogo {
@@ -197,6 +121,11 @@ nav.open {
     padding-right: 9%;
 }
 
+.contain {
+    display: flex;
+    justify-content: space-between;
+}
+
 .menu a {
     padding: 0;
 }
@@ -204,6 +133,79 @@ nav.open {
 #headerMv {
     display: flex;
     justify-content: center;
+
+}
+
+header {
+    background-color: rgb(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: 0.5s;
+}
+
+header.abajo {
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header.abajo .burger span {
+    background: black;
+}
+
+header.abajo ul li a {
+    color: #000;
+}
+
+header.abajo span {
+    color: #000;
+}
+
+.menu {
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    transition: all 0.3s;
+}
+
+.menu div {
+    display: block;
+    padding: 6px 0px;
+    cursor: pointer;
+}
+
+.menu img {
+    width: 100px;
+}
+
+.menu a:hover {
+    font-size: 1.2em;
 }
 
 @media only screen and (min-width:900px) {
@@ -228,11 +230,6 @@ nav.open {
         display: flex;
         align-items: center;
         justify-content: center;
-        /* padding-left: 3%; */
-        font-size: 1em;
-    }
-
-    header {
         padding-inline: 4%;
         font-size: 1em;
     }
@@ -246,8 +243,6 @@ nav.open {
     #burgerLogo {
         padding-inline: 0;
     }
-
-    /* PROYECTOS */
 
     /* Portada */
 
@@ -280,37 +275,35 @@ nav.open {
         color: #FFDC84;
     }
 
-    /* Proyectos */
+    /* PROYECTOS */
 
-    #proyectos{
-        background-image: url(../img/fondoProyectos.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    /* Proyectos impares */
 
     #proyecto{
+        background-color: #FFDC84;        
+    }
+
+    #content-proyecto{
         display: flex;
         flex-direction: column;
-        padding-top: 14%;
-        padding-bottom: 14%;
-        margin-left: 6%;
+        margin-left: 5%;
     }
 
-    #proyecto img{
-        width: 75%;
+    #content-proyecto img{
+        width: 70%;
+        margin-top: 3%;
+    }
+
+    #content-proyecto p{
+        width: 70%;
         margin-top: 5%;
     }
 
-    #proyecto p{
-        width: 75%;
-        margin-top: 5%;
-    }
-
-    .container-proyectos {
+    .container-proyecto {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px;
+        padding: 50px;
         border-radius: 10px;
     }
 
@@ -318,20 +311,82 @@ nav.open {
         writing-mode: vertical-rl;
         text-orientation: mixed;
         font-size: 9em;
-        margin-right: 6%;
+        margin-right: 4%;
         font-weight: bold;
     }
 
-    .content img {
-        max-width: 100%;
+    .triangle1 {
+
+        width: 100%;
+
+        /*que ocupe el 100% de la pantalla en ancho*/
+        height: 14rem;
+
+        /*Altura del triangulo*/
+        background-color: #141414;
+
+        /* Cambia el color a tu gusto */
+        clip-path: polygon(0% 0%, 100% -1%, 100% 100%);    
+
+        /*1 y 2 parametro = vertice superior, el 1 de los dos es posicion ejeX 2 eje Y 3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y*/
+    }
+
+    /* Proyecto pares */
+
+    #proyecto2{
+        background-color: #141414;        
+    }
+
+    #content-proyecto2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 6%;
+    }
+
+    #content-proyecto2 img{
+        width: 70%;
+        margin-top: 3%;
+    }
+
+    #content-proyecto2 p{
+        width: 70%;
+        margin-top: 5%;
+        color: #fff;
+    }
+
+    .container-proyecto2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
         border-radius: 10px;
     }
 
-    .content p {
-        margin: 10px 0 0 0;
-        font-size: 1em;
-        color: #333;
-        text-align: center;
+    .vertical-text2 {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        font-size: 9em;
+        margin-left: 3%;
+        font-weight: bold;
+        color: #FFDC84;
+    }
+
+    .triangle2 {
+
+        width: 100%;
+
+        /*que ocupe el 100% de la pantalla en ancho*/
+        height: 14rem;
+
+        /*Altura del triangulo*/
+        background-color: #141414;
+
+        /* Cambia el color a tu gusto */
+        clip-path: polygon(0% 100%, 100% 0%, 100% 101%);
+
+        /*1 y 2 parametro = vertice superior, el 1 de los dos es posicion ejeX 2 eje Y 3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y*/
     }
 
 }

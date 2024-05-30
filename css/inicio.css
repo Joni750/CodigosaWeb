@@ -12,16 +12,13 @@ body {
 
 /* Menú */
 
-
 .burger {
-
     position: relative;
     width: 40px;
     height: 30px;
     background: transparent;
     cursor: pointer;
     display: block;
-
 }
 
 .burger input {
@@ -373,7 +370,6 @@ header.abajo span {
     3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y
     */
 }
-
 
 /* DESTACADOS */
 
