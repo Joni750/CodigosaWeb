@@ -116,8 +116,6 @@ nav.open {
     align-items: center;
     margin-left: 0;
     padding-inline: 5%;
-
-
 }
 
 .logo {
@@ -290,29 +288,20 @@ header.abajo span {
     color: #000000;
 }
 
-
-
 #precios {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FFDC84;
-
-
 }
-
-
 
 #precios-cartas {
     margin-bottom: 10%;
     width: 100%;
     display: flex;
-
     justify-content: space-evenly;
-
 }
-
 
 .carta {
     width: 20%;
@@ -386,7 +375,8 @@ header.abajo span {
 }
 
 
-/*DESTACADOS*/
+/* DESTACADOS */
+
 #destacado {
     display: flex;
     flex-direction: column;
@@ -397,7 +387,6 @@ header.abajo span {
 
 h2 {
     font-size: 3.5rem;
-
 }
 
 h3 {
@@ -421,15 +410,12 @@ h3 {
 
 .proyectoDestacado img,
 .proyectoDestacado div {
-
     color: #fff;
     width: 80%;
 }
 
-
-
-
 @media only screen and (min-width:900px) {
+
     .burger {
         display: none;
     }
@@ -468,15 +454,16 @@ h3 {
 
 @media only screen and (min-width:1200px) {
 
+    header {
+        padding-inline: 4%;
+        font-size: 1em;
+    }
 
     .triangle {
-
         height: 7.5rem;
-
     }
 
     .portada {
-
         height: 32rem;
     }
 
@@ -485,15 +472,8 @@ h3 {
         max-width: 50%;
     }
 
-    header {
-
-        padding-inline: 4%;
-        font-size: 1em;
-    }
-
     .content-portada {
         justify-content: flex-start;
-
     }
 
     .content-portada h1 {
@@ -509,30 +489,22 @@ h3 {
 
         /* Ajusta según sea necesario */
         height: 45rem;
-        /* Ajusta según sea necesario */
-
     }
 
-
-
-    /*PROYECTOS DESTACADOS*/
+    /* PROYECTOS DESTACADOS */
 
     #destacado {
-
         margin-block: 9rem;
     }
 
     #destacado h2 {
         position: absolute;
         transform: rotate(-90deg) translate(60%, -430%);
-
         margin: 0;
     }
 
     h2 {
         font-size: 5em;
-
-
     }
 
     h3 {
@@ -540,10 +512,8 @@ h3 {
     }
 
     .proyectoDestacado {
-
         margin-left: 25%;
     }
-
 
 }
 
@@ -559,14 +529,11 @@ h3 {
     #destacado h2 {
         position: absolute;
         transform: rotate(-90deg) translate(57%, -390%);
-
         margin: 0;
     }
 
     h2 {
         font-size: 5.8rem;
-
-
     }
 
     h3 {
@@ -591,6 +558,7 @@ h3 {
     h2 {
         font-size: 6rem;
     }
+
 }
 
 @media only screen and (min-width:1500px) {
@@ -602,9 +570,11 @@ h3 {
     }
 
     /*PROYECTOS DESTACADOS*/
+
     #destacado h2 {
         transform: rotate(-90deg) translate(58%, -435%);
     }
+
 }
 
 @media only screen and (min-width:1600px) {
@@ -616,9 +586,11 @@ h3 {
     }
 
     /*PROYECTOS DESTACADOS*/
+
     #destacado h2 {
         transform: rotate(-90deg) translate(58%, -450%);
     }
+
 }
 
 @media only screen and (min-width:1700px) {
@@ -630,9 +602,11 @@ h3 {
     }
 
     /*PROYECTOS DESTACADOS*/
+
     #destacado h2 {
         transform: rotate(-90deg) translate(58%, -465%);
     }
+
 }
 
 @media only screen and (min-width:1800px) {
@@ -646,12 +620,13 @@ h3 {
     #destacado h2 {
         transform: rotate(-90deg) translate(58%, -505%);
     }
+
 }
 
 @media only screen and (min-width:1900px) {
 
-
     #destacado h2 {
         transform: rotate(-90deg) translate(58%, -535%);
     }
+
 }
