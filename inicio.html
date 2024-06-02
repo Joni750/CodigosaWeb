@@ -174,35 +174,6 @@
 
 </body>
 
-<script>
-
-    window.addEventListener("scroll", function () {
-
-        var destacados = document.getElementsByTagName('h2')[2];
-
-        if (window.scrollY > 2000 && window.scrollY < 2806) {
-
-            destacados.style.position = "fixed";
-
-            destacados.style.top = "910px";
-  
-        }else if (window.scrollY >= 2806) {
-
-            destacados.style.position = "absolute";
-
-        }else{
-
-            destacados.style.position = "absolute";
-
-            destacados.style.top = "initial";
-
-        }
-
-    })
-
-
-</script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 <script src="js/robot.js"></script>

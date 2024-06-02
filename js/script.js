@@ -210,3 +210,40 @@ window.addEventListener('resize', ()=>{
         })
     }
 });
+
+
+
+// Scroll inicio proyectos destacados
+
+window.addEventListener("scroll", function () {
+
+    var destacados = document.getElementsByTagName('h2')[2];
+
+    if (window.scrollY > 2000 && window.scrollY < 2806) {
+
+        destacados.style.position = "fixed";
+
+        destacados.style.top = "910px";
+
+        destacados.style.marginTop = "initial";
+
+
+    }else if (window.scrollY >= 2806) {
+
+        destacados.style.position = "absolute";
+
+        destacados.style.top = "initial";
+
+        destacados.style.marginTop = "1600px";
+
+    }else {
+
+        destacados.style.position = "absolute";
+
+        destacados.style.top = "initial";
+
+        destacados.style.marginTop = "initial";
+
+    }
+
+})
