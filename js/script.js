@@ -203,5 +203,10 @@ punto.forEach( (cadaPunto, i)=> {
 window.addEventListener('resize', ()=>{
     if(window.innerWidth > 1200){
         bloqueCartas.style.transform = `translateX(0%)`;
+
+        punto.forEach((cadaPunto, i )=>{
+            punto[i].classList.remove('activo')
+            punto[1].classList.add('activo');
+        })
     }
 });
