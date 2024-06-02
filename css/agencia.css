@@ -228,6 +228,7 @@ header.abajo span {
 .content-portada {
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -238,9 +239,38 @@ header.abajo span {
 }
 
 .content-portada img {
-    max-width: 50%;
-    width: 500px;
+    filter: grayscale(1);
+    /* Aplica el filtro de escala de grises completo */
+    object-fit: contain;
+
+
 }
+
+#fotosPortada {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.foto-lonja {
+    max-width: 50%;
+    width: 20rem;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translate(40%, 0%);
+}
+
+.foto-trabajando {
+    width: 20rem;
+
+    transform: translate(-10%, 30%);
+    /* Para centrar la imagen */
+    z-index: 2;
+}
+
 
 .bernadette {
     font-family: 'bernadette';
@@ -256,234 +286,52 @@ header.abajo span {
     height: 13rem;
 }
 
+/*METODOLOGIA*/
+#metodologiaSeccion {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFDC84;
+
+}
+#contenedorImagenes{
+    display: flex;
+    flex-direction: row;
+}
+.cajaImagen{
+    background-image: url(../img/fotoEjemplo.png);
+}
+
 #p1 {
-
     font-family: 'Montserrat';
-
-    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 244px;
     text-align: center;
-    background-color: #837042;
-    color: transparent;
-    text-shadow: 1px 1px 7.5px #FFDC84;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    margin: 0 auto;
-    z-index: -100;
-    width: 100%;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 
-    filter: blur(1.7px);
+    margin: 0;
+    color: #FFDC84;
+    filter: blur(3.7px);
 }
 
 #p2 {
     position: relative;
     display: flex;
     justify-content: center;
-    top: -9rem;
+    top: -11rem;
     margin: 0;
     font-weight: 400;
     font-size: 5rem;
     color: #000000;
 }
 
-/*PRECIOS*/
-
-#precios {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FFDC84;
-
-}
-
-
-/*carrousell*/
-
-#precios-cartas {
-    margin-bottom: 5rem;
-    width: 300%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-
-
-
-
-    transition: all 0.5s ease;
-    transform: translate(0%);
-
-}
-
-.carrousel {
-    width: 90%;
-    max-width: 120rem;
-    padding: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.carrousel .puntos {
-    width: 100%;
-
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.carrousel .punto {
-    cursor: pointer;
-    list-style-type: none;
-    width: 1rem;
-    height: 1rem;
-    background-color: transparent;
-    border: #000 0.1rem solid;
-    border-radius: 3rem;
-    margin: 1rem;
-
-}
-
-.carrousel .punto.activo {
-    background-color: #141414;
-    border: none;
-}
-
-.carta {
-    min-width: calc(75% / 3);
-    max-width: calc(150% / 3);
-    border-radius: 20px;
-    padding: 3rem;
-    background-color: #141414;
-    color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-}
-
-.content-carta {
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-}
-
-
-
-.beneficios p {
-    font-size: 25px;
-}
-
-#precio {
-    font-size: 40px;
-    margin: 0;
-}
-
-.carta h3 {
-    font-weight: 400;
-    font-size: 55px;
-    margin: 0;
-}
-
-#button-carta {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding-top: 0;
-    text-decoration: none;
-}
-
-#button-carta button {
-    width: 100%;
-    height: 3rem;
-    color: #141414;
-    border-radius: 1rem;
-    background-color: #FFDC84;
-    border: none;
-    font-family: 'Montserrat';
-    font-size: large;
-    cursor: pointer;
-    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-}
-
-/*carrousell*/
-
-
-
-.triangle {
-    width: 100%;
-    /*que ocupe el 100% de la pantalla en ancho*/
-    height: 3rem;
-    /*Altura del triangulo*/
-    background-color: #141414;
-    /* Cambia el color a tu gusto */
-    clip-path: polygon(37% 0%, -4.5% 101%, 102% 101%);
-    /*
-    1 y 2 parametro = vertice superior, el 1 de los dos es posicion ejeX
-    2 eje Y
-
-    3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y
-    */
-}
-
-/*PRECIOS*/
-
-/*robot*/
-
-#cajaRobot {
-    display: none;
-}
-
-/*robot*/
-
-/* DESTACADOS */
-
-#destacado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #FFDC84;
-}
-
-h2 {
-    font-size: 3.5rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-#destacado article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-
-}
-
-.proyectoDestacado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.proyectoDestacado img,
-.proyectoDestacado div {
-    color: #fff;
-    width: 80%;
-}
 
 
 
@@ -531,8 +379,9 @@ footer a {
     .content-carta h3 {
         font-size: 2.5rem;
     }
+
     #precios-cartas {
-    
+
         width: 250%;
     }
 
@@ -549,10 +398,12 @@ footer a {
 
 @media only screen and (min-width:900px) {
 
+
+
     /*PRECIOS*/
 
     /*carrousel*/
-  
+
     #precios-cartas {
         justify-content: space-evenly;
     }
@@ -561,7 +412,7 @@ footer a {
         font-size: 2.5rem;
     }
 
-   
+
 
     #precios-cartas {
         width: 200%;
@@ -578,11 +429,12 @@ footer a {
 
 
 
-    #p1, #p2{
+    #p1,
+    #p2 {
 
         font-size: 7rem;
     }
-  
+
     /*FOOTER*/
     footer {
         font-size: 100%;
@@ -595,6 +447,7 @@ footer a {
     #derechos {
         font-size: 159%;
     }
+
     /*FOOTER*/
 
 
@@ -637,20 +490,44 @@ footer a {
 
 @media only screen and (min-width:1200px) {
 
+    .content-portada {
+
+        flex-direction: row;
+
+    }
+
+    .foto-lonja {
+        width: 15rem;
+        transform: translate(20%, 0%);
+    }
+
+    .foto-trabajando {
+        width: 20rem;
+        transform: translate(-40%, 30%);
+        /* Para centrar la imagen */
+        z-index: 2;
+    }
+
+    /*AGENCIA PORTADA*/
+
     /*PRECIOS*/
 
     /*carrousel desactivado*/
-    .punto, .puntos{
+    .punto,
+    .puntos {
         display: none;
     }
-    #precios-cartas{
+
+    #precios-cartas {
         justify-content: space-between;
 
         width: 100%;
     }
-    .carta{
+
+    .carta {
         width: 23%;
     }
+
     /*carrousel desactivado*/
 
     /*PRECIOS*/
@@ -669,14 +546,11 @@ footer a {
     }
 
     .content-portada h1 {
-        font-size: 5em;
+        font-size: 4em;
         max-width: 50%;
     }
 
-    .content-portada {
-        justify-content: flex-start;
-    }
-
+  
     .content-portada h1 {
         margin-left: 6%;
         width: 100%;
@@ -747,13 +621,31 @@ footer a {
 
 @media only screen and (min-width:1400px) {
 
+    /*AGENCIA PORTADA*/
+
+
+    .foto-lonja {
+        width: 15rem;
+        transform: translate(20%, 0%);
+    }
+
+    .foto-trabajando {
+        width: 20rem;
+        transform: translate(-40%, 30%);
+        /* Para centrar la imagen */
+        z-index: 2;
+    }
+
+    /*AGENCIA PORTADA*/
+
     /*PRECIOS*/
 
-    #precios-cartas{
+    #precios-cartas {
         justify-content: space-evenly;
 
     }
-    .carta{
+
+    .carta {
         width: 20%;
     }
 
@@ -796,8 +688,22 @@ footer a {
 }
 
 @media only screen and (min-width:1600px) {
-  
-  
+
+    /*AGENCIA PORTADA*/
+
+    .foto-lonja {
+        width: 25rem;
+        transform: translate(20%, 0%);
+    }
+
+    .foto-trabajando {
+        width: 30rem;
+        transform: translate(-40%, 30%);
+        /* Para centrar la imagen */
+        z-index: 2;
+    }
+
+    /*AGENCIA PORTADA*/
 
     #cajaRobot {
         transform: translate(45%, -17%);
@@ -849,4 +755,3 @@ footer a {
     }
 
 }
-
