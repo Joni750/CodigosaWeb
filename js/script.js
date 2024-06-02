@@ -249,43 +249,28 @@ window.addEventListener("scroll", function () {
 // Carrusel servicios
 
 document.addEventListener('DOMContentLoaded', function() {
-    const carouselImages = document.getElementsByClassName("carousel-images")[0];
-    const images = document.querySelectorAll('.carousel-images img');
-    let index = 0;
-    const totalImages = images.length;
-    let intervalId;
+    const carouselTrack = document.querySelector('.car-img1');
+    const carouselTrack2 = document.querySelector('.car-img2');
+    const carouselTrack3 = document.querySelector('.car-img3');
 
-    function moveCarousel() {
-        index++;
-        if (index >= totalImages) {
-            index = 0;
-            // Elimina la transición temporalmente para evitar un salto brusco
-            carouselImages.style.transition = 'none';
-            carouselImages.style.transform = 'translateX(0)';
-            // Forzar reflujo para aplicar el cambio instantáneamente
-            void carouselImages.offsetWidth; // o carouselImages.clientHeight;
-            // Reestablece la transición
-            carouselImages.style.transition = 'transform 1s ease';
-        } else {
-            const width = images[index].clientWidth;
-            carouselImages.style.transform = `translateX(${-index * width}px)`;
-        }
+    function pauseAnimation() {
+        carouselTrack.style.animationPlayState = 'paused';
+        carouselTrack2.style.animationPlayState = 'paused';
+        carouselTrack3.style.animationPlayState = 'paused';
     }
 
+    function resumeAnimation() {
+        carouselTrack.style.animationPlayState = 'running';
+        carouselTrack2.style.animationPlayState = 'running';
+        carouselTrack3.style.animationPlayState = 'running';
+    }
+
+    carouselTrack.addEventListener('mouseover', pauseAnimation);
+    carouselTrack.addEventListener('mouseout', resumeAnimation);
+
+    carouselTrack2.addEventListener('mouseover', pauseAnimation);
+    carouselTrack2.addEventListener('mouseout', resumeAnimation);
+
+    carouselTrack3.addEventListener('mouseover', pauseAnimation);
+    carouselTrack3.addEventListener('mouseout', resumeAnimation);
 });
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const carouselTrack = document.querySelector('.carousel-images');
-
-//     function pauseAnimation() {
-//         carouselTrack.style.animationPlayState = 'paused';
-//     }
-
-//     function resumeAnimation() {
-//         carouselTrack.style.animationPlayState = 'running';
-//     }
-
-//     carouselTrack.addEventListener('mouseover', pauseAnimation);
-//     carouselTrack.addEventListener('mouseout', resumeAnimation);
-// });
