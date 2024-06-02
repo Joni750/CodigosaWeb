@@ -338,6 +338,41 @@ header.abajo span {
     clip-path: polygon(0% 100%, 100% 0%, 100% 101%);
 }
 
+/*FOOTER*/
+
+footer {
+    background-color: #FFDC84;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 80%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+#politicas {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+#derechos {
+    color: #fff;
+    text-shadow: 0rem 0.2rem 0.2rem #0004;
+    font-size: 149%;
+    font-weight: 500;
+}
+
+#derechos span {
+
+    color: #000;
+}
+
 @media only screen and (min-width:700px) {
 
     /* PORTADA */
@@ -433,7 +468,7 @@ header.abajo span {
 
     .triangle1 {
         height: 14rem;
-        clip-path: polygon(0% 0%, 100% -1%, 100% 100%);    
+        clip-path: polygon(0% 0%, 100% -15%, 100% 100%);
     }
 
     /* pares */
@@ -530,6 +565,10 @@ header.abajo span {
         clip-path: polygon(0% 0%, 100% -4%, 100% 100%); 
     }
 
+    #content-proyecto p{
+        font-size: 1.4em;
+    }
+
     /* impares */
 
     .vertical-text2 {
@@ -538,6 +577,10 @@ header.abajo span {
 
     .triangle2 {
         clip-path: polygon(0% 100%, 100% 0%, 100% 116%);
+    }
+
+    #content-proyecto2 p{
+        font-size: 1.4em;
     }
 
 }
