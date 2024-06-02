@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat';    
+    scroll-behavior: smooth;
+    background-color: #141414;                 
+}
+
+/* MENU */
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 115%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform: translateY(-100%);
+    transform-origin: left center;
+}
+
+.burger input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.burger input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.burger input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav ul {
+    flex-direction: column;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 1em 0;
+}
+
+nav ul li a {
+    width: 100%;
+    display: block;
+}
+
+nav.open {
+    display: flex;
+}
+
+.contain {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#burgerLogo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding-inline: 5%;
+}
+
+.logo {
+    width: 85px;
+}
+
+.logos {
+    padding: 20px 0;
+    padding-right: 9%;
+}
+
+.contain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    padding: 0;
+}
+
+#headerMv {
+    display: flex;
+    justify-content: center;
+
+}
+
+header {
+    background-color: rgb(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: 0.5s;
+}
+
+header.abajo {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header.abajo .burger span {
+    background: black;
+}
+
+header.abajo ul li a {
+    color: #000;
+}
+
+header.abajo span {
+    color: #000;
+}
+
+.menu {
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    transition: all 0.3s;
+}
+
+.menu div {
+    display: block;
+    padding: 6px 0px;
+    cursor: pointer;
+}
+
+.menu img {
+    width: 100px;
+}
+
+.menu a:hover {
+    font-size: 1.2em;
+}
+
+/* PORTADA */
+
+.portada-proyectos {
+    background-image: url(../img/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding-top: 54%;
+    padding-bottom: 54%;
+}
+
+.content-portada-proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content-portada-proyectos h1{
+   font-size: 3em;
+}
+
+.bernadette {
+    font-family: 'bernadette';
+    font-weight: lighter;
+    color: black;
+}
+
+.amarillo {
+    color: #FFDC84;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #FFDC84;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 80%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+#politicas {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+#derechos {
+    color: #fff;
+    text-shadow: 0rem 0.2rem 0.2rem #0004;
+    font-size: 149%;
+    font-weight: 500;
+}
+
+#derechos span {
+
+    color: #000;
+}
+
+@media only screen and (min-width:700px) {
+
+    /* MENU */
+
+    .burger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header {
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 4%;
+        font-size: 1em;
+    }
+
+    header section {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+
+    #burgerLogo {
+        padding-inline: 0;
+    }
+
+    /* PORTADA */
+
+    .content-portada-proyectos h1{
+       font-size: 5em;
+    }
+
+    .portada-proyectos{
+        padding-top: 19%;
+        padding-bottom: 13%;
+    }
+
+    /* SERVICIOS */
+
+    /* pares */
+
+    #servicio1{
+        background-color: #FFDC84;
+    }
+
+    .container-servicio {
+        padding: 100px;
+    }
+
+    .container-servicio h2{
+        font-size: 4em;
+        color: #fff;
+        text-shadow: 0rem 0.2rem 0.2rem #0004;
+        margin-top: 0;
+    }
+
+    .container-servicio p{
+        font-size: 1.5em;
+        text-align: justify;
+    }
+    
+    .circle {
+        background-color: #FFDC84;
+        height: 15rem;
+        clip-path: circle(200% at 50% 1140%);
+    }
+    
+    /* impares */
+
+    .container-servicio2 {
+        padding: 100px;
+    }
+
+    .container-servicio2 h2{
+        font-size: 4em;
+        color: #fff;
+        text-shadow: 0rem 0.2rem 0.2rem #0004;
+    }
+
+    .container-servicio2 p{
+        font-size: 1.5em;
+        color: #fff;
+        text-align: justify;
+    }
+
+    .circle2 {
+        background-color: #FFDC84;
+        height: 15rem;
+        clip-path: circle(200% at 50% 1140%);
+        transform: rotate(180deg);
+    }
+
+    /* Carrusel */
+
+    .carousel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel-images {
+        display: flex;
+        width: max-content;
+        animation: scroll 90s linear infinite; 
+    }
+
+    .carousel-images a{
+        width: 600px;
+        padding: 0 40px;
+        padding-bottom: 100px;
+    }
+
+    .carousel-images img {
+        width: 100%; 
+        height: auto;
+        transition: transform 0.5s ease; 
+    }
+    
+    .carousel-images img:hover {
+        transform: scale(1.1); 
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+}

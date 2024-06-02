@@ -211,13 +211,11 @@ window.addEventListener('resize', ()=>{
     }
 });
 
-
-
 // Scroll inicio proyectos destacados
 
 window.addEventListener("scroll", function () {
 
-    var destacados = document.getElementsByTagName('h2')[2];
+    var destacados = document.getElementById('destacadosTitulo');
 
     if (window.scrollY > 2000 && window.scrollY < 2806) {
 
@@ -247,3 +245,47 @@ window.addEventListener("scroll", function () {
     }
 
 })
+
+// Carrusel servicios
+
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselImages = document.getElementsByClassName("carousel-images")[0];
+    const images = document.querySelectorAll('.carousel-images img');
+    let index = 0;
+    const totalImages = images.length;
+    let intervalId;
+
+    function moveCarousel() {
+        index++;
+        if (index >= totalImages) {
+            index = 0;
+            // Elimina la transición temporalmente para evitar un salto brusco
+            carouselImages.style.transition = 'none';
+            carouselImages.style.transform = 'translateX(0)';
+            // Forzar reflujo para aplicar el cambio instantáneamente
+            void carouselImages.offsetWidth; // o carouselImages.clientHeight;
+            // Reestablece la transición
+            carouselImages.style.transition = 'transform 1s ease';
+        } else {
+            const width = images[index].clientWidth;
+            carouselImages.style.transform = `translateX(${-index * width}px)`;
+        }
+    }
+
+});
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const carouselTrack = document.querySelector('.carousel-images');
+
+//     function pauseAnimation() {
+//         carouselTrack.style.animationPlayState = 'paused';
+//     }
+
+//     function resumeAnimation() {
+//         carouselTrack.style.animationPlayState = 'running';
+//     }
+
+//     carouselTrack.addEventListener('mouseover', pauseAnimation);
+//     carouselTrack.addEventListener('mouseout', resumeAnimation);
+// });
