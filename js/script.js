@@ -129,3 +129,73 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    var carta1 = document.getElementById('carta1');
+    var carta2 = document.getElementById('carta2');
+    var carta3 = document.getElementById('carta3');
+    var cartaActiva = document.querySelector('.cartaActiva');
+
+    carta1.addEventListener('click', function() {
+        cartaActiva.classList.toggle('cartaActiva');
+        carta1.classList.toggle('cartaActiva');
+
+        /*Mover la carta*/
+    });
+
+    carta3.addEventListener('click', function() {
+        cartaActiva.classList.toggle('cartaActiva');
+        carta2.classList.toggle('cartaActiva');
+
+        /*Mover la carta*/
+    });
+
+    carta3.addEventListener('click', function() {
+        cartaActiva.classList.toggle('cartaActiva');
+        carta3.classList.toggle('cartaActiva');
+
+        /*Mover la carta*/
+    });
+    
+});
+
+
+
+
+
+/*PRUEBA CARROUSELL*/
+
+var bloqueCartas = document.querySelector('#precios-cartas');
+var punto = document.querySelectorAll('.punto');
+
+//Cuando click en punto
+    //Saber pos del punto
+    //aplicar translateX al bloqueCartas
+    //quitar clase activos a todos
+    //añadir clase activo al que hemos dado click
+
+punto.forEach( (cadaPunto, i)=> {
+    punto[i].addEventListener('click', ()=>{
+        let posicion = i;
+
+        let operacion;
+        if(posicion == 0){
+            operacion = 33;
+        }else if(posicion == 1){
+            operacion = 0;
+        }else if(posicion == 2){
+            operacion = -33;
+        }
+
+        bloqueCartas.style.transform = `translateX(${operacion}%)`
+
+        punto.forEach((cadaPunto, h )=>{
+            punto[h].classList.remove('activo')
+        })
+        punto[i].classList.add('activo');
+
+        
+    })
+});

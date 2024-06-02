@@ -5,6 +5,7 @@ body {
     font-family: 'Montserrat';
     scroll-behavior: smooth;
     background-color: #141414;
+    overflow-x: hidden;
     /* background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
     background-size: cover; */
@@ -250,11 +251,9 @@ header.abajo span {
     color: #FFDC84;
 }
 
-/* Precios */
-
 #titulo {
     margin-top: 5%;
-    height: 380px;
+    height: 13rem;
 }
 
 #p1 {
@@ -277,7 +276,8 @@ header.abajo span {
 
 #p2 {
     position: relative;
-    left: calc(50% - 13rem/2);
+    display: flex;
+    justify-content: center;
     top: -11rem;
     margin: 0;
     font-weight: 400;
@@ -285,35 +285,97 @@ header.abajo span {
     color: #000000;
 }
 
+/*PRECIOS*/
+
 #precios {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FFDC84;
+
 }
 
+
+/*carrousell*/
+
 #precios-cartas {
-    margin-bottom: 10%;
-    width: 100%;
+    margin-bottom: 5rem;
+    width: 300%;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
+    align-items: center;
+
+
+
+
+    transition: all 0.5s ease;
+    transform: translate(0%);
+
+}
+
+.carrousel {
+    width: 90%;
+    max-width: 120rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrousel .puntos {
+    width: 100%;
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel .punto {
+    cursor: pointer;
+    list-style-type: none;
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    border: #000 0.1rem solid;
+    border-radius: 3rem;
+    margin: 1rem;
+
+}
+
+.carrousel .punto.activo {
+    background-color: #141414;
+    border: none;
 }
 
 .carta {
-    width: 20%;
+    min-width: calc(75% / 3);
+    max-width: calc(150% / 3);
     border-radius: 20px;
-    padding: 10px;
+    padding: 3rem;
     background-color: #141414;
     color: #FFFFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
 }
 
 .content-carta {
-    padding: 40px;
+
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+
 }
+
+
 
 .beneficios p {
     font-size: 25px;
@@ -321,6 +383,7 @@ header.abajo span {
 
 #precio {
     font-size: 40px;
+    margin: 0;
 }
 
 .carta h3 {
@@ -330,30 +393,31 @@ header.abajo span {
 }
 
 #button-carta {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+
     padding-top: 0;
     text-decoration: none;
 }
 
 #button-carta button {
     width: 100%;
-    height: 50px;
+    height: 3rem;
     color: #141414;
-    border-radius: 20px;
+    border-radius: 1rem;
     background-color: #FFDC84;
     border: none;
     font-family: 'Montserrat';
     font-size: large;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-#cajaRobot {
-    display: none;
-}
+/*carrousell*/
+
+
 
 .triangle {
     width: 100%;
@@ -370,6 +434,16 @@ header.abajo span {
     3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y
     */
 }
+
+/*PRECIOS*/
+
+/*robot*/
+
+#cajaRobot {
+    display: none;
+}
+
+/*robot*/
 
 /* DESTACADOS */
 
@@ -410,7 +484,118 @@ h3 {
     width: 80%;
 }
 
+
+
+/*FOOTER*/
+footer {
+    background-color: #FFDC84;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 80%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+#politicas {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+#derechos {
+    color: #fff;
+    text-shadow: 0rem 0.2rem 0.2rem #0004;
+    font-size: 149%;
+    font-weight: 500;
+}
+
+#derechos span {
+
+    color: #000;
+}
+
+/*FOOTER*/
+@media only screen and (min-width:700px) {
+
+    /*PRECIOS*/
+
+    /*carrousell*/
+
+    .content-carta h3 {
+        font-size: 2.5rem;
+    }
+    #precios-cartas {
+    
+        width: 250%;
+    }
+
+    .carta {
+        min-width: calc(62.5% / 3);
+        max-width: calc(125% / 3);
+    }
+
+    /*carrousell*/
+
+    /*PRECIOS*/
+
+}
+
 @media only screen and (min-width:900px) {
+
+    /*PRECIOS*/
+
+    /*carrousel*/
+  
+    #precios-cartas {
+        justify-content: space-evenly;
+    }
+
+    .content-carta h3 {
+        font-size: 2.5rem;
+    }
+
+   
+
+    #precios-cartas {
+        width: 200%;
+    }
+
+    .carta {
+        min-width: calc(50% / 3);
+        max-width: calc(100% / 3);
+    }
+
+    /*carrousel*/
+
+    /*PRECIOS*/
+
+
+
+    #p1, #p2{
+
+        font-size: 7rem;
+    }
+  
+    /*FOOTER*/
+    footer {
+        font-size: 100%;
+    }
+
+    #politicas {
+        gap: 1rem;
+    }
+
+    #derechos {
+        font-size: 159%;
+    }
+    /*FOOTER*/
+
 
     .burger {
         display: none;
@@ -448,7 +633,26 @@ h3 {
 }
 
 
+
 @media only screen and (min-width:1200px) {
+
+    /*PRECIOS*/
+
+    /*carrousel desactivado*/
+    .punto, .puntos{
+        display: none;
+    }
+    #precios-cartas{
+        justify-content: space-between;
+     
+        width: 100%;
+    }
+    .carta{
+        width: 23%;
+    }
+    /*carrousel desactivado*/
+
+    /*PRECIOS*/
 
     header {
         padding-inline: 4%;
@@ -542,6 +746,21 @@ h3 {
 
 @media only screen and (min-width:1400px) {
 
+    /*PRECIOS*/
+
+    #precios-cartas{
+        justify-content: space-evenly;
+
+    }
+    .carta{
+        width: 20%;
+    }
+
+    /*PRECIOS*/
+
+
+    /*
+
     #cajaRobot {
         transform: translate(45%, -17%);
         width: 75rem;
@@ -576,6 +795,8 @@ h3 {
 }
 
 @media only screen and (min-width:1600px) {
+  
+  
 
     #cajaRobot {
         transform: translate(45%, -17%);
@@ -627,3 +848,4 @@ h3 {
     }
 
 }
+
