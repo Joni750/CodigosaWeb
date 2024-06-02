@@ -189,7 +189,7 @@ punto.forEach( (cadaPunto, i)=> {
             operacion = -33;
         }
 
-        bloqueCartas.style.transform = `translateX(${operacion}%)`
+        bloqueCartas.style.transform = `translateX(${operacion}%)`;
 
         punto.forEach((cadaPunto, h )=>{
             punto[h].classList.remove('activo')
@@ -198,4 +198,10 @@ punto.forEach( (cadaPunto, i)=> {
 
         
     })
+});
+
+window.addEventListener('resize', ()=>{
+    if(window.innerWidth > 1200){
+        bloqueCartas.style.transform = `translateX(0%)`;
+    }
 });
