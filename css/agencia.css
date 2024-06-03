@@ -284,7 +284,7 @@ header.abajo span {
 #titulo {
     margin-block: 20%;
     margin-bottom: 10%;
-    
+
 }
 
 /*UI*/
@@ -454,7 +454,7 @@ footer a {
 }
 
 /*SECCION CARROUSELL IMAGENES*/
-#seccionCarrousellImagenes{
+#seccionCarrousellImagenes {
     background-color: #141414;
     display: flex;
     flex-direction: column;
@@ -465,7 +465,7 @@ footer a {
     overflow: hidden;
     width: 100%;
 
-    
+
 
     border-radius: 10px;
     display: flex;
@@ -482,11 +482,12 @@ footer a {
 }
 
 .carousel-slide {
-    min-width: 100%; /* Ajusta el ancho para tener en cuenta el gap */
+    min-width: 100%;
+    /* Ajusta el ancho para tener en cuenta el gap */
     transition: transform 0.5s ease-in-out;
     display: flex;
     justify-content: center;
-    margin: 0 -7%; 
+    margin: 0 -7%;
 }
 
 .carousel-slide img {
@@ -496,53 +497,82 @@ footer a {
 
 
 @keyframes scroll {
-    0% { transform: translateX(86%); }
-    20% { transform: translateX(86%); }
-    25% { transform: translateX(0%); }
-    45% { transform: translateX(0%); }
-    50% { transform: translateX(-86%); }
-    70% { transform: translateX(-86%); }
-    75% { transform: translateX(86%); }
-    100% { transform: translateX(86%); }
+    0% {
+        transform: translateX(86%);
+    }
+
+    20% {
+        transform: translateX(86%);
+    }
+
+    25% {
+        transform: translateX(0%);
+    }
+
+    45% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-86%);
+    }
+
+    70% {
+        transform: translateX(-86%);
+    }
+
+    75% {
+        transform: translateX(86%);
+    }
+
+    100% {
+        transform: translateX(86%);
+    }
 }
+
 /*SECCION CARROUSELL IMAGENES*/
 
 /*SECCION INTEGRANTES*/
 
-#seccionIntegrantes{
+#seccionIntegrantes {
     background-color: #FFDC84;
 
 }
-.cajaIntegrantes img{
-    width: 60%;
+
+.cajaIntegrantes img {
+    width: 100%;
     filter: grayscale(1);
 
 }
-#bloqueIntegrantes{
-    padding-block: 10rem;
+
+#bloqueIntegrantes {
+    padding-block: 8rem;
+    padding-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    gap: 2rem;
+
 
 
 }
-.cajaIntegrantes{
+
+.cajaIntegrantes {
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.cajaIntegrantes h3{
+
+.cajaIntegrantes h3 {
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'bernadette';
     margin-block: 0.5rem;
 }
-.cajaIntegrantes img:hover{
-    
-}
+
+.cajaIntegrantes img:hover {}
 
 
 
@@ -550,7 +580,7 @@ footer a {
 
 /*SECCION INTEGRANTES*/
 
-#seccionTriangulos{
+#seccionTriangulos {
     display: flex;
     flex-direction: row;
 }
@@ -558,7 +588,7 @@ footer a {
 .triangle1 {
     width: 170%;
     /*que ocupe el 100% de la pantalla en ancho*/
-    height: 4rem;
+    height: 2rem;
     /*Altura del triangulo*/
     background-color: #141414;
     /* Cambia el color a tu gusto */
@@ -574,7 +604,7 @@ footer a {
 .triangle2 {
     width: 30%;
     /*que ocupe el 100% de la pantalla en ancho*/
-    height: 3rem;
+    height: 1.5rem;
     /*Altura del triangulo*/
     background-color: #141414;
     /* Cambia el color a tu gusto */
@@ -615,10 +645,11 @@ footer a {
         margin-block: 15%;
         margin-bottom: 5%;
         height: 10rem;
-        
+
     }
-    #p2{
-        top:-5rem;
+
+    #p2 {
+        top: -5rem;
     }
 
     #p1,
@@ -633,21 +664,34 @@ footer a {
 
 @media only screen and (min-width:900px) {
 
- 
-  
 
+    /*SECCION INTEGRANTES*/
+
+    .cajaIntegrantes img {
+        width: 100%;
+        filter: grayscale(1);
+    }
+    #bloqueIntegrantes {
+        gap: 5rem;
+    }
+    .cajaIntegrantes h3 {
+       font-size: 3rem;
+    }
+
+    /*SECCION INTEGRANTES*/
 
     /*METODOLOGIA*/
 
     #contenedorImagenes {
-        flex-direction: row;       
+        flex-direction: row;
         gap: 2rem;
     }
-    .bloqueImagenes{
+
+    .bloqueImagenes {
         gap: 9rem;
     }
 
-  
+
 
     .card-front,
     .card-back {
@@ -692,10 +736,11 @@ footer a {
         margin-block: 10%;
         margin-bottom: 5%;
         height: 13rem;
-        
+
     }
-    #p2{
-        top:-8rem;
+
+    #p2 {
+        top: -8rem;
     }
 
     #p1,
@@ -760,24 +805,48 @@ footer a {
     /*CARROUSELL IMAGENES*/
     .carousel-slide img {
         width: 60%;
- 
+
     }
+
     .carousel-slide {
-        margin: 0 -17%; 
+        margin: 0 -17%;
     }
 
     @keyframes scroll {
-        0% { transform: translateX(66%); }
-        20% { transform: translateX(66%); }
-        25% { transform: translateX(0%); }
-        45% { transform: translateX(0%); }
-        50% { transform: translateX(-66%); }
-        70% { transform: translateX(-66%); }
-        75% { transform: translateX(66%); }
-        100% { transform: translateX(66%); }
+        0% {
+            transform: translateX(66%);
+        }
+
+        20% {
+            transform: translateX(66%);
+        }
+
+        25% {
+            transform: translateX(0%);
+        }
+
+        45% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-66%);
+        }
+
+        70% {
+            transform: translateX(-66%);
+        }
+
+        75% {
+            transform: translateX(66%);
+        }
+
+        100% {
+            transform: translateX(66%);
+        }
     }
 
-     /*CARROUSELL IMAGENES*/
+    /*CARROUSELL IMAGENES*/
 
 
 }
@@ -786,31 +855,68 @@ footer a {
 
 @media only screen and (min-width:1200px) {
 
-    
-   
+    /*SECCION INTEGRANTES*/
 
- /*CARROUSELL IMAGENES*/
- .carousel-slide img {
-    width: 50%;
-    display: block;
-}
-.carousel-slide {
-    margin: 0 -23%; 
-}
+    .cajaIntegrantes img {
+        width: 80%;
+        filter: grayscale(1);
+    }
+    #bloqueIntegrantes {
+        gap: 5rem;
+    }
+    .cajaIntegrantes h3 {
+       font-size: 3rem;
+    }
+
+    /*SECCION INTEGRANTES*/
 
 
-@keyframes scroll {
-    0% { transform: translateX(54%); }
-    20% { transform: translateX(54%); }
-    25% { transform: translateX(0%); }
-    45% { transform: translateX(0%); }
-    50% { transform: translateX(-54%); }
-    70% { transform: translateX(-54%); }
-    75% { transform: translateX(54%); }
-    100% { transform: translateX(54%); }
-}
+    /*CARROUSELL IMAGENES*/
+    .carousel-slide img {
+        width: 50%;
+        display: block;
+    }
 
- /*CARROUSELL IMAGENES*/
+    .carousel-slide {
+        margin: 0 -23%;
+    }
+
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(54%);
+        }
+
+        20% {
+            transform: translateX(54%);
+        }
+
+        25% {
+            transform: translateX(0%);
+        }
+
+        45% {
+            transform: translateX(0%);
+        }
+
+        50% {
+            transform: translateX(-54%);
+        }
+
+        70% {
+            transform: translateX(-54%);
+        }
+
+        75% {
+            transform: translateX(54%);
+        }
+
+        100% {
+            transform: translateX(54%);
+        }
+    }
+
+    /*CARROUSELL IMAGENES*/
 
 
     .content-portada {
@@ -860,8 +966,12 @@ footer a {
         font-size: 1em;
     }
 
-    .triangle {
-        height: 7.5rem;
+    .triangle1 {
+        height: 4rem;
+    }
+
+    .triangle2 {
+        height: 3rem;
     }
 
     .portada {
@@ -920,19 +1030,20 @@ footer a {
 @media only screen and (min-width:1300px) {
 
     /*METODOLOGIA*/
-    #contenedorImagenes{
+    #contenedorImagenes {
         gap: 0rem;
     }
 
-    .bloqueImagenes{
+    .bloqueImagenes {
         flex-direction: row;
         gap: 0rem;
     }
 
-    .card-inner p{
+    .card-inner p {
         font-size: 0.8rem;
     }
-    .card-back h3{
+
+    .card-back h3 {
         margin-bottom: 0.5rem;
     }
 
@@ -973,8 +1084,18 @@ footer a {
 
 @media only screen and (min-width:1400px) {
 
-    
-     
+
+    /*SECCION INTEGRANTES*/
+
+    .cajaIntegrantes img {
+        width: 70%;
+        filter: grayscale(1);
+    }
+
+
+    /*SECCION INTEGRANTES*/
+
+
 
     /*AGENCIA PORTADA*/
 
@@ -1028,6 +1149,18 @@ footer a {
 
 @media only screen and (min-width:1500px) {
 
+    /*SECCION INTEGRANTES*/
+
+    .cajaIntegrantes img {
+        width: 60%;
+        filter: grayscale(1);
+    }
+    #bloqueIntegrantes {
+        gap: 0rem;
+    }
+
+    /*SECCION INTEGRANTES*/
+
     #cajaRobot {
         transform: translate(45%, -17%);
         width: 80rem;
@@ -1044,12 +1177,13 @@ footer a {
 
 @media only screen and (min-width:1600px) {
 
-     /*METODOLOGIA*/
-    #contenedorImagenes, .bloqueImagenes{
-        gap:2rem;
+    /*METODOLOGIA*/
+    #contenedorImagenes,
+    .bloqueImagenes {
+        gap: 2rem;
     }
 
-    .card-inner p{
+    .card-inner p {
         font-size: 1rem;
     }
 
