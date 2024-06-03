@@ -287,76 +287,6 @@ header.abajo span {
 
 }
 
-/*UI*/
-.card {
-    width: 300px;
-    height: 200px;
-    perspective: 1000px;
-}
-
-.card-inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.999s;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-inner h3 {
-    font-size: 2rem;
-}
-
-.card:hover .card-inner {
-    transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-    position: absolute;
-    height: 19rem;
-    backface-visibility: hidden;
-
-    color: #fff;
-    border-radius: 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-}
-
-.card-front {
-    font-family: 'bernadette';
-    text-shadow: 0.3rem 0.3rem 0.5rem #0009;
-    background-image: url(../img/fotoEjemplo.png);
-    filter: grayscale(1);
-
-
-}
-
-
-.card-back {
-    transform: rotateY(180deg);
-    background-color: #141414;
-
-}
-
-.card-back p {
-    width: 80%;
-}
-
-.card-back h3 {
-    font-family: 'bernadette';
-    margin-block: 0.5rem;
-}
-
-/*UI*/
-/*METODOLOGIA*/
 #metodologiaSeccion {
 
     display: flex;
@@ -397,24 +327,31 @@ header.abajo span {
     font-size: 3rem;
     color: #000000;
 }
-
-#contenedorImagenes {
+#seccionTextosMetodologia{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 13rem;
-    margin-block: 15rem;
-    margin-top: 0rem;
+    gap: 4rem;
+    padding-bottom: 8rem;
 }
 
-.bloqueImagenes {
+.articulo1, .articulo2{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 13rem;
+    width: 90%;
 }
+.articulo1 h3, .articulo2 h3{
+    margin-block: 0.5rem;
+}
+.articulo1 img, .textoArticulo1, .articulo2 img, .textoArticulo2{
+    width: 100%;
+}
+.textoArticulo1, .textoArticulo2{
+    text-align: justify;
+}
+
+
 
 
 
@@ -572,7 +509,7 @@ footer a {
     margin-block: 0.5rem;
 }
 
-.cajaIntegrantes img:hover {}
+
 
 
 
@@ -664,6 +601,41 @@ footer a {
 
 @media only screen and (min-width:900px) {
 
+    /*METODOLOGIA*/
+
+    #seccionTextosMetodologia{
+
+        gap: 1rem;
+    }
+
+    .articulo1{
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+
+
+    }
+    .articulo1 img{
+        width: 20%;
+    }
+
+    .articulo2{
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 5rem;
+
+
+    }
+    .textoArticulo2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .articulo2 img{
+        width: 20%;
+    }
+
+
 
     /*SECCION INTEGRANTES*/
 
@@ -682,22 +654,8 @@ footer a {
 
     /*METODOLOGIA*/
 
-    #contenedorImagenes {
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .bloqueImagenes {
-        gap: 9rem;
-    }
 
 
-
-    .card-front,
-    .card-back {
-        height: 19rem;
-
-    }
 
 
 
@@ -709,32 +667,15 @@ footer a {
 
     /*carrousel*/
 
-    #precios-cartas {
-        justify-content: space-evenly;
-    }
 
-    .content-carta h3 {
-        font-size: 2.5rem;
-    }
-
-
-
-    #precios-cartas {
-        width: 200%;
-    }
-
-    .carta {
-        min-width: calc(50% / 3);
-        max-width: calc(100% / 3);
-    }
 
     /*carrousel*/
 
     /*PRECIOS*/
 
     #titulo {
-        margin-block: 10%;
-        margin-bottom: 5%;
+        margin-block: 5%;
+        margin-bottom: 2%;
         height: 13rem;
 
     }
@@ -1029,35 +970,7 @@ footer a {
 
 @media only screen and (min-width:1300px) {
 
-    /*METODOLOGIA*/
-    #contenedorImagenes {
-        gap: 0rem;
-    }
-
-    .bloqueImagenes {
-        flex-direction: row;
-        gap: 0rem;
-    }
-
-    .card-inner p {
-        font-size: 0.8rem;
-    }
-
-    .card-back h3 {
-        margin-bottom: 0.5rem;
-    }
-
-    .card-front,
-    .card-back {
-
-        height: 15rem;
-        width: 80%;
-
-    }
-
-
-
-    /*METODOLOGIA*/
+  
 
     #cajaRobot {
         transform: translate(45%, -17%);
@@ -1177,27 +1090,6 @@ footer a {
 
 @media only screen and (min-width:1600px) {
 
-    /*METODOLOGIA*/
-    #contenedorImagenes,
-    .bloqueImagenes {
-        gap: 2rem;
-    }
-
-    .card-inner p {
-        font-size: 1rem;
-    }
-
-    .card-front,
-    .card-back {
-
-        height: 18rem;
-        width: 100%;
-
-    }
-
-
-
-    /*METODOLOGIA*/
 
     /*AGENCIA PORTADA*/
 
