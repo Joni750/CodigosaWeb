@@ -252,12 +252,14 @@ header.abajo span {
 }
 
 #titulo {
-    margin-top: 5%;
-    height: 13rem;
+    margin-block: 20%;
+    margin-bottom: 10%;
+    height: 5rem;
+    
 }
 
 #p1 {
-
+    font-size: 3em;
     font-family: 'Montserrat';
 
     text-transform: uppercase;
@@ -276,13 +278,14 @@ header.abajo span {
 }
 
 #p2 {
+
     position: relative;
     display: flex;
     justify-content: center;
-    top: -9rem;
+    top: -3.5rem;
     margin: 0;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 3rem;
     color: #000000;
 }
 
@@ -320,6 +323,7 @@ header.abajo span {
     width: 90%;
     max-width: 120rem;
     padding: 2rem;
+    padding-top: 0;
 
     display: flex;
     flex-direction: column;
@@ -543,6 +547,22 @@ footer a {
 
     /*carrousell*/
 
+    #titulo {
+        margin-block: 15%;
+        margin-bottom: 5%;
+        height: 10rem;
+        
+    }
+    #p2{
+        top:-5rem;
+    }
+
+    #p1,
+    #p2 {
+
+        font-size: 4rem;
+    }
+
     /*PRECIOS*/
 
 }
@@ -576,12 +596,23 @@ footer a {
 
     /*PRECIOS*/
 
-
-
-    #p1, #p2{
-
-        font-size: 7rem;
+    #titulo {
+        margin-block: 10%;
+        margin-bottom: 5%;
+        height: 8rem;
+        
     }
+    #p2{
+        top:-8rem;
+    }
+
+    #p1,
+    #p2 {
+
+        font-size: 6rem;
+    }
+
+
   
     /*FOOTER*/
     footer {
