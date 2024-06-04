@@ -383,17 +383,17 @@ header.abajo span {
 
 
 .beneficios p {
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
 #precio {
-    font-size: 40px;
+    font-size: 2.5em;
     margin: 0;
 }
 
 .carta h3 {
     font-weight: 400;
-    font-size: 55px;
+    font-size: 3.5em;
     margin: 0;
 }
 
@@ -482,6 +482,14 @@ h3 {
     align-items: center;
 
 }
+.proyectoDestacado p{
+    font-size: 0.8rem;
+    margin: 0;
+}
+.proyectoDestacado  h3{
+    margin-block: 1rem;
+    font-size: 1.5rem;
+}
 
 .proyectoDestacado img,
 .proyectoDestacado div {
@@ -568,6 +576,15 @@ footer a {
 }
 
 @media only screen and (min-width:900px) {
+
+    .proyectoDestacado p{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .proyectoDestacado  h3{
+        margin-block: 1.5rem;
+        font-size: 2rem;
+    }
 
     /*PRECIOS*/
 

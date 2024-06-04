@@ -896,7 +896,7 @@ footer a {
 
 
     .triangle p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: 30%;
         transform: translate(15%, 220%);
     }
@@ -938,7 +938,6 @@ footer a {
     }
 
     #seccionPortadaDecorado p {
-        font-size: 1.3rem;
         margin-bottom: 2rem;
         margin-top: 1rem;
     }
@@ -1020,7 +1019,7 @@ footer a {
     }
 
     .triangle p {
-        font-size: 1.3rem;
+
         width: 35%;
         transform: translate(10%, 340%);
     }
