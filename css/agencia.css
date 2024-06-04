@@ -363,11 +363,8 @@ header.abajo span {
     font-family: 'bernadette';
 }
 
-
-
-
-
 /*FOOTER*/
+
 footer {
     background-color: #141414;
     display: flex;
@@ -403,6 +400,7 @@ footer a {
 }
 
 /*SECCION CARROUSELL IMAGENES*/
+
 #seccionCarrousellImagenes {
     background-color: #141414;
     display: flex;
@@ -485,13 +483,11 @@ footer a {
 
 #seccionIntegrantes {
     background-color: #FFDC84;
-
 }
 
 .cajaIntegrantes img {
     width: 100%;
     filter: grayscale(1);
-
 }
 
 #bloqueIntegrantes {
@@ -501,9 +497,6 @@ footer a {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-
-
-
 }
 
 .cajaIntegrantes {
@@ -519,6 +512,107 @@ footer a {
     font-size: 2rem;
     font-family: 'bernadette';
     margin-block: 0.5rem;
+}
+
+
+
+
+
+/* Cartas */
+
+.cards {
+    width: 100%;
+    padding-block: 8rem;
+    padding-block-end: 16rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-card h3{
+    font-weight: 400;
+    font-size: 3rem;
+    font-family: 'bernadette';
+}
+
+.cards a{
+    text-decoration: none;
+}
+
+.card {
+    width: 350px;
+    height: 450px;
+    border-radius: 20em;
+    padding: 1.9rem;
+    background: #dfdff5;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+}
+
+.card-info {
+    position: relative;
+    z-index: 3;
+    color: #f5f5f5;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 0.5s;
+    width: 350px;
+    height: 62%;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.text-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.card:hover {
+    /* transform: translateY(5%); */
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card:hover .card-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
