@@ -222,7 +222,8 @@ header.abajo span {
     text-align: center;
     padding-top: 13%;
     padding-bottom: 11%;
-    height: 50rem;
+    height: 100%;
+  
 }
 
 .content-portada {
@@ -230,7 +231,7 @@ header.abajo span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .content-portada h1 {
@@ -247,63 +248,97 @@ header.abajo span {
 
 }
 
-#seccionPortadaDecorado{
+#seccionPortadaDecorado {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+
+
+}
+
+#seccionPortadaDecorado h1 {
+    margin: 0;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#seccionPortadaDecorado span {
+    color: #FFDC84;
+    font-weight: 100;
+}
+
+#seccionPortadaDecorado p {
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0rem;
+    margin-bottom: 5rem;
 }
 
 #fotosPortadaContacto {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    align-items: flex-start;
 
 
 }
-#formularioContacto{
+
+#formularioContacto {
     background-color: #141414;
-    box-shadow: 0rem 0rem 1rem #0005;
+    box-shadow: 0rem 0rem 1.5rem #0008;
     border-radius: 1rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 2rem;
-    width: 25%;
+    width: 80%;
     height: 100%;
     font-weight: 100;
- 
+
 }
-.bloqueForm1{
+
+.bloqueForm1 {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
-.cajaTexto label, .cajaTexto input{
+
+.cajaTexto {
+    width: 100%;
+}
+
+.cajaTexto label,
+.cajaTexto input {
     text-align: left;
-    width: 13rem;
+    width: 100%;
 }
-.cajaTexto input{
+
+.cajaTexto input {
     background: transparent;
     border: #fff solid 0.1rem;
     border-radius: 0.5rem;
     height: 3em;
     color: #fff;
 }
-.cajaTexto2 textarea{
+
+.cajaTexto2 textarea {
     background: transparent;
     border: #fff solid 0.1rem;
     border-radius: 0.5rem;
     width: 100%;
     color: #fff;
 
-    
+
 }
-.cajaTexto{
+
+.cajaTexto {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -311,7 +346,8 @@ header.abajo span {
 
 
 }
-.cajaTexto2{
+
+.cajaTexto2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -320,17 +356,19 @@ header.abajo span {
 
 .foto1 {
     max-width: 50%;
-    width: 20rem;
-    top: 0;
-    left: 0;
+    width: 25rem;
+
     z-index: 1;
     transform: translate(40%, 0%);
+    display: none;
+
 }
 
 .foto2 {
     width: 20rem;
     transform: translate(-10%, 30%);
     z-index: 2;
+    display: none;
 }
 
 
@@ -379,26 +417,205 @@ footer a {
 
     color: #FFDC84;
 }
+
 /*FOOTER*/
 
+/*Seccion baja Contacto*/
+
+.foto3 {
+    width: 50%;
+    transform: translate(80%, -280%);
+    filter: grayscale(1);
+    position: absolute;
+
+}
+
+
+/*TRIANGLE*/
+
+.triangle {
+
+    width: 100%;
+    /*que ocupe el 100% de la pantalla en ancho*/
+    height: 30rem;
+    /*Altura del triangulo*/
+    background-color: #FFDC84;
+    /* Cambia el color a tu gusto */
+    clip-path: polygon(0% 0%, 0% 100%, 102% 100%, 70% 30%);
+    /*
+    1 y 2 parametro = vertice superior, el 1 de los dos es posicion ejeX
+    2 eje Y
+
+    3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y
+    */
+}
+
+.triangle p {
+    text-align: justify;
+    font-size: 0.8rem;
+    width: 60%;
+    transform: translate(15%, 215%);
+}
+
+/*TRIANGLE*/
 
 
 
+/*Seccion baja Contacto*/
 
 
+@media only screen and (min-width:600px) {
+
+    .foto3 {
+        width: 50%;
+        transform: translate(80%, -250%);
+
+
+    }
+
+
+    .triangle p {
+
+        width: 60%;
+        transform: translate(15%, 265%);
+    }
+
+}
 
 
 
 @media only screen and (min-width:700px) {
+    .foto3 {
+        width: 50%;
+        transform: translate(80%, -220%);
+    }
 
 
+    .triangle p {
+
+        width: 60%;
+        transform: translate(15%, 350%);
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .foto3 {
+        width: 40%;
+        transform: translate(120%, -220%);
+    }
 
 
+    .triangle p {
+        font-size: 0.9rem;
+        width: 60%;
+        transform: translate(15%, 270%);
+    }
 }
 
 @media only screen and (min-width:900px) {
 
+    /*Seccion contacto baja*/
 
+    .foto3 {
+        width: 40%;
+        transform: translate(130%, -210%);
+    }
+
+
+    .triangle p {
+        font-size: 0.95rem;
+        width: 40%;
+        transform: translate(15%, 110%);
+    }
+
+    /*Seccion contacto baja*/
+
+    /*PORTADA CONTACTO*/
+
+    .content-portada {
+
+        flex-direction: row;
+
+    }
+
+
+    #seccionPortadaDecorado {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+
+    }
+
+    .portada {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-portada {
+        justify-content: center;
+        width: 90%;
+    }
+
+    #seccionPortadaDecorado h1 {
+        margin: 0;
+        line-height: 4rem;
+        text-align: left;
+    }
+
+    #seccionPortadaDecorado span {
+        color: #FFDC84;
+        font-weight: 100;
+    }
+
+    #seccionPortadaDecorado p {
+        font-size: 1rem;
+        font-weight: 100;
+        margin: 0rem;
+        margin-bottom: 5rem;
+    }
+
+
+    .foto1 {
+        display: flex;
+        width: 18rem;
+        transform: translate(75%, 0%);
+        z-index: 2;
+    }
+
+    .foto2 {
+        display: flex;
+        width: 18rem;
+        transform: translate(-65%, 30%);
+        /* Para centrar la imagen */
+        z-index: 1;
+    }
+
+    #formularioContacto {
+        background-color: #141414;
+        box-shadow: 0rem 0rem 1.5rem #0008;
+        border-radius: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        padding: 2rem;
+        width: 100%;
+        height: 115%;
+        font-weight: 100;
+
+    }
+
+    .bloqueForm1 {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+
+    /*PORTADA CONTACTO*/
 
     .burger {
         display: none;
@@ -451,37 +668,136 @@ footer a {
 
 }
 
-@media only screen and (min-width:1000px) {}
+@media only screen and (min-width:1000px) {
 
+
+    /*Seccion contacto baja*/
+
+    .foto3 {
+        width: 40%;
+        transform: translate(130%, -180%);
+    }
+
+
+    .triangle p {
+        font-size: 0.95rem;
+        width: 40%;
+        transform: translate(15%, 140%);
+    }
+
+    /*Seccion contacto baja*/
+
+    .foto1 {
+        display: flex;
+        width: 18rem;
+        transform: translate(60%, 0%);
+        z-index: 2;
+    }
+
+    .foto2 {
+        display: flex;
+        width: 18rem;
+        transform: translate(-70%, 30%);
+        /* Para centrar la imagen */
+        z-index: 1;
+    }
+
+}
+
+@media only screen and (min-width:1100px) {
+
+    .foto1 {
+        display: flex;
+        width: 14rem;
+        transform: translate(65%, 0%);
+        z-index: 2;
+    }
+
+    .foto2 {
+        display: flex;
+        width: 18rem;
+        transform: translate(-80%, 30%);
+        /* Para centrar la imagen */
+        z-index: 1;
+    }
+
+    #seccionPortadaDecorado h1 {
+        font-size: 4.2rem;
+    }
+
+    #seccionPortadaDecorado p {
+        font-size: 1.12rem;
+        margin-bottom: 2rem;
+    }
+
+}
 
 
 @media only screen and (min-width:1200px) {
 
+    /*Seccion contacto baja*/
 
+    .foto3 {
+        width: 35%;
+        transform: translate(150%, -170%);
+    }
+
+
+    .triangle p {
+        font-size: 1rem;
+        width: 35%;
+        transform: translate(15%, 135%);
+    }
+
+    /*Seccion contacto baja*/
 
 
 
     /*Contacto PORTADA*/
 
-    .content-portada {
-
-        flex-direction: row;
-
-    }
-
-
-
     .foto1 {
-        width: 15rem;
-        transform: translate(20%, 0%);
+        display: flex;
+        width: 14rem;
+        transform: translate(65%, 0%);
+        z-index: 2;
     }
 
     .foto2 {
-        width: 20rem;
-        transform: translate(-40%, 30%);
+        display: flex;
+        width: 18rem;
+        transform: translate(-80%, 30%);
         /* Para centrar la imagen */
-        z-index: 2;
+        z-index: 1;
     }
+
+    #seccionPortadaDecorado h1 {
+        font-size: 4.8rem;
+        line-height: 5rem;
+    }
+
+    #seccionPortadaDecorado p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    #formularioContacto {
+
+        width: 60rem;
+
+
+    }
+
+    .portada {
+        margin-block: 5rem;
+    }
+
+    /*Contacto PORTADA*/
+
+
+
+
+
 
     /*Contacto PORTADA*/
 
@@ -524,26 +840,114 @@ footer a {
 
 }
 
-@media only screen and (min-width:1300px) {}
+@media only screen and (min-width:1300px) {
+
+    /*Contacto PORTADA*/
+
+    .portada {
+        margin-block: 5rem;
+        margin-top: 3rem;
+    }
+
+
+    .foto1 {
+        display: flex;
+        width: 16rem;
+        transform: translate(70%, 0%);
+        z-index: 2;
+    }
+
+    .foto2 {
+        display: flex;
+        width: 22rem;
+        transform: translate(-73%, 30%);
+        z-index: 1;
+    }
+
+    #seccionPortadaDecorado h1 {
+        font-size: 4.8rem;
+    }
+
+    #seccionPortadaDecorado p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    #formularioContacto {
+
+        width: 60rem;
+
+
+    }
+
+    /*Contacto PORTADA*/
+}
 
 @media only screen and (min-width:1400px) {
 
 
+    /*Seccion contacto baja*/
+
+    .foto3 {
+        width: 35%;
+        transform: translate(120%, -180%);
+    }
+
+
+    .triangle p {
+        font-size: 1rem;
+        width: 30%;
+        transform: translate(15%, 220%);
+    }
+
+    .triangle{
+        height: 40rem;
+        clip-path: polygon(0% 0%, 0% 100%, 102% 100%, 60% 30%);
+    }
+
+    
+
+    /*Seccion contacto baja*/
 
 
     /*Contacto PORTADA*/
 
+    .portada {
+        margin-block: 5rem;
+        margin-top: 3rem;
+    }
 
     .foto1 {
-        width: 15rem;
-        transform: translate(20%, 0%);
+        display: flex;
+        width: 18rem;
+        transform: translate(70%, 0%);
+        z-index: 2;
     }
 
     .foto2 {
-        width: 20rem;
-        transform: translate(-40%, 30%);
-        /* Para centrar la imagen */
-        z-index: 2;
+        display: flex;
+        width: 22rem;
+        transform: translate(-83%, 30%);
+        z-index: 1;
+    }
+
+    #seccionPortadaDecorado h1 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    #seccionPortadaDecorado p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    #formularioContacto {
+
+        width: 50rem;
+
+
     }
 
     /*Contacto PORTADA*/
@@ -561,31 +965,76 @@ footer a {
 
 }
 
-@media only screen and (min-width:1500px) {}
+@media only screen and (min-width:1500px) {
+    #seccionPortadaDecorado {
+        justify-content: center;
+    }
+
+
+    .portada {
+        margin-block: 5rem;
+        margin-top: 1.5rem;
+    }
+}
 
 @media only screen and (min-width:1600px) {
 
-    /*Contacto PORTADA*/
-
-    .foto1 {
-        width: 40rem;
-        transform: translate(20%, 0%);
+    #seccionPortadaDecorado {
+        width: 40%;
+        height: 90%;
+        justify-content: flex-end;
     }
 
-    .foto2 {
-        width: 20rem;
-        transform: translate(-20%, -30%);
-        /* Para centrar la imagen */
-        z-index: 2;
+    #formularioContacto {
+        width: 30rem;
     }
 
-    /*Contacto PORTADA*/
+    .portada,
+    .content-portada {
+        justify-content: space-around;
+        align-items: center;
 
+    }
 
 
 }
 
-@media only screen and (min-width:1700px) {}
+@media only screen and (min-width:1700px) {
+
+    /*Seccion baja Contacto*/
+
+    .foto3 {
+        width: 30%;
+        transform: translate(150%, -230%);
+        filter: grayscale(1);
+        position: absolute;
+
+    }
+
+
+    /*TRIANGLE*/
+
+    .triangle {
+        height: 60rem;
+        clip-path: polygon(0% 0%, 0% 100%, 102% 100%, 60% 30%);
+    }
+
+    .triangle p {
+        font-size: 1.3rem;
+        width: 35%;
+        transform: translate(10%, 340%);
+    }
+
+    /*TRIANGLE*/
+
+
+
+    /*Seccion baja Contacto*/
+    .portada {
+        margin: 0;
+        margin-bottom: 15rem;
+    }
+}
 
 @media only screen and (min-width:1800px) {}
 
