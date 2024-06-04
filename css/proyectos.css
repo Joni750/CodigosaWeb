@@ -258,10 +258,11 @@ header.abajo span {
     margin-top: 3%;
 }
 
-#content-proyecto p{
+#content-proyecto h2{
     width: 80%;
     margin-top: 7%;
     font-size: 0.8em;
+    font-weight: normal;
 }
 
 .container-proyecto {
@@ -302,15 +303,16 @@ header.abajo span {
 }
 
 #content-proyecto2 img{
-    width: 70%;
+    width: 80%;
     margin-top: 3%;
 }
 
-#content-proyecto2 p{
-    width: 70%;
+#content-proyecto2 h2{
+    width: 80%;
     margin-top: 7%;
     color: #fff;
     font-size: 0.8em;
+    font-weight: normal;
 }
 
 .container-proyecto2 {
@@ -457,7 +459,7 @@ footer a {
         width: 70%;
     }
 
-    #content-proyecto p{
+    #content-proyecto h2{
         width: 70%;
         margin-top: 5%;
     }
@@ -477,7 +479,7 @@ footer a {
         width: 70%;
     }
 
-    #content-proyecto2 p{
+    #content-proyecto2 h2{
         width: 70%;
         margin-top: 5%;
     }
@@ -520,7 +522,7 @@ footer a {
         width: 80%;
     }
 
-    #content-proyecto p {
+    #content-proyecto h2 {
         width: 80%;
     }
 
@@ -534,7 +536,7 @@ footer a {
         width: 80%;
     }
 
-    #content-proyecto2 p {
+    #content-proyecto2 h2 {
         width: 80%;
     }
 
@@ -565,7 +567,7 @@ footer a {
         clip-path: polygon(0% 0%, 100% -4%, 100% 100%); 
     }
 
-    #content-proyecto p{
+    #content-proyecto h2{
         font-size: 1.4em;
     }
 
@@ -579,7 +581,7 @@ footer a {
         clip-path: polygon(0% 100%, 100% 0%, 100% 116%);
     }
 
-    #content-proyecto2 p{
+    #content-proyecto2 h2{
         font-size: 1.4em;
     }
 

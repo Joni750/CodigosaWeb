@@ -353,9 +353,10 @@ header.abajo span {
 
 }
 
-.textoArticulo1 p, .textoArticulo2 p{
-    font-size: 0.8rem;
+.textoArticulo1 h4, .textoArticulo2 h4{
+    font-size: 1.2rem;
     margin: 0;
+    font-weight: normal;
 }
 .textoArticulo1 h3, .textoArticulo2 h3{
     margin-block: 1rem;
@@ -485,39 +486,6 @@ footer a {
     background-color: #FFDC84;
 }
 
-.cajaIntegrantes img {
-    width: 100%;
-    filter: grayscale(1);
-}
-
-#bloqueIntegrantes {
-    padding-block: 8rem;
-    padding-top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.cajaIntegrantes {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.cajaIntegrantes h3 {
-    font-weight: 400;
-    font-size: 2rem;
-    font-family: 'bernadette';
-    margin-block: 0.5rem;
-}
-
-
-
-
-
 /* Cartas */
 
 .cards {
@@ -615,12 +583,6 @@ footer a {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-
-
-
-
-
-
 /*SECCION INTEGRANTES*/
 
 #seccionTriangulos {
@@ -707,7 +669,7 @@ footer a {
 
 @media only screen and (min-width:900px) {
 
-    .textoArticulo1 p, .textoArticulo2 p{
+    .textoArticulo1 h4, .textoArticulo2 h4{
         font-size: 1.2rem;
         margin: 0;
     }

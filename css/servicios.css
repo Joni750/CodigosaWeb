@@ -259,9 +259,10 @@ header.abajo span {
     margin-top: 0;
 }
 
-.container-servicio p{
+.container-servicio h3{
     font-size: 0.8em;
     text-align: justify;
+    font-weight: normal;
 }
     
 .circle {
@@ -282,10 +283,11 @@ header.abajo span {
     text-shadow: 0rem 0.2rem 0.2rem #0004;
 }
 
-.container-servicio2 p{
+.container-servicio2 h3{
     font-size: 0.8em;
     color: #fff;
     text-align: justify;
+    font-weight: normal;
 }
 
 .circle2 {
@@ -534,7 +536,7 @@ footer a {
         font-size: 4em;
     }
 
-    .container-servicio p{
+    .container-servicio h3{
         font-size: 1.5em;
     }
 
@@ -556,7 +558,7 @@ footer a {
         font-size: 4em;
     }
 
-    .container-servicio2 p{
+    .container-servicio2 h3{
         font-size: 1.5em;
     }
 
