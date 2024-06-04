@@ -626,8 +626,6 @@ footer a {
         font-size: 2.5rem;
     }
 
-   
-
     #precios-cartas {
         width: 200%;
     }
@@ -742,8 +740,10 @@ footer a {
 
     .portada {
         height: 32rem;
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
     }
-
 
     .content-portada {
         flex-direction: row;
