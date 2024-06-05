@@ -932,7 +932,7 @@ footer a {
 @media only screen and (min-width:1900px) {
 
     #destacado h2 {
-        transform: rotate(-90deg) translate(58%, -535%);
+        transform: rotate(-90deg) translate(50%, -535%);
     }
 
 }

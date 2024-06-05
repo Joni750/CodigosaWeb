@@ -217,22 +217,24 @@ window.addEventListener("scroll", function () {
 
     var destacados = document.getElementById('destacadosTitulo');
 
-    if (window.scrollY > 2000 && window.scrollY < 2806) {
+    console.log(window.scrollY)
+
+    if (window.scrollY > 2582 && window.scrollY < 3319) {
 
         destacados.style.position = "fixed";
 
-        destacados.style.top = "910px";
+        destacados.style.top = "845px";
 
         destacados.style.marginTop = "initial";
 
 
-    }else if (window.scrollY >= 2806) {
+    }else if (window.scrollY >= 3319) {
 
         destacados.style.position = "absolute";
 
         destacados.style.top = "initial";
 
-        destacados.style.marginTop = "1600px";
+        destacados.style.marginTop = "1535px";
 
     }else {
 
