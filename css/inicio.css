@@ -565,6 +565,11 @@ footer a {
     color: #000;
 }
 
+video {
+    display: none;
+
+}
+
 /*FOOTER*/
 @media only screen and (min-width:700px) {
 
@@ -714,6 +719,11 @@ footer a {
 
 
 @media only screen and (min-width:1200px) {
+    video{
+        display: flex;
+        width: 50%; /* Ajusta el tamaño del video */
+        transform: translateX(20%);
+    }
 
     /*PRECIOS*/
 
