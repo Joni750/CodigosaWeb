@@ -6,6 +6,9 @@ body {
     scroll-behavior: smooth;
     background-color: #141414;
     overflow-x: hidden;
+    /* background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 /* Menú */
@@ -215,13 +218,9 @@ header.abajo span {
     /* background-image: url(../img/portada.png);
     background-repeat: no-repeat;
     background-size: cover; */
-    background-color: #141414;
     color: #fff;
     text-align: center;
-    padding-top: 13%;
-    padding-bottom: 11%;
     height: 50rem;
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -238,17 +237,16 @@ header.abajo span {
 
 .content-portada h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 6.5em;
     max-width: 100%;
-    line-height: 2.5rem;
-
 }
+
 .cajasTextosPortada{
     width: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between
 }
-
 
 .content-portada img {
     max-width: 50%;
@@ -268,36 +266,126 @@ header.abajo span {
     color: #FFDC84;
 }
 
-#titulo {
-    margin-block: 20%;
-    margin-bottom: 10%;
-    height: 5rem;
+/* OBJETIVOS */
+
+.objetivos{
+    background-color: #FFDC84;
 }
 
-#p1 {
-    font-size: 3em;
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #837042;
-    color: transparent;
-    text-shadow: 1px 1px 7.5px #FFDC84;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    margin: 0 auto;
-    z-index: -100;
-    width: 100%;
-    filter: blur(1.7px);
-}
+@media only screen and (min-width:1200px) {
 
-#p2 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: -3.5rem;
-    margin: 0;
-    font-weight: 400;
-    font-size: 3rem;
-    color: #000000;
+    /* MENU */
+
+    .burger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header {
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 4%;
+        font-size: 1em;
+    }
+
+    header section {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+
+    #burgerLogo {
+        padding-inline: 0;
+    }
+
+    /* PORTADA */
+
+    .content-portada {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content-portada h1 {
+
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+
+    }
+
+    .h2fake{
+        width: 90%;
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    /* VIDEO */
+
+    .video{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10rem;
+    }
+
+    .container-objetivo {
+        padding: 10rem;
+    }
+
+    .container-objetivo h2{
+        font-size: 4em;
+    }
+
+    /* Carrusel */
+
+    .carousel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 10rem;
+    }
+
+    .carousel-images {
+        display: flex;
+        width: max-content;
+        animation: scroll 110s linear infinite; 
+    }
+
+    .carousel-images a{
+        width: 1300px;
+        padding: 0 40px;
+    }
+
+    .carousel-images img {
+        width: 100%; 
+        height: auto;
+        transition: transform 0.5s ease; 
+    }
+
+    .carousel-images img:hover {
+        transform: scale(1.1); 
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+
 }
