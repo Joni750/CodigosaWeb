@@ -494,6 +494,9 @@ h2 {
 h3 {
     font-size: 2rem;
 }
+#destacadosTitulo{
+    top:0;
+}
 
 #destacado article {
     display: flex;
@@ -787,9 +790,10 @@ footer a {
         margin-block: 9rem;
     }
 
-    #destacado h2 {
+    #destacadosTitulo {
         position: absolute;
-        transform: rotate(-90deg) translate(60%, -430%);
+        
+        transform: rotate(-90deg) translateY(-450%);
         margin: 0;
     }
 
@@ -816,9 +820,10 @@ footer a {
     }
 
     /*PROYECTOS DESTACADOS*/
-    #destacado h2 {
+    #destacadosTitulo {
+
         position: absolute;
-        transform: rotate(-90deg) translate(57%, -390%);
+        transform: rotate(-90deg) translateY(-400%);
         margin: 0;
     }
 
@@ -856,8 +861,8 @@ footer a {
     }
 
     /*PROYECTOS DESTACADOS*/
-    #destacado h2 {
-        transform: rotate(-90deg) translate(58%, -430%);
+    #destacadosTitulo{
+        transform: rotate(-90deg) translateY(-420%);
     }
 
     h2 {
@@ -876,8 +881,8 @@ footer a {
 
     /*PROYECTOS DESTACADOS*/
 
-    #destacado h2 {
-        transform: rotate(-90deg) translate(58%, -435%);
+    #destacadosTitulo {
+        transform: rotate(-90deg) translateY(-450%);
     }
 
 }
@@ -894,8 +899,8 @@ footer a {
 
     /*PROYECTOS DESTACADOS*/
 
-    #destacado h2 {
-        transform: rotate(-90deg) translate(58%, -450%);
+    #destacadosTitulo {
+        transform: rotate(-90deg) translateY(-455%);
     }
 
 }
@@ -909,8 +914,8 @@ footer a {
 
     /*PROYECTOS DESTACADOS*/
 
-    #destacado h2 {
-        transform: rotate(-90deg) translate(88%, -465%);
+    #destacadosTitulo {
+        transform: rotate(-90deg) translateY(-495%);
     }
 
 }
@@ -923,16 +928,17 @@ footer a {
         height: 45rem;
     }
 
-    #destacado h2 {
-        transform: rotate(-90deg) translate(58%, -505%);
+    #destacadosTitulo {
+        transform: rotate(-90deg) translateY(-510%);
     }
 
 }
 
 @media only screen and (min-width:1900px) {
 
-    #destacado h2 {
-        transform: rotate(-90deg) translate(50%, -535%);
+    #destacadosTitulo {
+        transform: rotate(-90deg) translateY(-530%);
+
     }
 
 }
