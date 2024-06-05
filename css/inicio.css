@@ -579,7 +579,7 @@ footer a {
 
     .carta {
         min-width: calc(62.5% / 3);
-        max-width: calc(125% / 3);
+        max-width: calc(62.5% / 3);
     }
 
     /*carrousell*/
@@ -633,7 +633,7 @@ footer a {
 
     .carta {
         min-width: calc(50% / 3);
-        max-width: calc(100% / 3);
+        max-width: calc(70% / 3);
     }
 
     /*carrousel*/
@@ -723,8 +723,9 @@ footer a {
 
         width: 100%;
     }
-    .carta{
-        width: 23%;
+    .carta {
+        min-width: calc(50% / 3);
+        max-width: calc(70% / 3);
     }
     /*carrousel desactivado*/
 
