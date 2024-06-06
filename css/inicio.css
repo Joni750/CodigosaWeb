@@ -222,7 +222,7 @@ header.abajo span {
     text-align: center;
     padding-top: 13%;
     padding-bottom: 11%;
-    height: 50rem;
+    height: 88vh;
 
     display: flex;
     justify-content: space-evenly;
@@ -396,7 +396,7 @@ h5{
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
-    height: 850px;   
+    height: 55rem;   
 }
 
 .content-carta {
@@ -485,6 +485,7 @@ h5{
     align-items: center;
     justify-content: center;
     color: #FFDC84;
+    padding-block: 5rem;
 }
 
 h2 {
@@ -496,6 +497,7 @@ h3 {
 }
 #destacadosTitulo{
     top:0;
+    margin-bottom: 5rem;
 }
 
 #destacado article {
@@ -573,6 +575,8 @@ video {
 /*FOOTER*/
 @media only screen and (min-width:700px) {
 
+    
+
     /*PRECIOS*/
 
     /*carrousell*/
@@ -613,6 +617,11 @@ video {
 }
 
 @media only screen and (min-width:900px) {
+    .portada {
+
+        height: 77vh;
+
+    }
 
     .proyectoDestacado h4{
         font-size: 1.2rem;
@@ -754,7 +763,7 @@ video {
     }
 
     .portada {
-        height: 32rem;
+        height: 69vh;
         display: flex;
         align-items: flex-start;
         text-align: left;
@@ -796,12 +805,12 @@ video {
     /* PROYECTOS DESTACADOS */
 
     #destacado {
-        margin-block: 9rem;
+       
     }
 
     #destacadosTitulo {
         position: absolute;
-        
+        /* font-size: 5.5rem; */
         transform: rotate(-90deg) translateY(-450%);
         margin: 0;
     }
@@ -829,12 +838,7 @@ video {
     }
 
     /*PROYECTOS DESTACADOS*/
-    #destacadosTitulo {
-
-        position: absolute;
-        transform: rotate(-90deg) translateY(-400%);
-        margin: 0;
-    }
+   
 
     h2 {
         font-size: 5.8rem;
@@ -842,6 +846,13 @@ video {
 
     h3 {
         font-size: 2.5rem;
+    }
+    #destacadosTitulo {
+        margin-bottom: initial;
+        font-size: 5.2rem;
+        position: absolute;
+        transform: rotate(-90deg) translateY(-440%);
+        margin: 0;
     }
 
 }
@@ -871,7 +882,8 @@ video {
 
     /*PROYECTOS DESTACADOS*/
     #destacadosTitulo{
-        transform: rotate(-90deg) translateY(-420%);
+        font-size: 5.4rem;
+        transform: rotate(-90deg) translateY(-470%);
     }
 
     h2 {
@@ -891,7 +903,8 @@ video {
     /*PROYECTOS DESTACADOS*/
 
     #destacadosTitulo {
-        transform: rotate(-90deg) translateY(-450%);
+        font-size: 5.7rem;
+        transform: rotate(-90deg) translateY(-480%);
     }
 
 }
@@ -899,7 +912,11 @@ video {
 @media only screen and (min-width:1600px) {
   
   
+    .portada {
 
+        height: 59vh;
+
+    }
     #cajaRobot {
         transform: translate(45%, -17%);
         width: 85rem;
@@ -909,7 +926,7 @@ video {
     /*PROYECTOS DESTACADOS*/
 
     #destacadosTitulo {
-        transform: rotate(-90deg) translateY(-455%);
+        transform: rotate(-90deg) translateY(-505%);
     }
 
 }
@@ -924,12 +941,17 @@ video {
     /*PROYECTOS DESTACADOS*/
 
     #destacadosTitulo {
-        transform: rotate(-90deg) translateY(-495%);
+        transform: rotate(-90deg) translateY(-545%);
     }
 
 }
 
 @media only screen and (min-width:1800px) {
+    .portada {
+
+        height: 52vh;
+
+    }
 
     #cajaRobot {
         transform: translate(80%, -17%);
@@ -938,7 +960,7 @@ video {
     }
 
     #destacadosTitulo {
-        transform: rotate(-90deg) translateY(-510%);
+        transform: rotate(-90deg) translateY(-580%);
     }
 
 }
@@ -946,7 +968,7 @@ video {
 @media only screen and (min-width:1900px) {
 
     #destacadosTitulo {
-        transform: rotate(-90deg) translateY(-530%);
+        transform: rotate(-90deg) translateY(-590%);
 
     }
 

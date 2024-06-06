@@ -232,105 +232,117 @@ function adaptarTextoRotatorio() {
         tendra un scroll concreto y una colocacion concreta*/
 
         if (window.innerWidth >= 1900) {
-            if (window.scrollY > 2582 && window.scrollY < 3319) {
-                console.log("estoy aqui2")
+            if (window.scrollY > 2582 && window.scrollY < 3419) {
+
                 destacados.style.position = "fixed";
                 destacados.style.marginTop = "initial";
                 destacados.style.top = "450px";
-            } else if (window.scrollY >= 3319) {
-                console.log("estoy aqui3")
+            } else if (window.scrollY >= 3419) {
+
                 destacados.style.position = "absolute";
-                destacados.style.top = "3780px";
+                destacados.style.top = "3880px";
             } else {
-                console.log("estoy aqui4")
+
                 destacados.style.position = "absolute";
                 destacados.style.top = "3030px";
 
             }
         } else if (window.innerWidth >= 1800) {
-            if (window.scrollY > 2581 && window.scrollY < 3326) {
+            if (window.scrollY > 2540 && window.scrollY < 3357) {
                 destacados.style.position = "fixed";
                 destacados.style.marginTop = "initial";
                 destacados.style.top = "450px";
-            } else if (window.scrollY >= 3326) {
+            } else if (window.scrollY >= 3357) {
                 destacados.style.position = "absolute";
-                destacados.style.top = "3760px";
+                destacados.style.top = "3825px";
             } else {
                 destacados.style.position = "absolute";
-                destacados.style.top = "3030px";
+                destacados.style.top = "3000px";
             }
         }
         else if (window.innerWidth >= 1700) {
-            if (window.scrollY > 2532 && window.scrollY < 3266) {
+            if (window.scrollY > 2532 && window.scrollY < 3336) {
                 destacados.style.position = "fixed";
                 destacados.style.marginTop = "initial";
                 destacados.style.top = "450px";
-            } else if (window.scrollY >= 3266) {
+            } else if (window.scrollY >= 3336) {
                 destacados.style.position = "absolute";
-                destacados.style.top = "3720px";
+                destacados.style.top = "3800px";
             } else {
                 destacados.style.position = "absolute";
-                destacados.style.top = "2980px";
+                destacados.style.top = "2990px";
             }
-        } else if (window.innerWidth >= 1600) {
-            if (window.scrollY > 2493 && window.scrollY < 3227) {
+        }else if (window.innerWidth >= 1600) {
+            if (window.scrollY > 2493 && window.scrollY < 3271) {
                 destacados.style.position = "fixed";
                 destacados.style.marginTop = "initial";
                 destacados.style.top = "450px";
-            } else if (window.scrollY >= 3227) {
+            } else if (window.scrollY >= 3271) {
                 destacados.style.position = "absolute";
-                destacados.style.top = "3680px";
+                destacados.style.top = "3730px";
             } else {
                 destacados.style.position = "absolute";
-                destacados.style.top = "2940px";
+                destacados.style.top = "2960px";
             }
         } else if (window.innerWidth >= 1500) {
-            if (window.scrollY > 2483 && window.scrollY < 3218) {
+            if (window.scrollY > 2549 && window.scrollY < 3273) {
                 destacados.style.position = "fixed";
                 destacados.style.marginTop = "initial";
                 destacados.style.top = "450px";
-            } else if (window.scrollY >= 3218) {
+            } else if (window.scrollY >= 3273) {
                 destacados.style.position = "absolute";
-                destacados.style.top = "3670px";
+                destacados.style.top = "3715px";
             } else {
                 destacados.style.position = "absolute";
-                destacados.style.top = "2932px";
+                destacados.style.top = "2990px";
             }
         } else if (window.innerWidth >= 1400) {
-            if (window.scrollY > 2447 && window.scrollY < 3177) {
+            if (window.scrollY > 2490 && window.scrollY < 3186) {
                 destacados.style.position = "fixed";
                 destacados.style.marginTop = "initial";
                 destacados.style.top = "450px";
-            } else if (window.scrollY >= 3177) {
+            } else if (window.scrollY >= 3186) {
                 destacados.style.position = "absolute";
                 destacados.style.top = "3635px";
             } else {
                 destacados.style.position = "absolute";
-                destacados.style.top = "2895px";
+                destacados.style.top = "2935px";
             }
         } else if (window.innerWidth >= 1300) {
-            if (window.scrollY > 2390 && window.scrollY < 3077) {
+            if (window.scrollY > 2444 && window.scrollY < 3116) {
                 destacados.style.position = "fixed";
                 destacados.style.marginTop = "initial";
                 destacados.style.top = "450px";
-            } else if (window.scrollY >= 3077) {
+            } else if (window.scrollY >= 3116) {
                 destacados.style.position = "absolute";
-                destacados.style.top = "3550px";
+                destacados.style.top = "3565px";
+            } else {
+                destacados.style.position = "absolute";
+                destacados.style.top = "2880px";
+            }
+        }else if (window.innerWidth >= 1250) {
+            if (window.scrollY > 2382 && window.scrollY < 3023) {
+                destacados.style.position = "fixed";
+                destacados.style.marginTop = "initial";
+                destacados.style.top = "450px";
+            } else if (window.scrollY >= 3023) {
+                destacados.style.position = "absolute";
+                destacados.style.top = "3500px";
             } else {
                 destacados.style.position = "absolute";
                 destacados.style.top = "2840px";
             }
-        } else {
-            if (window.scrollY > 2326 && window.scrollY < 2998) {
+        }else {
+            if (window.scrollY > 2348 && window.scrollY < 2977) {
                 destacados.style.position = "fixed";
                 destacados.style.marginTop = "initial";
                 destacados.style.top = "450px";
-            } else if (window.scrollY >= 2998) {
+            } else if (window.scrollY >= 2977) {
                 destacados.style.position = "absolute";
-                destacados.style.top = "3445px";
+                destacados.style.top = "3430px";
             } else {
                 destacados.style.position = "absolute";
-                destacados.style.top = "2780px";
+                destacados.style.top = "2810px";
             }
         }
 
