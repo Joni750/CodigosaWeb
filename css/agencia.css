@@ -490,8 +490,9 @@ footer a {
 
 .cards {
     width: 100%;
-    padding-block: 8rem;
-    padding-block-end: 16rem;
+    padding-block: 4rem;
+    padding-top: 0rem;
+
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
