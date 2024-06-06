@@ -333,6 +333,7 @@ header.abajo span {
     align-items: center;
     gap: 4rem;
     padding-bottom: 8rem;
+    
 }
 
 .articulo1, .articulo2{
@@ -359,6 +360,7 @@ header.abajo span {
     font-weight: normal;
 }
 .textoArticulo1 h3, .textoArticulo2 h3{
+    font-weight: 400;
     margin-block: 1rem;
     font-size: 1.5rem;
     font-family: 'bernadette';
@@ -391,7 +393,7 @@ footer a {
 #derechos {
     color: #fff;
     text-shadow: 0rem 0.2rem 0.2rem #0004;
-    font-size: 149%;
+    font-size: 144%;
     font-weight: 500;
 }
 
@@ -684,7 +686,7 @@ footer a {
     /*METODOLOGIA*/
 
     #seccionTextosMetodologia{
-
+        width: 80%;
         gap: 1rem;
     }
 
@@ -776,7 +778,7 @@ footer a {
     }
 
     #derechos {
-        font-size: 159%;
+        font-size: 155%;
     }
 
     /*FOOTER*/
