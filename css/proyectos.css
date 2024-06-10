@@ -253,9 +253,21 @@ header.abajo span {
     margin-left: 5%;
 }
 
-#content-proyecto img{
+#content-proyecto a{
     width: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#content-proyecto img{
+    width: 100%;
     margin-top: 3%;
+    transition: transform 0.5s ease; 
+}
+
+#content-proyecto img:hover{
+    transform: scale(1.1); 
 }
 
 #content-proyecto h2{
@@ -302,9 +314,21 @@ header.abajo span {
     margin-right: 6%;
 }
 
-#content-proyecto2 img{
+#content-proyecto2 a{
     width: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#content-proyecto2 img{
+    width: 100%;
     margin-top: 3%;
+    transition: transform 0.5s ease; 
+}
+
+#content-proyecto2 img:hover{
+    transform: scale(1.1); 
 }
 
 #content-proyecto2 h2{
@@ -455,7 +479,7 @@ footer a {
 
     /* impares */
 
-    #content-proyecto img{
+    #content-proyecto a{
         width: 70%;
     }
 
@@ -469,13 +493,13 @@ footer a {
     }
 
     .triangle1 {
-        height: 14rem;
+        height: 8rem;
         clip-path: polygon(0% 0%, 100% -15%, 100% 100%);
     }
 
     /* pares */
 
-    #content-proyecto2 img{
+    #content-proyecto2 a{
         width: 70%;
     }
 
@@ -490,7 +514,7 @@ footer a {
 
     .triangle2 {
         width: 100%;
-        height: 14rem;
+        height: 8rem;
         background-color: #141414;
         clip-path: polygon(0% 100%, 100% 0%, 100% 101%);
     }
@@ -528,12 +552,12 @@ footer a {
         font-size: 6em;
     }
 
-    #content-proyecto img {
-        width: 80%;
+    #content-proyecto a {
+        width: 70%;
     }
 
     #content-proyecto h2 {
-        width: 80%;
+        width: 70%;
     }
 
     /* impares */
@@ -542,12 +566,12 @@ footer a {
         font-size: 6em;
     }
 
-    #content-proyecto2 img {
-        width: 80%;
+    #content-proyecto2 a {
+        width: 70%;
     }
 
     #content-proyecto2 h2 {
-        width: 80%;
+        width: 70%;
     }
 
 }
@@ -574,9 +598,9 @@ footer a {
     }
 
     .triangle1 {
-        clip-path: polygon(0% 0%, 100% -4%, 100% 100%); 
+        clip-path: polygon(0% 0%, 100% -4%, 120% 100%);
     }
-
+    
     #content-proyecto h2{
         font-size: 1.4em;
     }
@@ -588,7 +612,7 @@ footer a {
     }
 
     .triangle2 {
-        clip-path: polygon(0% 100%, 100% 0%, 100% 116%);
+        clip-path: polygon(0% 100%, 120% 0%, 100% 116%);
     }
 
     #content-proyecto2 h2{
