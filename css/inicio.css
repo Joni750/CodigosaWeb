@@ -918,9 +918,7 @@ video {
 
 @media only screen and (min-width:1800px) {
     .portada {
-
-        height: 52vh;
-
+        height: 54vh;
     }
 
     #cajaRobot {

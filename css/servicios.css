@@ -450,6 +450,10 @@ footer a {
         font-size: 100%;
     }
 
+    #politicas {
+        gap: 1rem;
+    }
+
 }
 
 @media only screen and (min-width:1000px) {
