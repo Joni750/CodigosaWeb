@@ -866,7 +866,7 @@ footer a {
     }
 
     .portada {
-        height: 41rem;
+        height: 42rem;
     }
 
     /*CARROUSELL IMAGENES*/
@@ -1042,7 +1042,7 @@ footer a {
     }
 
     .portada {
-        height: 27.4rem;
+        height: 38.5rem;
     }
 
     .content-portada h1 {
@@ -1125,7 +1125,7 @@ footer a {
 @media only screen and (min-width:1400px) {
 
     .portada {
-        height: 24.2rem;
+        height: 34.8rem;
     }
     .content-portada h1{
         font-size: 4rem;
@@ -1260,6 +1260,9 @@ footer a {
 }
 
 @media only screen and (min-width:1700px) {
+    .portada {
+        height: 32rem;
+    }
 
     #cajaRobot {
         width: 65rem;
@@ -1275,6 +1278,7 @@ footer a {
 }
 
 @media only screen and (min-width:1800px) {
+    
 
     #cajaRobot {
         transform: translate(80%, -17%);
@@ -1289,6 +1293,10 @@ footer a {
 }
 
 @media only screen and (min-width:1900px) {
+    .portada {
+        height: 30rem;
+    }
+
 
     #destacado h2 {
         transform: rotate(-90deg) translate(58%, -535%);
