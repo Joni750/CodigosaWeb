@@ -308,16 +308,29 @@ header.abajo span {
 }
 
 .cajaTexto label,
-.cajaTexto input {
+.cajaTexto input,
+.cajaTexto select {
     text-align: left;
+    width: 2rem;
     width: 100%;
+    padding: 0;
 }
 
-.cajaTexto input {
+.cajaTexto input, .cajaTexto select{
     background: transparent;
     border: #fff solid 0.1rem;
     border-radius: 0.5rem;
-    height: 3em;
+    height: 2.5rem;
+    color: #fff;
+}
+.cajaTexto select{
+    height: 2.8rem;
+}
+.cajaTexto option{
+    background: #141414;
+
+    border-radius: 0.5rem;
+    padding-block: 4rem;
     color: #fff;
 }
 
@@ -327,6 +340,7 @@ header.abajo span {
     border-radius: 0.5rem;
     width: 100%;
     color: #fff;
+    padding: 0;
 }
 
 .cajaTexto {
@@ -458,6 +472,16 @@ footer a {
 
 }
 
+@media only screen and (min-width:575px) {
+
+    .foto3 {
+        width: 50%;
+        transform: translate(80%, -270%);
+    }
+
+
+}
+
 
 @media only screen and (min-width:600px) {
 
@@ -475,6 +499,15 @@ footer a {
 
 }
 
+@media only screen and (min-width:650px) {
+    .foto3 {
+        width: 50%;
+        transform: translate(80%, -230%);
+    }
+
+
+}
+
 
 
 @media only screen and (min-width:700px) {
@@ -489,6 +522,15 @@ footer a {
         width: 60%;
         transform: translate(15%, 420%);
     }
+}
+
+@media only screen and (min-width:760px) {
+    .foto3 {
+        width: 40%;
+        transform: translate(120%, -230%);
+    }
+
+
 }
 
 @media only screen and (min-width:800px) {
