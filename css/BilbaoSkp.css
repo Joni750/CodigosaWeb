@@ -273,11 +273,11 @@ header.abajo span {
 
 .objetivos {
     background-color: #FFDC84;
-  
+
 }
 
 
-/*FOOTER*/ 
+/*FOOTER*/
 footer {
     background-color: #141414;
     display: flex;
@@ -303,7 +303,7 @@ footer a {
 
 
 #derechos {
-  
+
     text-shadow: 0rem 0.2rem 0.2rem #0004;
     font-size: 149%;
     font-weight: 500;
@@ -314,17 +314,14 @@ footer a {
     color: #FFDC84;
 }
 
-video {
-    display: none;
 
-}
-.objetivos{
+.objetivos {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container-objetivo{
+.container-objetivo {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
@@ -332,7 +329,7 @@ video {
     width: 90%;
 }
 
-.container-objetivo h2{
+.container-objetivo h2 {
     margin-top: 0rem;
 }
 
@@ -381,6 +378,16 @@ video {
 .carousel-slide img {
     width: 80%;
     display: block;
+}
+
+.video {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.video video{
+    width: 100%;
 }
 
 
@@ -438,6 +445,7 @@ video {
 
     /*FOOTER*/
 }
+
 @media only screen and (min-width:950px) {
     .content-portada h1 {
         margin: 0;
@@ -447,8 +455,9 @@ video {
 }
 
 @media only screen and (min-width:1000px) {
-     /*CARROUSELL IMAGENES*/
-     .carousel-slide img {
+
+    /*CARROUSELL IMAGENES*/
+    .carousel-slide img {
         width: 60%;
 
     }
@@ -491,14 +500,19 @@ video {
         }
     }
 
-    /*CARROUSELL IMAGENES*/    
+    /*CARROUSELL IMAGENES*/
 }
 
 @media only screen and (min-width:1200px) {
 
+    .video video{
+        width: 70%;
+    }
+
     .portada {
         height: 58rem;
     }
+
     /*CARROUSELL IMAGENES*/
     .carousel-slide img {
         width: 50%;
@@ -603,14 +617,8 @@ video {
         text-align: justify;
     }
 
-    /* VIDEO */
 
-    .video {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
 
-    }
 
     .container-objetivo {
         padding: 10rem;
@@ -621,7 +629,7 @@ video {
         font-size: 4em;
     }
 
-   
+
 
 
 }
