@@ -243,7 +243,7 @@ header.abajo span {
     line-height: 2.5rem;
 }
 
-.cajasTextosPortada{
+.cajasTextosPortada {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -253,7 +253,7 @@ header.abajo span {
     max-width: 50%;
 }
 
-.h2fake{
+.h2fake {
     font-size: 0.8rem;
     font-weight: 100;
 }
@@ -324,7 +324,7 @@ header.abajo span {
     transform: translate(0%);
 }
 
-h5{
+h5 {
     font-size: 1.5em;
     font-weight: normal;
 }
@@ -377,7 +377,7 @@ h5{
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
-    height: 55rem;   
+    height: 55rem;
 }
 
 .content-carta {
@@ -424,6 +424,95 @@ h5{
     cursor: pointer;
     box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
+
+/*Bolas*/
+
+.pelotaAmarilla {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+
+
+    background: radial-gradient(circle at 30% 28%, #FFDC84, #807048 55%);
+    border-radius: 50%;
+    animation: movPelota 3s ease-in-out infinite;
+}
+
+.pelotaNegra {
+    position: absolute;
+    background: radial-gradient(circle at 30% 35%, #202020, #000 80%);
+    border-radius: 50%;
+}
+
+.pelota1 {
+    width: 4.5rem;
+    height: 4.5rem;
+    animation: movPelota1 3s ease-in-out infinite;
+    left: 5%;
+}
+
+.pelota2 {
+    width: 4rem;
+    height: 4rem;
+    animation: movPelota2 3s ease-in-out infinite;
+    transform: translateY(230%);
+    left: 80%;
+    animation-delay: 0.5s;
+}
+
+
+.pelota3 {
+    width: 5rem;
+    height: 5rem;
+    animation: movPelota3 3s ease-in-out infinite;
+    transform: translateY(1690%);
+    animation-delay: 1s;
+    left: 75%;
+}
+
+
+
+@keyframes movPelota1 {
+
+    0%,
+    100% {
+        transform: translateY(90%);
+    }
+
+    50% {
+        transform: translateY(80%);
+    }
+
+}
+
+
+@keyframes movPelota2 {
+
+    0%,
+    100% {
+        transform: translateY(230%);
+    }
+
+    50% {
+        transform: translateY(220%);
+    }
+
+}
+
+@keyframes movPelota3 {
+
+    0%,
+    100% {
+        transform: translateY(1690%);
+    }
+
+    50% {
+        transform: translateY(1700%);
+    }
+
+}
+
+
 
 /*carrousell*/
 
@@ -472,8 +561,8 @@ h3 {
     font-size: 2rem;
 }
 
-#destacadosTitulo{
-    top:0;
+#destacadosTitulo {
+    top: 0;
     margin-bottom: 5rem;
 }
 
@@ -490,13 +579,13 @@ h3 {
     align-items: center;
 }
 
-.proyectoDestacado h4{
+.proyectoDestacado h4 {
     font-size: 0.8rem;
     margin: 0;
     font-weight: normal;
 }
 
-.proyectoDestacado  h3{
+.proyectoDestacado h3 {
     margin-block: 1rem;
     font-size: 1.5rem;
 }
@@ -547,8 +636,48 @@ video {
 
 }
 
+@media only screen and (min-width:600px) {
+
+    /*Pelotas*/
+    .pelota3 {
+        transform: translateY(1730%);
+    }
+
+    @keyframes movPelota3 {
+
+        0%,
+        100% {
+            transform: translateY(1730%);
+        }
+
+        50% {
+            transform: translateY(1720%);
+        }
+
+    }
+}
+
 /*FOOTER*/
 @media only screen and (min-width:700px) {
+
+    /*Pelotas*/
+
+    .pelota3 {
+        transform: translateY(1780%);
+    }
+
+    @keyframes movPelota3 {
+
+        0%,
+        100% {
+            transform: translateY(1780%);
+        }
+
+        50% {
+            transform: translateY(1770%);
+        }
+
+    }
 
     /*PRECIOS*/
 
@@ -557,8 +686,9 @@ video {
     .content-carta h3 {
         font-size: 2.5rem;
     }
+
     #precios-cartas {
-    
+
         width: 250%;
     }
 
@@ -573,10 +703,11 @@ video {
         margin-block: 15%;
         margin-bottom: 5%;
         height: 10rem;
-        
+
     }
-    #p2{
-        top:-5rem;
+
+    #p2 {
+        top: -5rem;
     }
 
     #p1,
@@ -589,7 +720,49 @@ video {
 
 }
 
+@media only screen and (min-width:800px) {
+
+    /*Pelotas*/
+
+    .pelota3 {
+        transform: translateY(1820%);
+    }
+
+    @keyframes movPelota3 {
+
+        0%,
+        100% {
+            transform: translateY(1820%);
+        }
+
+        50% {
+            transform: translateY(1810%);
+        }
+
+    }
+
+}
+
 @media only screen and (min-width:900px) {
+
+    /*Pelotas*/
+
+    .pelota3 {
+        transform: translateY(1750%);
+    }
+
+    @keyframes movPelota3 {
+
+        0%,
+        100% {
+            transform: translateY(1750%);
+        }
+
+        50% {
+            transform: translateY(1740%);
+        }
+
+    }
 
     .portada {
 
@@ -597,11 +770,12 @@ video {
 
     }
 
-    .proyectoDestacado h4{
+    .proyectoDestacado h4 {
         font-size: 1.2rem;
         margin: 0;
     }
-    .proyectoDestacado  h3{
+
+    .proyectoDestacado h3 {
         margin-block: 1.5rem;
         font-size: 2rem;
     }
@@ -609,7 +783,7 @@ video {
     /*PRECIOS*/
 
     /*carrousel*/
-  
+
     #precios-cartas {
         justify-content: space-evenly;
     }
@@ -635,10 +809,11 @@ video {
         margin-block: 10%;
         margin-bottom: 5%;
         height: 8rem;
-        
+
     }
-    #p2{
-        top:-8rem;
+
+    #p2 {
+        top: -8rem;
     }
 
     #p1,
@@ -648,7 +823,7 @@ video {
     }
 
 
-  
+
     /*FOOTER*/
     footer {
         font-size: 100%;
@@ -661,6 +836,7 @@ video {
     #derechos {
         font-size: 159%;
     }
+
     /*FOOTER*/
 
 
@@ -702,27 +878,32 @@ video {
 
 
 @media only screen and (min-width:1200px) {
-    video{
+    video {
         display: flex;
-        width: 50%; /* Ajusta el tamaño del video */
+        width: 50%;
+        /* Ajusta el tamaño del video */
         transform: translateX(20%);
     }
 
     /*PRECIOS*/
 
     /*carrousel desactivado*/
-    .punto, .puntos{
+    .punto,
+    .puntos {
         display: none;
     }
-    #precios-cartas{
+
+    #precios-cartas {
         justify-content: space-between;
 
         width: 100%;
     }
+
     .carta {
         min-width: calc(50% / 3);
         max-width: calc(70% / 3);
     }
+
     /*carrousel desactivado*/
 
     /*PRECIOS*/
@@ -748,12 +929,13 @@ video {
         justify-content: center;
         width: 80%;
     }
-   
-    .h2fake{
+
+    .h2fake {
         font-size: 1.2rem;
         width: 90%;
         gap: 0.5rem;
     }
+
     .content-portada h1 {
         font-size: 4.5em;
         margin-bottom: 0;
@@ -761,9 +943,10 @@ video {
         line-height: 4.3rem;
     }
 
-    .cajasTextosPortada{
+    .cajasTextosPortada {
         width: 90%;
     }
+
     #cajaRobot {
         display: flex;
         align-items: center;
@@ -808,7 +991,7 @@ video {
     }
 
     /*PROYECTOS DESTACADOS*/
-   
+
 
     h2 {
         font-size: 5.8rem;
@@ -817,6 +1000,7 @@ video {
     h3 {
         font-size: 2.5rem;
     }
+
     #destacadosTitulo {
         margin-bottom: initial;
         font-size: 5.2rem;
@@ -829,13 +1013,52 @@ video {
 
 @media only screen and (min-width:1400px) {
 
+    /*Pelotas*/
+    .pelota1 {
+        width: 8rem;
+        height: 8rem;
+        transform: translateY(230%);
+        left: 10%;
+
+    }
+
+    .pelota2 {
+        width: 6rem;
+        height: 6rem;
+        transform: translateY(230%);
+
+
+    }
+
+    .pelota3 {
+        width: 7rem;
+        height: 7rem;
+        transform: translateY(1280%);
+
+
+    }
+
+    @keyframes movPelota3 {
+
+        0%,
+        100% {
+            transform: translateY(1280%);
+        }
+
+        50% {
+            transform: translateY(1270%);
+        }
+
+    }
+
     /*PRECIOS*/
 
-    #precios-cartas{
+    #precios-cartas {
         justify-content: space-evenly;
 
     }
-    .carta{
+
+    .carta {
         width: 20%;
     }
 
@@ -851,7 +1074,7 @@ video {
     }
 
     /*PROYECTOS DESTACADOS*/
-    #destacadosTitulo{
+    #destacadosTitulo {
         font-size: 5.4rem;
         transform: rotate(-90deg) translateY(-470%);
     }
@@ -880,13 +1103,31 @@ video {
 }
 
 @media only screen and (min-width:1600px) {
-  
-  
+
+    /*Pelotas*/
+    .pelota3 {
+        transform: translateY(1310%);
+    }
+
+    @keyframes movPelota3 {
+
+        0%,
+        100% {
+            transform: translateY(1310%);
+        }
+
+        50% {
+            transform: translateY(1300%);
+        }
+
+    }
+
     .portada {
 
         height: 59vh;
 
     }
+
     #cajaRobot {
         transform: translate(45%, -17%);
         width: 85rem;
@@ -917,6 +1158,29 @@ video {
 }
 
 @media only screen and (min-width:1800px) {
+
+    /*Pelotas*/
+    .pelota3 {
+        width: 7rem;
+        height: 7rem;
+        transform: translateY(1330%);
+
+
+    }
+
+    @keyframes movPelota3 {
+        0%,
+        100% {
+            transform: translateY(1330%);
+        }
+
+        50% {
+            transform: translateY(1320%);
+        }
+    }
+
+
+
     .portada {
         height: 54vh;
     }
@@ -941,4 +1205,3 @@ video {
     }
 
 }
-
