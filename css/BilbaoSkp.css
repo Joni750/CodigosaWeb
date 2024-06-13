@@ -311,14 +311,17 @@ header.abajo span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-block: 2rem;
+    gap: 2rem;
+    padding-block: 8rem;
+    padding-top: 4rem;
 }
 #soluciones h2{
     margin-top: 0rem;
+    font-size: 2.2rem;
 }
 #soluciones h3{
     text-align: justify;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 #cercania{
@@ -365,16 +368,23 @@ footer a {
     flex-direction: column;
     align-items: center;
     width: 90%;
+
 }
 
 .container-objetivo h2 {
     margin-top: 0rem;
+    font-size: 2.2rem;
 }
 
 .container-objetivo h3{
     font-weight: 400;
     text-align: justify;
 }
+.titulosObjetivos{
+    font-weight: 700 !important;
+}
+
+
 
 /*FOOTER*/
 
@@ -490,7 +500,7 @@ footer a {
         font-size: 3rem;
     }
     #soluciones{
-        padding-top: 0rem;
+        padding-top: 4rem;
     }
 
     #solucionesBloque{
@@ -499,7 +509,7 @@ footer a {
         gap: 10rem;
     }
     #solucionesBloque img, #solucionesBloque div{
-        width: 40rem;
+        width: 50rem;
     }
     #solucionesBloque img{
         width: 18rem;
@@ -597,6 +607,14 @@ footer a {
 
     .circle, .circle2  {
         clip-path: circle(200% at 50% 745%);
+    }
+
+
+    /*SOLUCIONES*/
+
+    #soluciones h3{
+        font-size: 1.5em;
+        
     }
 
 }
@@ -759,6 +777,10 @@ footer a {
 }
 
 @media only screen and (min-width:1350px) {
+    /*SOLUCIONES*/
+    #soluciones h2{
+        font-size: 4rem;
+    }
 
     /* OBJETIVOS */
 
@@ -877,3 +899,4 @@ footer a {
     }
     
 }
+
