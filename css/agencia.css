@@ -211,8 +211,58 @@ header.abajo span {
 .menu a:hover {
     font-size: 1.2em;
 }
+/*Pelotas*/
+.pelotaAmarilla {
+    position: absolute;
+    background: radial-gradient(circle at 30% 28%, #FFDC84, #807048 55%);
+    border-radius: 50%;
+}
 
+.pelota1 {
+    width: 3.5rem;
+    height: 3.5rem;
+    animation: movPelota1 3s ease-in-out infinite;
+    left: 5%;
+}
+
+.pelota2 {
+    width: 4rem;
+    height: 4rem;
+    animation: movPelota2 3s ease-in-out infinite;
+    transform: translateY(-130%);
+    left: 80%;
+    animation-delay: 0.5s;
+}
+
+@keyframes movPelota1 {
+
+    0%,
+    100% {
+        transform: translateY(90%);
+    }
+
+    50% {
+        transform: translateY(80%);
+    }
+
+}
+
+
+@keyframes movPelota2 {
+
+    0%,
+    100% {
+        transform: translateY(-130%);
+    }
+
+    50% {
+        transform: translateY(-120%);
+    }
+
+}
 /* Portada */
+
+
 
 .portada {
     background-image: url(../img/portada.png);
@@ -627,7 +677,38 @@ footer a {
     3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y
     */
 }
+@media only screen and (min-width:600px) {
+    /*Pelotas*/
+    .pelota2 {
+        transform: translateY(-200%);
+    }
 
+    @keyframes movPelota1 {
+
+        0%,
+        100% {
+            transform: translateY(50%);
+        }
+
+        50% {
+            transform: translateY(40%);
+        }
+
+    }
+
+    @keyframes movPelota2 {
+
+        0%,
+        100% {
+            transform: translateY(-200%);
+        }
+
+        50% {
+            transform: translateY(-190%);
+        }
+
+    }
+}
 
 @media only screen and (min-width:700px) {
 
@@ -694,6 +775,43 @@ footer a {
 }
 
 @media only screen and (min-width:900px) {
+
+     /*Pelotas*/
+    .pelota1{
+        width: 5rem;
+        height: 5rem;
+    }
+    .pelota2 {
+        width: 6rem;
+        height: 6rem;
+        transform: translateY(-150%);
+    }
+
+    @keyframes movPelota1 {
+
+        0%,
+        100% {
+            transform: translateY(50%);
+        }
+
+        50% {
+            transform: translateY(40%);
+        }
+
+    }
+
+    @keyframes movPelota2 {
+
+        0%,
+        100% {
+            transform: translateY(-150%);
+        }
+
+        50% {
+            transform: translateY(-140%);
+        }
+
+    }
 
     .content-portada h1{
      
@@ -921,6 +1039,29 @@ footer a {
 
 
 @media only screen and (min-width:1200px) {
+
+    /*Pelotas*/
+
+    .pelota2 {
+        width: 6rem;
+        height: 6rem;
+        transform: translateY(160%);
+        left: 45%;
+    }
+
+
+    @keyframes movPelota2 {
+
+        0%,
+        100% {
+            transform: translateY(160%);
+        }
+
+        50% {
+            transform: translateY(150%);
+        }
+
+    }
 
     /*SECCION INTEGRANTES*/
 
@@ -1224,6 +1365,40 @@ footer a {
 }
 
 @media only screen and (min-width:1600px) {
+
+    /*Pelotas*/
+   
+    .pelota2 {
+        width: 6rem;
+        height: 6rem;
+        transform: translateY(160%);
+        left: 35%;
+    }
+    @keyframes movPelota1 {
+
+        0%,
+        100% {
+            transform: translateY(0%);
+        }
+    
+        50% {
+            transform: translateY(-10%);
+        }
+    
+    }
+
+    @keyframes movPelota2 {
+
+        0%,
+        100% {
+            transform: translateY(160%);
+        }
+
+        50% {
+            transform: translateY(150%);
+        }
+
+    }
 
     .content-portada h1{
     

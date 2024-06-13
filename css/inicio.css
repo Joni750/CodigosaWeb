@@ -425,18 +425,9 @@ h5 {
     box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-/*Bolas*/
-
-.pelotaAmarilla {
-    position: absolute;
-    width: 8rem;
-    height: 8rem;
+/*Pelotas*/
 
 
-    background: radial-gradient(circle at 30% 28%, #FFDC84, #807048 55%);
-    border-radius: 50%;
-    animation: movPelota 3s ease-in-out infinite;
-}
 
 .pelotaNegra {
     position: absolute;
