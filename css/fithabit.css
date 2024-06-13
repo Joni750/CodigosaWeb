@@ -309,6 +309,7 @@ header.abajo span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 10rem;
 }
 
 .carousel {
@@ -373,6 +374,36 @@ header.abajo span {
     100% {
         transform: translateX(86%);
     }
+}
+
+/* SOLUCIONES */
+
+#solucionesBloque{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#soluciones{
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-block: 8rem;
+    padding-top: 4rem;
+}
+
+#soluciones h2{
+    margin-top: 0rem;
+    font-size: 2.2rem;
+}
+
+#soluciones h3{
+    text-align: justify;
+    font-weight: 200;
 }
 
 /*FOOTER*/ 
@@ -450,6 +481,30 @@ video {
         clip-path: circle(150% at 50% 480%);
     }
 
+    /* SOLUCIONES */
+
+    #soluciones h2, .container-objetivo h2{
+        font-size: 3rem;
+    }
+
+    #soluciones{
+        padding-top: 4rem;
+    }
+
+    #solucionesBloque{
+        flex-direction: row;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    #solucionesBloque img, #solucionesBloque div{
+        width: 50rem;
+    }
+
+    #solucionesBloque img{
+        width: 25rem;
+    }
+
     /*FOOTER*/
 
     footer {
@@ -518,8 +573,6 @@ video {
        }
    }
 
-
-
 }
 
 @media only screen and (min-width:1090px) {
@@ -528,6 +581,12 @@ video {
 
     .circle {
         clip-path: circle(200% at 50% 745%);
+    }
+
+    /* SOLUCIONES */
+
+    #soluciones h3{
+        font-size: 1.5em;
     }
 
 }
@@ -681,6 +740,14 @@ video {
         }
     }
 
+    /* SOLUCIONES */
+
+    #solucionesBloque{
+        flex-direction: row;
+        justify-content: center;
+        gap: 20rem;
+    }
+
 }
 
 @media only screen and (min-width:1280px) {
@@ -699,6 +766,12 @@ video {
 
     .circle {
         clip-path: circle(200% at 50% 895%);
+    }
+
+    /*SOLUCIONES*/
+
+    #soluciones h2{
+        font-size: 4rem;
     }
 
 }
