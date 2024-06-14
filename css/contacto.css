@@ -777,6 +777,38 @@ footer a {
 
 @media only screen and (min-width:1200px) {
 
+     /*Pelotas*/
+     .pelotaAmarilla {
+        position: absolute;
+        background: radial-gradient(circle at 30% 28%, #FFDC84, #807048 55%);
+        border-radius: 50%;
+    }
+    
+    .pelota2 {
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+        transform: translateY(-240%);
+        animation: movPelota2 3s ease-in-out infinite;
+        left: 35%;
+        animation-delay: 0.5s;
+    }
+
+    
+
+    @keyframes movPelota2 {
+
+        0%,
+        100% {
+            transform: translateY(-240%);
+        }
+
+        50% {
+            transform: translateY(-230%);
+        }
+
+    }
+
     /*Seccion contacto baja*/
 
     .foto3 {
@@ -930,6 +962,50 @@ footer a {
 
 @media only screen and (min-width:1400px) {
 
+    /*Pelotas*/
+
+    .pelota1 {
+        display: flex;
+        width: 7rem;
+        height: 7rem;
+        animation: movPelota1 3s ease-in-out infinite;
+        left: 84%;
+    }
+    .pelota3 {
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+        animation: movPelota3 3s ease-in-out infinite;
+        left: 78%;
+    }
+
+    @keyframes movPelota3 {
+
+        0%,
+        100% {
+            transform: translateY(-40%);
+        }
+
+        50% {
+            transform: translateY(-30%);
+        }
+
+    }
+
+
+    @keyframes movPelota1 {
+
+        0%,
+        100% {
+            transform: translateY(200%);
+        }
+
+        50% {
+            transform: translateY(190%);
+        }
+
+    }
+
 
     /*Seccion contacto baja*/
 
@@ -1045,6 +1121,35 @@ footer a {
 }
 
 @media only screen and (min-width:1700px) {
+
+    /*Pelotas*/
+
+    .pelota2 {
+ 
+        width: 8rem;
+        height: 8rem;
+        transform: translateY(-70%);
+        left: 35%;
+
+    }
+
+    .pelota3 {
+
+        left: 70%;
+    }
+
+    @keyframes movPelota2 {
+
+        0%,
+        100% {
+            transform: translateY(-70%);
+        }
+
+        50% {
+            transform: translateY(-60%);
+        }
+
+    }
 
     /*Seccion baja Contacto*/
 
