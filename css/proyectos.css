@@ -364,6 +364,28 @@ header.abajo span {
     clip-path: polygon(0% 100%, 100% 0%, 100% 101%);
 }
 
+/*PELOTAS*/
+
+.pelota1 {
+    display: none;
+}
+
+.pelota2 {
+    display: none;
+}
+
+.pelota3 {
+    display: none;
+}
+
+.pelota4{
+    display: none;
+}
+
+.pelota5{
+    display: none;
+}
+
 /*FOOTER*/
 
 footer {
