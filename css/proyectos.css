@@ -489,7 +489,7 @@ footer a {
     }
 
     .vertical-text {
-        font-size: 9em;
+        font-size: 6em;
     }
 
     .triangle1 {
@@ -517,6 +517,112 @@ footer a {
         height: 8rem;
         background-color: #141414;
         clip-path: polygon(0% 100%, 100% 0%, 100% 101%);
+    }
+
+    /* PELOTAS */
+
+    /*Pelotas Negras*/
+
+    .pelotaNegra {
+        position: absolute;
+        background: radial-gradient(circle at 30% 35%, #202020, #000 80%);
+        border-radius: 50%;
+    }
+    
+    .pelota1 {
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+        animation: movPelota1 3s ease-in-out infinite;
+        transform: translateY(230%);
+        left: 5%;
+    }
+    
+    .pelota2 {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        animation: movPelota2 3s ease-in-out infinite;
+        transform: translateY(230%);
+        left: 40%;
+    }
+
+    @keyframes movPelota1 {
+
+        0%,
+        100% {
+            transform: translateY(-90%);
+        }
+
+        50% {
+            transform: translateY(-80%);
+        }
+    
+    }
+    
+    @keyframes movPelota2 {
+    
+        0%,
+        100% {
+            transform: translateY(-70%);
+        }
+    
+        50% {
+            transform: translateY(-60%);
+        }
+    
+    }
+
+    /*Pelotas Amarillas*/
+
+    .pelotaAmarilla {
+        position: absolute;
+        background: radial-gradient(circle at 30% 28%, #FFDC84, #807048 55%);
+        border-radius: 50%;
+    }
+
+    .pelota4 {
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+        animation: movPelota4 3s ease-in-out infinite;
+        transform: translateY(230%);
+        left: 89%;
+    }
+    
+    .pelota5 {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        animation: movPelota5 3s ease-in-out infinite;
+        transform: translateY(230%);
+        left: 55%;
+    }
+
+    @keyframes movPelota4 {
+
+        0%,
+        100% {
+            transform: translateY(-70%);
+        }
+
+        50% {
+            transform: translateY(-60%);
+        }
+    
+    }
+    
+    @keyframes movPelota5 {
+    
+        0%,
+        100% {
+            transform: translateY(-50%);
+        }
+    
+        50% {
+            transform: translateY(-40%);
+        }
+    
     }
 
     /* FOOTER */

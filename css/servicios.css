@@ -335,6 +335,20 @@ header.abajo span {
     }
 }
 
+/*PELOTAS*/
+
+.pelota1 {
+    display: none;
+}
+
+.pelota2 {
+    display: none;
+}
+
+.pelota3 {
+    display: none;
+}
+
 /*FOOTER*/
 
 footer {
@@ -442,6 +456,90 @@ footer a {
     .circle2 {
         height: 21rem;
         clip-path: circle(200% at 50% 435%);
+    }
+
+    /* PELOTAS */
+
+    /*Pelotas Negras*/
+
+    .pelotaNegra {
+        position: absolute;
+        background: radial-gradient(circle at 30% 35%, #202020, #000 80%);
+        border-radius: 50%;
+    }
+    
+    .pelota1 {
+        display: flex;
+        width: 7.5rem;
+        height: 7.5rem;
+        animation: movPelota1 3s ease-in-out infinite;
+        transform: translateY(230%);
+        left: 73%;
+    }
+    
+    .pelota2 {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        animation: movPelota2 3s ease-in-out infinite;
+        transform: translateY(230%);
+        left: 55%;
+    }
+
+    .pelota3 {
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+        animation: movPelota3 3s ease-in-out infinite;
+        transform: translateY(230%);
+        left: 25%;
+    }
+
+    @keyframes movPelota1 {
+
+        0%,
+        100% {
+            transform: translateY(-30%);
+        }
+    
+        50% {
+            transform: translateY(-20%);
+        }
+    
+    }
+    
+    @keyframes movPelota2 {
+    
+        0%,
+        100% {
+            transform: translateY(130%);
+        }
+    
+        50% {
+            transform: translateY(120%);
+        }
+    
+    }
+
+    @keyframes movPelota3 {
+
+        0%,
+        100% {
+            transform: translateY(-50%);
+        }
+
+        50% {
+            transform: translateY(-40%);
+        }
+
+    }
+
+    /*Pelotas Amarillas*/
+
+    .pelotaAmarilla {
+        position: absolute;
+        background: radial-gradient(circle at 30% 28%, #FFDC84, #807048 55%);
+        border-radius: 50%;
     }
 
     /* FOOTER */
@@ -576,6 +674,23 @@ footer a {
         width: 600px;
     }
 
+    /* PELOTAS */
+
+    /*Pelotas Negras*/
+    
+    @keyframes movPelota2 {
+    
+        0%,
+        100% {
+            transform: translateY(350%);
+        }
+    
+        50% {
+            transform: translateY(340%);
+        }
+    
+    }
+    
 }
 
 @media only screen and (min-width:1250px) {
@@ -639,25 +754,11 @@ footer a {
     /* SERVICIOS */
 
     .circle {
-        clip-path: circle(205% at 50% 818%);
+        clip-path: circle(205% at 50% 819%);
     }
 
     .circle2 {
         clip-path: circle(205% at 50% 848%);
-    }
-
-}
-
-@media only screen and (min-width:1840px) {
-
-    /* SERVICIOS */
-
-    .circle {
-        clip-path: circle(205% at 50% 840%);
-    }
-
-    .circle2 {
-        clip-path: circle(205% at 50% 870%);
     }
 
 }
