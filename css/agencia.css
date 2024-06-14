@@ -211,55 +211,20 @@ header.abajo span {
 .menu a:hover {
     font-size: 1.2em;
 }
+
 /*Pelotas*/
-.pelotaAmarilla {
-    position: absolute;
-    background: radial-gradient(circle at 30% 28%, #FFDC84, #807048 55%);
-    border-radius: 50%;
-}
+
 
 .pelota1 {
-    width: 3.5rem;
-    height: 3.5rem;
-    animation: movPelota1 3s ease-in-out infinite;
-    left: 5%;
+    display: none;
+
 }
 
 .pelota2 {
-    width: 4rem;
-    height: 4rem;
-    animation: movPelota2 3s ease-in-out infinite;
-    transform: translateY(-130%);
-    left: 80%;
-    animation-delay: 0.5s;
-}
-
-@keyframes movPelota1 {
-
-    0%,
-    100% {
-        transform: translateY(90%);
-    }
-
-    50% {
-        transform: translateY(80%);
-    }
+    display: none;
 
 }
 
-
-@keyframes movPelota2 {
-
-    0%,
-    100% {
-        transform: translateY(-130%);
-    }
-
-    50% {
-        transform: translateY(-120%);
-    }
-
-}
 /* Portada */
 
 
@@ -380,39 +345,52 @@ header.abajo span {
     font-size: 3rem;
     color: #000000;
 }
-#seccionTextosMetodologia{
+
+#seccionTextosMetodologia {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
     padding-bottom: 8rem;
-    
+
 }
 
-.articulo1, .articulo2{
+.articulo1,
+.articulo2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
 }
-.articulo1 h3, .articulo2 h3{
+
+.articulo1 h3,
+.articulo2 h3 {
     margin-block: 0.5rem;
 }
-.articulo1 img, .textoArticulo1, .articulo2 img, .textoArticulo2{
+
+.articulo1 img,
+.textoArticulo1,
+.articulo2 img,
+.textoArticulo2 {
     width: 100%;
 }
-.textoArticulo1, .textoArticulo2{
+
+.textoArticulo1,
+.textoArticulo2 {
     text-align: justify;
 
 
 }
 
-.textoArticulo1 h4, .textoArticulo2 h4{
+.textoArticulo1 h4,
+.textoArticulo2 h4 {
     font-size: 1.2rem;
     margin: 0;
     font-weight: normal;
 }
-.textoArticulo1 h3, .textoArticulo2 h3{
+
+.textoArticulo1 h3,
+.textoArticulo2 h3 {
     font-weight: 400;
     margin-block: 1rem;
     font-size: 1.5rem;
@@ -553,19 +531,19 @@ footer a {
     flex-wrap: wrap;
 }
 
-.container-card{
+.container-card {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container-card h3{
+.container-card h3 {
     font-weight: 400;
     font-size: 3rem;
     font-family: 'bernadette';
 }
 
-.cards a{
+.cards a {
     text-decoration: none;
 }
 
@@ -635,7 +613,7 @@ footer a {
     transform: translateY(0);
 }
 
-.card:hover .overlay{
+.card:hover .overlay {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -677,7 +655,9 @@ footer a {
     3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y
     */
 }
+
 @media only screen and (min-width:600px) {
+
     /*Pelotas*/
     .pelota2 {
         transform: translateY(-200%);
@@ -712,8 +692,8 @@ footer a {
 
 @media only screen and (min-width:700px) {
 
-    .content-portada h1{
-     
+    .content-portada h1 {
+
         margin-top: -2rem;
     }
 
@@ -776,15 +756,29 @@ footer a {
 
 @media only screen and (min-width:900px) {
 
-     /*Pelotas*/
-    .pelota1{
+    /*Pelotas*/
+    .pelotaAmarilla {
+        position: absolute;
+        background: radial-gradient(circle at 30% 28%, #FFDC84, #807048 55%);
+        border-radius: 50%;
+    }
+
+    .pelota1 {
+        display: flex;
         width: 5rem;
         height: 5rem;
+        animation: movPelota1 3s ease-in-out infinite;
+        left: 5%;
     }
+
     .pelota2 {
+        display: flex;
         width: 6rem;
         height: 6rem;
         transform: translateY(-150%);
+        animation: movPelota2 3s ease-in-out infinite;
+        left: 80%;
+        animation-delay: 0.5s;
     }
 
     @keyframes movPelota1 {
@@ -813,48 +807,67 @@ footer a {
 
     }
 
-    .content-portada h1{
-     
+    @keyframes movPelota2 {
+
+        0%,
+        100% {
+            transform: translateY(-150%);
+        }
+
+        50% {
+            transform: translateY(-140%);
+        }
+
+    }
+
+    .content-portada h1 {
+
         width: 60%;
     }
 
-    .textoArticulo1 h4, .textoArticulo2 h4{
+    .textoArticulo1 h4,
+    .textoArticulo2 h4 {
         font-size: 1.2rem;
         margin: 0;
     }
-    .textoArticulo1 h3, .textoArticulo2 h3{
+
+    .textoArticulo1 h3,
+    .textoArticulo2 h3 {
         margin-block: 1.5rem;
         font-size: 1.5rem;
         font-family: 'bernadette';
     }
-    
+
 
     /*METODOLOGIA*/
 
-    #seccionTextosMetodologia{
+    #seccionTextosMetodologia {
         width: 80%;
         gap: 1rem;
     }
 
-    .articulo1{
+    .articulo1 {
         flex-direction: row;
         justify-content: center;
         gap: 5rem;
 
 
     }
-    .articulo1 img, .articulo2 img{
+
+    .articulo1 img,
+    .articulo2 img {
         width: 40%;
     }
 
-    .articulo2{
+    .articulo2 {
         flex-direction: row-reverse;
         justify-content: center;
         gap: 5rem;
 
 
     }
-    .textoArticulo2{
+
+    .textoArticulo2 {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -867,11 +880,13 @@ footer a {
         width: 100%;
         filter: grayscale(1);
     }
+
     #bloqueIntegrantes {
         gap: 5rem;
     }
+
     .cajaIntegrantes h3 {
-       font-size: 3rem;
+        font-size: 3rem;
     }
 
     /*SECCION INTEGRANTES*/
@@ -967,8 +982,8 @@ footer a {
 
 @media only screen and (min-width:1000px) {
 
-    .content-portada h1{
-     
+    .content-portada h1 {
+
         margin-top: -3rem;
     }
 
@@ -1069,11 +1084,13 @@ footer a {
         width: 80%;
         filter: grayscale(1);
     }
+
     #bloqueIntegrantes {
         gap: 5rem;
     }
+
     .cajaIntegrantes h3 {
-       font-size: 3rem;
+        font-size: 3rem;
     }
 
     /*SECCION INTEGRANTES*/
@@ -1236,7 +1253,8 @@ footer a {
 
 @media only screen and (min-width:1300px) {
 
-    .articulo1 img, .articulo2 img{
+    .articulo1 img,
+    .articulo2 img {
         width: 20%;
     }
 
@@ -1268,7 +1286,8 @@ footer a {
     .portada {
         height: 34.8rem;
     }
-    .content-portada h1{
+
+    .content-portada h1 {
         font-size: 4rem;
         width: 100%;
     }
@@ -1344,6 +1363,7 @@ footer a {
         width: 60%;
         filter: grayscale(1);
     }
+
     #bloqueIntegrantes {
         gap: 0rem;
     }
@@ -1367,24 +1387,25 @@ footer a {
 @media only screen and (min-width:1600px) {
 
     /*Pelotas*/
-   
+
     .pelota2 {
         width: 6rem;
         height: 6rem;
         transform: translateY(160%);
         left: 35%;
     }
+
     @keyframes movPelota1 {
 
         0%,
         100% {
             transform: translateY(0%);
         }
-    
+
         50% {
             transform: translateY(-10%);
         }
-    
+
     }
 
     @keyframes movPelota2 {
@@ -1400,10 +1421,11 @@ footer a {
 
     }
 
-    .content-portada h1{
-    
+    .content-portada h1 {
+
         width: 70%;
     }
+
     /*AGENCIA PORTADA*/
 
     .foto-lonja {
@@ -1453,7 +1475,7 @@ footer a {
 }
 
 @media only screen and (min-width:1800px) {
-    
+
 
     #cajaRobot {
         transform: translate(80%, -17%);

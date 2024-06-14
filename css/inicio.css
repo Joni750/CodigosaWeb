@@ -428,80 +428,24 @@ h5 {
 /*Pelotas*/
 
 
-
-.pelotaNegra {
-    position: absolute;
-    background: radial-gradient(circle at 30% 35%, #202020, #000 80%);
-    border-radius: 50%;
-}
-
 .pelota1 {
-    width: 4.5rem;
-    height: 4.5rem;
-    animation: movPelota1 3s ease-in-out infinite;
-    left: 5%;
+    display: none;
+
 }
 
 .pelota2 {
-    width: 4rem;
-    height: 4rem;
-    animation: movPelota2 3s ease-in-out infinite;
-    transform: translateY(230%);
-    left: 80%;
-    animation-delay: 0.5s;
+    display: none;
+
 }
 
 
 .pelota3 {
-    width: 5rem;
-    height: 5rem;
-    animation: movPelota3 3s ease-in-out infinite;
-    transform: translateY(1690%);
-    animation-delay: 1s;
-    left: 75%;
+    display: none;
 }
 
 
 
-@keyframes movPelota1 {
 
-    0%,
-    100% {
-        transform: translateY(90%);
-    }
-
-    50% {
-        transform: translateY(80%);
-    }
-
-}
-
-
-@keyframes movPelota2 {
-
-    0%,
-    100% {
-        transform: translateY(230%);
-    }
-
-    50% {
-        transform: translateY(220%);
-    }
-
-}
-
-@keyframes movPelota3 {
-
-    0%,
-    100% {
-        transform: translateY(1690%);
-    }
-
-    50% {
-        transform: translateY(1700%);
-    }
-
-}
 
 
 
@@ -630,7 +574,7 @@ video {
 @media only screen and (min-width:600px) {
 
     /*Pelotas*/
-    .pelota3 {
+    /* .pelota3 {
         transform: translateY(1730%);
     }
 
@@ -645,7 +589,7 @@ video {
             transform: translateY(1720%);
         }
 
-    }
+    } */
 }
 
 /*FOOTER*/
@@ -653,7 +597,7 @@ video {
 
     /*Pelotas*/
 
-    .pelota3 {
+    /* .pelota3 {
         transform: translateY(1780%);
     }
 
@@ -668,7 +612,7 @@ video {
             transform: translateY(1770%);
         }
 
-    }
+    } */
 
     /*PRECIOS*/
 
@@ -714,7 +658,7 @@ video {
 @media only screen and (min-width:800px) {
 
     /*Pelotas*/
-
+/* 
     .pelota3 {
         transform: translateY(1820%);
     }
@@ -730,7 +674,7 @@ video {
             transform: translateY(1810%);
         }
 
-    }
+    } */
 
 }
 
@@ -738,8 +682,67 @@ video {
 
     /*Pelotas*/
 
+    .pelotaNegra {
+        position: absolute;
+        background: radial-gradient(circle at 30% 35%, #202020, #000 80%);
+        border-radius: 50%;
+    }
+    
+    .pelota1 {
+        display: flex;
+        width: 4.5rem;
+        height: 4.5rem;
+        animation: movPelota1 3s ease-in-out infinite;
+        left: 5%;
+    }
+    
+    .pelota2 {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        animation: movPelota2 3s ease-in-out infinite;
+        transform: translateY(230%);
+        left: 80%;
+        animation-delay: 0.5s;
+    }
+    
+    
+    
+
     .pelota3 {
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+        animation: movPelota3 3s ease-in-out infinite;
         transform: translateY(1750%);
+        animation-delay: 1s;
+        left: 75%;
+    }
+    @keyframes movPelota1 {
+
+        0%,
+        100% {
+            transform: translateY(90%);
+        }
+    
+        50% {
+            transform: translateY(80%);
+        }
+    
+    }
+    
+    
+    @keyframes movPelota2 {
+    
+        0%,
+        100% {
+            transform: translateY(230%);
+        }
+    
+        50% {
+            transform: translateY(220%);
+        }
+    
     }
 
     @keyframes movPelota3 {
