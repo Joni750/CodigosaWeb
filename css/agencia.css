@@ -880,6 +880,9 @@ footer a {
         width: 100%;
         filter: grayscale(1);
     }
+    .carousel-track img{
+        filter: grayscale(1);
+    }
 
     #bloqueIntegrantes {
         gap: 5rem;
