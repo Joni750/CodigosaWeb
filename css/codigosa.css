@@ -322,6 +322,11 @@ header.abajo span {
     padding-block: 3rem;
 }
 
+
+.carousel-track img{
+    box-shadow: 0.3rem 0.3rem 1rem #0005;
+}
+
 .carousel-slide {
     min-width: 100%;
     /* Ajusta el ancho para tener en cuenta el gap */
