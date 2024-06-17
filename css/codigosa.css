@@ -439,8 +439,14 @@ footer a {
     color: #FFDC84;
 }
 
-video {
-    display: none;
+
+.video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.video video{
+    width: 100%;
 }
 
 @media only screen and (min-width:660px) {
@@ -664,11 +670,8 @@ video {
 
     /* VIDEO */
 
-    .video{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-bottom: 10rem;
+    .video video{
+        width: 100%;
     }
 
     .fotos img{
