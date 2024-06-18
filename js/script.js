@@ -384,3 +384,31 @@ document.addEventListener('DOMContentLoaded', function () {
     carouselTrack3.addEventListener('mouseover', pauseAnimation);
     carouselTrack3.addEventListener('mouseout', resumeAnimation);
 });
+
+
+
+/*PRUEBA CARRUSELL SERVICIOS*/
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const carouselImages = document.querySelector('.carousel-images');
+//     const images = Array.from(carouselImages.children);
+
+//     const checkImages = () => {
+//         const firstImage = images[0];
+//         const firstImageRect = firstImage.getBoundingClientRect();
+
+//         // Si la primera imagen ha salido completamente del contenedor
+//         if (firstImageRect.right < 0) {
+//              // Duplicamos las imágenes para crear un efecto infinito
+//             const clone = firstImage.cloneNode(true);
+//             carouselImages.appendChild(clone);
+
+//             carouselImages.removeChild(firstImage); // Eliminar la imagen del DOM
+         
+//         }
+
+//         requestAnimationFrame(checkImages);
+//     };
+
+//     checkImages();
+// });

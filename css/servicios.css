@@ -314,24 +314,61 @@ header.abajo span {
 .carousel-images a{
     width: 300px;
     padding: 0 40px;
+  
 }
 
 .carousel-images img {
     width: 100%; 
     height: auto;
     transition: transform 0.5s ease; 
+
+    box-shadow: 0.3rem 0.3rem 1rem #0005;
 }
     
-.carousel-images img:hover {
+.carousel-images img:hover, .carousel-images2 img:hover {
     transform: scale(1.1); 
 }
+
+
+
+
+.carousel-images2 {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scroll2 50s linear infinite; 
+}
+
+.carousel-images2 a{
+    width: 100%;
+    padding: 0 10rem;
+    margin-inline:-15rem;
+}
+
+.carousel-images2 img {
+    width: 20%; 
+    height: auto;
+    transition: transform 0.5s ease; 
+}
+
+    
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-66.7%);
+    }
+}
+
+
     
 @keyframes scroll {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-75%);
     }
 }
 
@@ -673,6 +710,15 @@ footer a {
     .carousel-images a{
         width: 600px;
     }
+
+    .carousel-images2 a{
+        margin: 0;
+        padding-inline: 6rem;
+    }
+    .carousel-images2 img{
+        width: 50%;
+    }
+
 
     /* PELOTAS */
 
