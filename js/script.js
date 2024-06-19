@@ -213,6 +213,777 @@ window.addEventListener('resize', () => {
 
 // Scroll inicio proyectos destacados
 
+function adaptarTextoRotatorio() {
+
+
+    var destacados = document.getElementById('destacadosTitulo');
+
+    console.log(window.scrollY)
+    console.log("width: " + window.innerWidth)
+
+    if (window.innerWidth >= 1200) {
+
+        /*Verificamos que rango de resulucion tiene, en funcion de eso
+        tendra un scroll concreto y una colocacion concreta*/
+
+
+        if (window.innerWidth >= 1900) {
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2582 && window.scrollY < 3419) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3419) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3880px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3030px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2593 && window.scrollY < 3455) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "420px";                 
+                } else if (window.scrollY >= 3455) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3880px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3030px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2625 && window.scrollY < 3441) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "395px";                
+                } else if (window.scrollY >= 3441) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3840px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3010px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2592 && window.scrollY < 3419) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3419) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3810px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2970px";
+    
+                }
+            }else{
+                if (window.scrollY > 2600 && window.scrollY < 3445) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "355px";                 
+                } else if (window.scrollY >= 3445) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3800px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2955px";
+    
+                }
+            }
+            
+        } else if (window.innerWidth >= 1800) {
+
+
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2582 && window.scrollY < 3419) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3419) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3825px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3000px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2547 && window.scrollY < 3355) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "435px";                 
+                } else if (window.scrollY >= 3355) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3800px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2980px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2543 && window.scrollY < 3383) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "400px";                
+                } else if (window.scrollY >= 3383) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3780px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2950px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2522 && window.scrollY < 3349) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3349) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3730px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2915px";
+    
+                }
+            }else{
+                if (window.scrollY > 2531 && window.scrollY < 3356) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "355px";                 
+                } else if (window.scrollY >= 3356) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3700px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2885px";
+    
+                }
+            }
+
+        }
+        else if (window.innerWidth >= 1700) {
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2548 && window.scrollY < 3336) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3336) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3790px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3010px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2547 && window.scrollY < 3331) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "435px";                 
+                } else if (window.scrollY >= 3331) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3765px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2980px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2543 && window.scrollY < 3328) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "400px";                
+                } else if (window.scrollY >= 3328) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3735px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2950px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2522 && window.scrollY < 3329) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3329) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3710px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2915px";
+    
+                }
+            }else{
+                if (window.scrollY > 2531 && window.scrollY < 3356) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "355px";                 
+                } else if (window.scrollY >= 3356) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3700px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2885px";
+    
+                }
+            }
+        }else if (window.innerWidth >= 1600) {
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2548 && window.scrollY < 3336) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3336) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3790px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3010px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2547 && window.scrollY < 3331) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "435px";                 
+                } else if (window.scrollY >= 3331) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3765px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2980px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2543 && window.scrollY < 3328) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "400px";                
+                } else if (window.scrollY >= 3328) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3735px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2950px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2522 && window.scrollY < 3329) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3329) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3710px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2915px";
+    
+                }
+            }else{
+                if (window.scrollY > 2496 && window.scrollY < 3265) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "355px";                 
+                } else if (window.scrollY >= 3265) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3620px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2845px";
+    
+                }
+            }
+        } else if (window.innerWidth >= 1500) {
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2548 && window.scrollY < 3276) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3276) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3730px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2995px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2538 && window.scrollY < 3265) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "435px";                 
+                } else if (window.scrollY >= 3265) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3695px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2970px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2525 && window.scrollY < 3252) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "400px";                
+                } else if (window.scrollY >= 3252) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3655px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2930px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2522 && window.scrollY < 3242) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3242) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3625px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2895px";
+    
+                }
+            }else{
+                if (window.scrollY > 2496 && window.scrollY < 3235) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "355px";                 
+                } else if (window.scrollY >= 3235) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3595px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2845px";
+    
+                }
+            }
+        } else if (window.innerWidth >= 1400) {
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2493 && window.scrollY < 3187) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3187) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3640px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2945px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2476 && window.scrollY < 3176) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "435px";                 
+                } else if (window.scrollY >= 3176) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3605px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2910px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2472 && window.scrollY < 3164) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "410px";                
+                } else if (window.scrollY >= 3164) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3575px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2880px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2460 && window.scrollY < 3152) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3152) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3540px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2845px";
+    
+                }
+            }else{
+                if (window.scrollY > 2450 && window.scrollY < 3147) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "357px";                 
+                } else if (window.scrollY >= 3147) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3495px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2805px";
+    
+                }
+            }
+        } else if (window.innerWidth >= 1300) {
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2431 && window.scrollY < 3106) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3106) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3560px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2885px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2433 && window.scrollY < 3105) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "425px";                 
+                } else if (window.scrollY >= 3105) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3535px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2855px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2425 && window.scrollY < 3095) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "400px";                
+                } else if (window.scrollY >= 3095) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3495px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2825px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2412 && window.scrollY < 3083) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3083) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3460px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2790px";
+    
+                }
+            }else{
+                if (window.scrollY > 2400 && window.scrollY < 3073) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "353px";                 
+                } else if (window.scrollY >= 3073) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3428px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2750px";
+    
+                }
+            }
+        }else if (window.innerWidth >= 1250) {
+
+            
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2396 && window.scrollY < 3051) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3051) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3500px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2850px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2388 && window.scrollY < 3045) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "425px";                 
+                } else if (window.scrollY >= 3045) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3465px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2820px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2378 && window.scrollY < 3030) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "400px";                
+                } else if (window.scrollY >= 3030) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3435px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2785px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2376 && window.scrollY < 3020) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3020) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3400px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2755px";
+    
+                }
+            }else{
+                if (window.scrollY > 2362 && window.scrollY < 3009) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "353px";                 
+                } else if (window.scrollY >= 3009) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3368px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2715px";
+    
+                }
+            }
+        }else {
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2372 && window.scrollY < 3000) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3000) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3450px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2820px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2366 && window.scrollY < 2999) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "425px";                 
+                } else if (window.scrollY >= 2999) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3425px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2795px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2351 && window.scrollY < 2985) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "400px";                
+                } else if (window.scrollY >= 2985) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3385px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2755px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2340 && window.scrollY < 2974) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 2974) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3355px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2720px";
+    
+                }
+            }else{
+                if (window.scrollY > 2332 && window.scrollY < 2965) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "353px";                 
+                } else if (window.scrollY >= 2965) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3318px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2685px";
+    
+                }
+            }
+        }
+
+    } else {
+        destacados.style.top = "initial";
+        destacados.style.position = "initial";
+    }
+
+
+
+
+}
+
 window.addEventListener("scroll", adaptarTextoRotatorio);
 window.addEventListener("DOMContentLoaded", adaptarTextoRotatorio);
 window.addEventListener("resize", adaptarTextoRotatorio);
