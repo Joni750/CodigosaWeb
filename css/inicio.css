@@ -1158,8 +1158,6 @@ video {
         width: 7rem;
         height: 7rem;
         transform: translateY(1330%);
-
-
     }
 
     @keyframes movPelota3 {
@@ -1172,9 +1170,7 @@ video {
             transform: translateY(1320%);
         }
     }
-
-
-
+    
     .portada {
         height: 54vh;
     }

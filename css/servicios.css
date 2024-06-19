@@ -209,7 +209,7 @@ header.abajo span {
 
 /* PORTADA */
 
-.portada-proyectos {
+.portada-servicios {
     background-image: url(../img/portada.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -219,13 +219,13 @@ header.abajo span {
     padding-bottom: 0%;
 }
 
-.content-portada-proyectos {
+.content-portada-servicios {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.content-portada-proyectos h1{
+.content-portada-servicios h1{
     font-size: 2.5em;
 }
 
@@ -425,7 +425,7 @@ footer a {
 
     /* PORTADA */
 
-    .portada-proyectos {
+    .portada-servicios {
         padding-bottom: 12%;
     }
 
@@ -445,7 +445,7 @@ footer a {
 
     /* PORTADA */
 
-    .portada-proyectos {
+    .portada-servicios {
         padding-bottom: 26%;
     }
 
@@ -479,7 +479,7 @@ footer a {
 
     /* PORTADA */
 
-    .portada-proyectos {
+    .portada-servicios {
         padding-bottom: 18%;
     }
 
@@ -595,7 +595,7 @@ footer a {
 
     /* PORTADA */
 
-    .portada-proyectos {
+    .portada-servicios {
         padding-top: 35%;
         padding-bottom: 25%;
     }
@@ -650,11 +650,11 @@ footer a {
 
     /* PORTADA */
 
-    .content-portada-proyectos h1{
+    .content-portada-servicios h1{
        font-size: 5em;
     }
 
-    .portada-proyectos{
+    .portada-servicios{
         padding-top: 19%;
         padding-bottom: 13%;
     }
@@ -805,6 +805,10 @@ footer a {
 
     .circle2 {
         clip-path: circle(205% at 50% 848%);
+    }
+
+    .portada-servicios {
+        height: 54vh;
     }
 
 }

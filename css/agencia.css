@@ -1490,13 +1490,13 @@ footer a {
         transform: rotate(-90deg) translate(58%, -505%);
     }
 
+    .portada {
+        height: 54vh;
+    }
+
 }
 
 @media only screen and (min-width:1900px) {
-    .portada {
-        height: 30rem;
-    }
-
 
     #destacado h2 {
         transform: rotate(-90deg) translate(58%, -535%);
