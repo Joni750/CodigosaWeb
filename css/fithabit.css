@@ -698,45 +698,45 @@ video {
     /*CARROUSELL IMAGENES*/
     
     .carousel-slide img {
-        width: 50%;
+        width: 40%;
         display: block;
     }
 
     .carousel-slide {
-        margin: 0 -23%;
+        margin: 0 -28%;
     }
 
     @keyframes scroll {
         0% {
-            transform: translateX(54%);
+            transform: translateX(65%);
         }
 
         20% {
-            transform: translateX(54%);
+            transform: translateX(65%);
         }
 
         25% {
-            transform: translateX(0%);
+            transform: translateX(21%);
         }
 
         45% {
-            transform: translateX(0%);
+            transform: translateX(21%);
         }
 
         50% {
-            transform: translateX(-54%);
+            transform: translateX(-23%);
         }
 
         70% {
-            transform: translateX(-54%);
+            transform: translateX(-23%);
         }
 
         75% {
-            transform: translateX(54%);
+            transform: translateX(65%);
         }
 
         100% {
-            transform: translateX(54%);
+            transform: translateX(65%);
         }
     }
 
@@ -792,6 +792,53 @@ video {
 
     .circle {
         clip-path: circle(200% at 50% 975%);
+    }
+
+
+    
+    /*CARROUSELL IMAGENES*/
+    
+    .carousel-slide img {
+        width: 25%;
+        display: block;
+    }
+
+    .carousel-slide {
+        margin: 0 -33%;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(51%);
+        }
+
+        20% {
+            transform: translateX(51%);
+        }
+
+        25% {
+            transform: translateX(17%);
+        }
+
+        45% {
+            transform: translateX(17%);
+        }
+
+        50% {
+            transform: translateX(-17%);
+        }
+
+        70% {
+            transform: translateX(-17%);
+        }
+
+        75% {
+            transform: translateX(51%);
+        }
+
+        100% {
+            transform: translateX(51%);
+        }
     }
 
 }
