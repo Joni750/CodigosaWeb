@@ -213,6 +213,12 @@ window.addEventListener('resize', () => {
 
 // Scroll inicio proyectos destacados
 
+
+
+window.addEventListener("scroll", adaptarTextoRotatorio);
+window.addEventListener("DOMContentLoaded", adaptarTextoRotatorio);
+window.addEventListener("resize", adaptarTextoRotatorio);
+
 function adaptarTextoRotatorio() {
 
 
@@ -984,181 +990,6 @@ function adaptarTextoRotatorio() {
 
 }
 
-window.addEventListener("scroll", adaptarTextoRotatorio);
-window.addEventListener("DOMContentLoaded", adaptarTextoRotatorio);
-window.addEventListener("resize", adaptarTextoRotatorio);
-
-
-function adaptarTextoRotatorio() {
-
-
-    var destacados = document.getElementById('destacadosTitulo');
-
-    console.log(window.scrollY)
-    console.log("width: " + window.innerWidth)
-
-    if (window.innerWidth >= 1200) {
-
-        /*Verificamos que rango de resulucion tiene, en funcion de eso
-        tendra un scroll concreto y una colocacion concreta*/
-
-        if(window.innerWidth >= 2500){
-            if (window.scrollY > 2860 && window.scrollY < 3740) {
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "600px";
-            } else if (window.scrollY >= 3740) {
-                destacados.style.position = "absolute";
-                destacados.style.top = "4240px";
-            } else {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3450px";
-            }
-        }else if(window.innerWidth >= 2300){
-            if (window.scrollY > 2682 && window.scrollY < 3640) {
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "500px";
-            } else if (window.scrollY >= 3640) {
-                destacados.style.position = "absolute";
-                destacados.style.top = "4140px";
-            } else {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3175px";
-            }
-        }else if(window.innerWidth >= 2100){
-            if (window.scrollY > 2582 && window.scrollY < 3460) {
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "520px";
-            } else if (window.scrollY >= 3419) {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3930px";
-            } else {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3110px";
-            }
-        }else if (window.innerWidth >= 1900) {
-            if (window.scrollY > 2582 && window.scrollY < 3419) {
-
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "450px";
-            } else if (window.scrollY >= 3419) {
-
-                destacados.style.position = "absolute";
-                destacados.style.top = "3880px";
-            } else {
-
-                destacados.style.position = "absolute";
-                destacados.style.top = "3030px";
-
-            }
-        } else if (window.innerWidth >= 1800) {
-            if (window.scrollY > 2540 && window.scrollY < 3357) {
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "450px";
-            } else if (window.scrollY >= 3357) {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3825px";
-            } else {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3000px";
-            }
-        }
-        else if (window.innerWidth >= 1700) {
-            if (window.scrollY > 2532 && window.scrollY < 3336) {
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "450px";
-            } else if (window.scrollY >= 3336) {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3800px";
-            } else {
-                destacados.style.position = "absolute";
-                destacados.style.top = "2990px";
-            }
-        }else if (window.innerWidth >= 1600) {
-            if (window.scrollY > 2493 && window.scrollY < 3271) {
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "450px";
-            } else if (window.scrollY >= 3271) {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3730px";
-            } else {
-                destacados.style.position = "absolute";
-                destacados.style.top = "2960px";
-            }
-        } else if (window.innerWidth >= 1500) {
-            if (window.scrollY > 2549 && window.scrollY < 3273) {
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "450px";
-            } else if (window.scrollY >= 3273) {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3715px";
-            } else {
-                destacados.style.position = "absolute";
-                destacados.style.top = "2990px";
-            }
-        } else if (window.innerWidth >= 1400) {
-            if (window.scrollY > 2490 && window.scrollY < 3186) {
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "450px";
-            } else if (window.scrollY >= 3186) {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3635px";
-            } else {
-                destacados.style.position = "absolute";
-                destacados.style.top = "2935px";
-            }
-        } else if (window.innerWidth >= 1300) {
-            if (window.scrollY > 2444 && window.scrollY < 3116) {
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "450px";
-            } else if (window.scrollY >= 3116) {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3565px";
-            } else {
-                destacados.style.position = "absolute";
-                destacados.style.top = "2880px";
-            }
-        }else if (window.innerWidth >= 1250) {
-            if (window.scrollY > 2382 && window.scrollY < 3023) {
-                destacados.style.position = "fixed";
-                destacados.style.marginTop = "initial";
-                destacados.style.top = "450px";
-            } else if (window.scrollY >= 3023) {
-                destacados.style.position = "absolute";
-                destacados.style.top = "3500px";
-            } else {
-                destacados.style.position = "absolute";
-                destacados.style.top = "2840px";
-            }
-        }else {
-            // if (window.scrollY > 2348 && window.scrollY < 2977) {
-            //     destacados.style.position = "fixed";
-            //     destacados.style.marginTop = "initial";
-            //     destacados.style.top = "450px";
-            // } else if (window.scrollY >= 2977) {
-            //     destacados.style.position = "absolute";
-            //     destacados.style.top = "3430px";
-            // } else {
-            //     destacados.style.position = "absolute";
-            //     destacados.style.top = "2810px";
-            // }
-        }
-
-    } else {
-        destacados.style.top = "initial";
-        destacados.style.position = "initial";
-    }
-
-}
 
 // Carrusel servicios
 
