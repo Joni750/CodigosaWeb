@@ -531,6 +531,20 @@ h3 {
     width: 80%;
 }
 
+.proyectoDestacado a{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.proyectoDestacado img{
+    transition: transform 0.5s ease; 
+}
+
+.proyectoDestacado img:hover{
+    transform: scale(1.1); 
+}
+
 /*FOOTER*/
 
 footer {

@@ -812,3 +812,17 @@ footer a {
     }
 
 }
+
+@media only screen and (min-width:2500px) {
+
+    /* SERVICIOS */
+
+    .circle {
+        clip-path: circle(205% at 50% 1075%);
+    }
+
+    .circle2 {
+        clip-path: circle(205% at 50% 1135%);
+    }
+
+}
