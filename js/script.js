@@ -1020,30 +1020,25 @@ document.addEventListener('DOMContentLoaded', function () {
     carouselTrack3.addEventListener('mouseout', resumeAnimation);
 });
 
+//Animación sections
 
+document.addEventListener("DOMContentLoaded", function() {
 
-/*PRUEBA CARRUSELL SERVICIOS*/
+    const animarElements = document.querySelectorAll('.animar');
+    function checkVisibility() {
+        const triggerBottom = window.innerHeight / 5 * 4;
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const carouselImages = document.querySelector('.carousel-images');
-//     const images = Array.from(carouselImages.children);
+        animarElements.forEach(element => {
+            const boxTop = element.getBoundingClientRect().top;
 
-//     const checkImages = () => {
-//         const firstImage = images[0];
-//         const firstImageRect = firstImage.getBoundingClientRect();
+            if (boxTop < triggerBottom) {
+                element.classList.add('visible');
+            } else {
+                element.classList.remove('visible');
+            }
+        });
+    }
 
-//         // Si la primera imagen ha salido completamente del contenedor
-//         if (firstImageRect.right < 0) {
-//              // Duplicamos las imágenes para crear un efecto infinito
-//             const clone = firstImage.cloneNode(true);
-//             carouselImages.appendChild(clone);
-
-//             carouselImages.removeChild(firstImage); // Eliminar la imagen del DOM
-         
-//         }
-
-//         requestAnimationFrame(checkImages);
-//     };
-
-//     checkImages();
-// });
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+});

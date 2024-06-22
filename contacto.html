@@ -113,68 +113,72 @@
 
     </header>
 
-    <section class="portada">
-        <div class="content-portada">
-            <section id="seccionPortadaDecorado">
-                <h1>¿Quieres <span class="bernadette amarillo">contactarnos?</span></h1>
-                <h2>Si quieres digitalizar tu <span class="bernadette amarillo">negocio</span>, contáctanos</h2>
-                <div id="fotosPortadaContacto">
-                    <img src="img/imagenesLonja/pizarra.jpg" alt="" class="foto1">
-                    <img src="img/fotoTrabajando.jpg" alt="" class="foto2">
-                </div>
-            </section>
-
-            <form action="" id="formularioContacto">
-                <div class="bloqueForm1">
-                    <div class="cajaTexto">
-                        <label for="">Nombre*</label>
-                        <input type="text">
-                    </div>
-                    <div class="cajaTexto">
-                        <label for="">Apellidos*</label>
-                        <input type="text">
-                    </div>
-                </div>
-
-                <div class="bloqueForm1">
-                    <div class="cajaTexto">
-                        <label for="">Email*</label>
-                        <input type="text">
-                    </div>
-                    <div class="cajaTexto">
-                        <label for="">Teléfono*</label>
-                        <input type="text">
-                    </div>
-                </div>
-
-                <div class="bloqueForm1">
-                    <div class="cajaTexto">
-                        <label for="">Trabajo*</label>
-                        <input type="text">
-                    </div>
-                    <div class="cajaTexto">
-                        <label for="">Presupuesto aproximado*</label>
-                        <!-- <input type="text"> -->
-                        <select name="">
-                            <option value="400">+400</option>
-                            <option value="750">+750</option>
-                            <option value="1000">+1000</option>
-                            <option value="1500">+1500</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="cajaTexto2">
-                    <label for="">Mensaje*</label>
-                    <textarea name="" id="" cols="100%" rows="10"></textarea>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- Precios -->
     <main>
-        <section>
+
+        <section class="portada">
+            <div class="content-portada">
+                <section id="seccionPortadaDecorado">
+                    <h1>¿Quieres <span class="bernadette amarillo">contactarnos?</span></h1>
+                    <h2>Si quieres digitalizar tu <span class="bernadette amarillo">negocio</span>, contáctanos</h2>
+                    <div id="fotosPortadaContacto">
+                        <img src="img/imagenesLonja/pizarra.jpg" alt="" class="foto1">
+                        <img src="img/fotoTrabajando.jpg" alt="" class="foto2">
+                    </div>
+                </section>
+
+                <form action="" method="POST" id="formularioContacto">
+                    <div class="bloqueForm1">
+                        <div class="cajaTexto">
+                            <label for="">Nombre*</label>
+                            <input type="text">
+                        </div>
+                        <div class="cajaTexto">
+                            <label for="">Apellidos*</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="bloqueForm1">
+                        <div class="cajaTexto">
+                            <label for="">Email*</label>
+                            <input type="text">
+                        </div>
+                        <div class="cajaTexto">
+                            <label for="">Teléfono*</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="bloqueForm1">
+                        <div class="cajaTexto">
+                            <label for="">Trabajo*</label>
+                            <input type="text">
+                        </div>
+                        <div class="cajaTexto">
+                            <label for="">Presupuesto aproximado*</label>
+                            <!-- <input type="text"> -->
+                            <select name="">
+                                <option value="400">+400</option>
+                                <option value="750">+750</option>
+                                <option value="1000">+1000</option>
+                                <option value="1500">+1500</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cajaTexto2">
+                        <label for="">Mensaje*</label>
+                        <textarea name="" id="" cols="100%" rows="10"></textarea>
+                    </div>
+
+                    <button id="button-contact">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Precios -->
+
+        <section class="animar">
             <div class="pelotaAmarilla pelota1"></div>
             <div class="pelotaAmarilla pelota2"></div>
             <div class="pelotaAmarilla pelota3"></div>
@@ -193,6 +197,7 @@
             </div>
             <img src="img/imagenesLonja/telefono.jpg" alt="" class="foto3">
         </section>
+
     </main>
 
 

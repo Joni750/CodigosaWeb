@@ -1,7 +1,3 @@
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -329,6 +325,19 @@ header.abajo span {
 
 #cercania{
     background-color: #FFDC84;
+}
+
+/* Animacón para arriba */
+
+.animar {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: all 0.5s ease-out;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*FOOTER*/

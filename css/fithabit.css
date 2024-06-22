@@ -437,8 +437,22 @@ footer a {
 #derechos span {
     color: #000;
 }
+
 video {
     display: none;
+}
+
+/* Animacón para arriba */
+
+.animar {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: all 0.5s ease-out;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media only screen and (min-width:660px) {

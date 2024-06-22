@@ -282,7 +282,6 @@ header.abajo span {
     background-color: #141414;
     box-shadow: 0rem 0rem 1.5rem #0008;
     border-radius: 1rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -328,7 +327,6 @@ header.abajo span {
 }
 .cajaTexto option{
     background: #141414;
-
     border-radius: 0.5rem;
     padding-block: 4rem;
     color: #fff;
@@ -357,6 +355,50 @@ header.abajo span {
     gap: 0.5rem;
 }
 
+#button-contact{
+    width: 100%;
+    padding: 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #FFDC84;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Montserrat';
+    font-size: large;
+    font-weight: 500;
+    transition: all 250ms;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#button-contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #ffe9b1;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+
+#button-contact:hover {
+    box-shadow: 4px 8px 19px -3px rgba(255, 255, 255, 0.205);
+}
+   
+#button-contact:hover::before {
+    width: 100%;
+}
+
 .foto1 {
     max-width: 50%;
     width: 25rem;
@@ -376,6 +418,19 @@ header.abajo span {
 .bernadette {
     font-family: 'bernadette';
     font-weight: lighter;
+}
+
+/* Animacón para arriba */
+
+.animar {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: all 0.5s ease-out;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*FOOTER*/
@@ -1189,9 +1244,8 @@ footer a {
 @media only screen and (min-width:1800px) {
 
     .portada {
-        margin-bottom: 22rem;
+        margin-bottom: 8rem;
     }
-
 
 }
 

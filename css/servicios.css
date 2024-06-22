@@ -329,9 +329,6 @@ header.abajo span {
     transform: scale(1.1); 
 }
 
-
-
-
 .carousel-images2 {
     display: flex;
     align-items: center;
@@ -350,7 +347,6 @@ header.abajo span {
     height: auto;
     transition: transform 0.5s ease; 
 }
-
     
 @keyframes scroll2 {
     0% {
@@ -360,8 +356,6 @@ header.abajo span {
         transform: translateX(-66.7%);
     }
 }
-
-
     
 @keyframes scroll {
     0% {
@@ -384,6 +378,19 @@ header.abajo span {
 
 .pelota3 {
     display: none;
+}
+
+/* Animacón para arriba */
+
+.animar {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: all 0.5s ease-out;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*FOOTER*/

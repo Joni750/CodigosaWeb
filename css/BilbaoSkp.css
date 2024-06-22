@@ -433,10 +433,10 @@ footer a {
     flex-direction: row;
     justify-content: center;
 }
+
 .video video{
     width: 100%;
 }
-
 
 @keyframes scroll {
     0% {
@@ -472,7 +472,18 @@ footer a {
     }
 }
 
-/*SECCION CARROUSELL IMAGENES*/
+/* Animacón para arriba */
+
+.animar {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: all 0.5s ease-out;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 @media only screen and (min-width:660px) {
 
