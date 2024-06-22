@@ -334,45 +334,45 @@ header.abajo span {
     transition: transform 0.5s ease-in-out;
     display: flex;
     justify-content: center;
-    margin: 0 -7%;
+    margin: 0 -10%;
 }
 
 .carousel-slide img {
-    width: 80%;
+    width: 70%;
     display: block;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(86%);
+        transform: translateX(120%);
     }
 
     20% {
-        transform: translateX(86%);
+        transform: translateX(120%);
     }
 
     25% {
-        transform: translateX(0%);
+        transform: translateX(40%);
     }
 
     45% {
-        transform: translateX(0%);
+        transform: translateX(40%);
     }
 
     50% {
-        transform: translateX(-86%);
+        transform: translateX(-40%);
     }
 
     70% {
-        transform: translateX(-86%);
+        transform: translateX(-40%);
     }
 
     75% {
-        transform: translateX(86%);
+        transform: translateX(120%);
     }
 
     100% {
-        transform: translateX(86%);
+        transform: translateX(120%);
     }
 }
 
@@ -529,44 +529,44 @@ video {
     /*CARROUSELL IMAGENES*/
 
     .carousel-slide img {
-        width: 60%;
+        width: 40%;
     }
 
     .carousel-slide {
-        margin: 0 -17%;
+        margin: 0 -25%;
     }
 
    @keyframes scroll {
        0% {
-           transform: translateX(66%);
+           transform: translateX(75%);
        }
 
        20% {
-           transform: translateX(66%);
+           transform: translateX(75%);
        }
 
        25% {
-           transform: translateX(0%);
+           transform: translateX(25%);
        }
 
        45% {
-           transform: translateX(0%);
+           transform: translateX(25%);
        }
 
        50% {
-           transform: translateX(-66%);
+           transform: translateX(-25%);
        }
 
        70% {
-           transform: translateX(-66%);
+           transform: translateX(-25%);
        }
 
        75% {
-           transform: translateX(66%);
+           transform: translateX(75%);
        }
 
        100% {
-           transform: translateX(66%);
+           transform: translateX(75%);
        }
    }
 
