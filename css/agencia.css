@@ -387,7 +387,7 @@ header.abajo span {
 
 .animar {
     opacity: 0;
-    transform: translateY(300px);
+    transform: translateY(100px);
     transition: all 0.5s ease-out;
 }
 
