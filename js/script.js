@@ -53,22 +53,20 @@ function scrollToTopAnimation() {
 
 //Flecha
 
-// var isScrolling = false;
+var isScrolling = false;
 
-// window.onscroll = function () {
-//     mostrarFlecha();
-// };
+window.onscroll = function () {
+    mostrarFlecha();
+};
 
-// function mostrarFlecha() {
-//     var flecha = document.querySelector('.flecha');
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//         flecha.style.display = 'block';
-//     } else {
-//         flecha.style.display = 'none';
-//     }
-// }
-
-
+function mostrarFlecha() {
+    var flecha = document.querySelector('.flecha');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        flecha.style.display = 'block';
+    } else {
+        flecha.style.display = 'none';
+    }
+}
 
 /*Adquirimos el logo para cambiarlo de color cuando queramos*/
 
