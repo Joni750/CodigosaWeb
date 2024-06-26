@@ -606,6 +606,10 @@ h3 {
 .svgIcon path {
     fill: white;
 }
+
+.flecha:hover{
+    background-color: rgb(90, 90, 90);
+}
   
 /* .flecha:hover {
     width: 140px;
