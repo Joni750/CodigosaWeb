@@ -209,9 +209,59 @@ window.addEventListener('resize', () => {
     }
 });
 
+// Carrusel servicios
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselTrack = document.querySelector('.car-img1');
+    const carouselTrack2 = document.querySelector('.car-img2');
+    const carouselTrack3 = document.querySelector('.car-img3');
+
+    function pauseAnimation() {
+        carouselTrack.style.animationPlayState = 'paused';
+        carouselTrack2.style.animationPlayState = 'paused';
+        carouselTrack3.style.animationPlayState = 'paused';
+    }
+
+    function resumeAnimation() {
+        carouselTrack.style.animationPlayState = 'running';
+        carouselTrack2.style.animationPlayState = 'running';
+        carouselTrack3.style.animationPlayState = 'running';
+    }
+
+    carouselTrack.addEventListener('mouseover', pauseAnimation);
+    carouselTrack.addEventListener('mouseout', resumeAnimation);
+
+    carouselTrack2.addEventListener('mouseover', pauseAnimation);
+    carouselTrack2.addEventListener('mouseout', resumeAnimation);
+
+    carouselTrack3.addEventListener('mouseover', pauseAnimation);
+    carouselTrack3.addEventListener('mouseout', resumeAnimation);
+});
+
+//Animación sections
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const animarElements = document.querySelectorAll('.animar');
+    function checkVisibility() {
+        const triggerBottom = window.innerHeight / 5 * 4;
+
+        animarElements.forEach(element => {
+            const boxTop = element.getBoundingClientRect().top;
+
+            if (boxTop < triggerBottom) {
+                element.classList.add('visible');
+            } else {
+                element.classList.remove('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+});
+
 // Scroll inicio proyectos destacados
-
-
 
 window.addEventListener("scroll", adaptarTextoRotatorio);
 window.addEventListener("DOMContentLoaded", adaptarTextoRotatorio);
@@ -231,7 +281,256 @@ function adaptarTextoRotatorio() {
         tendra un scroll concreto y una colocacion concreta*/
 
 
-        if (window.innerWidth >= 1900) {
+        if (window.innerWidth >= 2500) {
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 3000 && window.scrollY < 3740) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3419) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "4290px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3450px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2593 && window.scrollY < 3455) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "420px";                 
+                } else if (window.scrollY >= 3455) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3880px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3030px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2625 && window.scrollY < 3441) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "395px";                
+                } else if (window.scrollY >= 3441) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3840px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3010px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2592 && window.scrollY < 3419) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3419) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3810px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2970px";
+    
+                }
+            }else{
+                if (window.scrollY > 2600 && window.scrollY < 3445) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "355px";                 
+                } else if (window.scrollY >= 3445) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3800px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2955px";
+    
+                }
+            }
+            
+        } else if (window.innerWidth >= 2200) {
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2800 && window.scrollY < 3640) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3419) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "4100px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3260px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2593 && window.scrollY < 3455) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "420px";                 
+                } else if (window.scrollY >= 3455) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3880px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3030px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2625 && window.scrollY < 3441) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "395px";                
+                } else if (window.scrollY >= 3441) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3840px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3010px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2592 && window.scrollY < 3419) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3419) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3810px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2970px";
+    
+                }
+            }else{
+                if (window.scrollY > 2600 && window.scrollY < 3445) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "355px";                 
+                } else if (window.scrollY >= 3445) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3800px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2955px";
+    
+                }
+            }
+            
+        } else if (window.innerWidth >= 2000) {
+            if (window.innerHeight >= 900){
+                if (window.scrollY > 2700 && window.scrollY < 3530) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "450px";                 
+                } else if (window.scrollY >= 3419) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3980px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3150px";
+    
+                }
+            }else if (window.innerHeight >= 850){
+                if (window.scrollY > 2593 && window.scrollY < 3455) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "420px";                 
+                } else if (window.scrollY >= 3455) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3880px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3030px";
+    
+                }
+            }else if (window.innerHeight >= 800){
+                if (window.scrollY > 2625 && window.scrollY < 3441) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "395px";                
+                } else if (window.scrollY >= 3441) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3840px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3010px";
+    
+                }
+            }else if (window.innerHeight >= 750){
+                if (window.scrollY > 2592 && window.scrollY < 3419) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "380px";                 
+                } else if (window.scrollY >= 3419) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3810px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2970px";
+    
+                }
+            }else{
+                if (window.scrollY > 2600 && window.scrollY < 3445) {
+                    destacados.style.position = "fixed";
+                    destacados.style.marginTop = "initial";
+                    destacados.style.top = "355px";                 
+                } else if (window.scrollY >= 3445) {
+                    /*POST*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "3800px";
+    
+                } else {
+                    /*PRE*/
+                    destacados.style.position = "absolute";
+                    destacados.style.top = "2955px";
+    
+                }
+            }
+            
+        } else if (window.innerWidth >= 1900) {
             if (window.innerHeight >= 900){
                 if (window.scrollY > 2582 && window.scrollY < 3419) {
                     destacados.style.position = "fixed";
@@ -983,60 +1282,4 @@ function adaptarTextoRotatorio() {
         destacados.style.position = "initial";
     }
 
-
-
-
 }
-
-
-// Carrusel servicios
-
-document.addEventListener('DOMContentLoaded', function () {
-    const carouselTrack = document.querySelector('.car-img1');
-    const carouselTrack2 = document.querySelector('.car-img2');
-    const carouselTrack3 = document.querySelector('.car-img3');
-
-    function pauseAnimation() {
-        carouselTrack.style.animationPlayState = 'paused';
-        carouselTrack2.style.animationPlayState = 'paused';
-        carouselTrack3.style.animationPlayState = 'paused';
-    }
-
-    function resumeAnimation() {
-        carouselTrack.style.animationPlayState = 'running';
-        carouselTrack2.style.animationPlayState = 'running';
-        carouselTrack3.style.animationPlayState = 'running';
-    }
-
-    carouselTrack.addEventListener('mouseover', pauseAnimation);
-    carouselTrack.addEventListener('mouseout', resumeAnimation);
-
-    carouselTrack2.addEventListener('mouseover', pauseAnimation);
-    carouselTrack2.addEventListener('mouseout', resumeAnimation);
-
-    carouselTrack3.addEventListener('mouseover', pauseAnimation);
-    carouselTrack3.addEventListener('mouseout', resumeAnimation);
-});
-
-//Animación sections
-
-document.addEventListener("DOMContentLoaded", function() {
-
-    const animarElements = document.querySelectorAll('.animar');
-    function checkVisibility() {
-        const triggerBottom = window.innerHeight / 5 * 4;
-
-        animarElements.forEach(element => {
-            const boxTop = element.getBoundingClientRect().top;
-
-            if (boxTop < triggerBottom) {
-                element.classList.add('visible');
-            } else {
-                element.classList.remove('visible');
-            }
-        });
-    }
-
-    window.addEventListener('scroll', checkVisibility);
-    checkVisibility();
-});
