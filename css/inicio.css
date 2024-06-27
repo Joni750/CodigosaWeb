@@ -6,9 +6,6 @@ body {
     scroll-behavior: smooth;
     background-color: #141414;
     overflow-x: hidden;
-    /* background-image: url(../img/fondo.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 /* Menú */
@@ -152,7 +149,6 @@ header {
 }
 
 header.abajo {
-    /* background-color: rgb(255, 255, 255); */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -211,7 +207,7 @@ header.abajo span {
     font-size: 1.2em;
 }
 
-/* Portada */
+/* PORTADA */
 
 .portada {
     background-image: url(../img/portada.png);
@@ -309,7 +305,6 @@ header.abajo span {
     align-items: center;
     background-color: #FFDC84;
 }
-
 
 /*carrousell*/
 
@@ -466,33 +461,12 @@ h5 {
     display: none;
 }
 
-/*carrousell*/
-
 .triangle {
     width: 100%;
-    /*que ocupe el 100% de la pantalla en ancho*/
     height: 3rem;
-    /*Altura del triangulo*/
     background-color: #141414;
-    /* Cambia el color a tu gusto */
     clip-path: polygon(37% 0%, -4.5% 101%, 102% 101%);
-    /*
-    1 y 2 parametro = vertice superior, el 1 de los dos es posicion ejeX
-    2 eje Y
-
-    3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y
-    */
 }
-
-/*PRECIOS*/
-
-/*robot*/
-
-#cajaRobot {
-    display: none;
-}
-
-/*robot*/
 
 /* DESTACADOS */
 
@@ -651,48 +625,7 @@ video {
 
 }
 
-@media only screen and (min-width:600px) {
-
-    /*Pelotas*/
-    /* .pelota3 {
-        transform: translateY(1730%);
-    }
-
-    @keyframes movPelota3 {
-
-        0%,
-        100% {
-            transform: translateY(1730%);
-        }
-
-        50% {
-            transform: translateY(1720%);
-        }
-
-    } */
-}
-
-/*FOOTER*/
 @media only screen and (min-width:700px) {
-
-    /*Pelotas*/
-
-    /* .pelota3 {
-        transform: translateY(1780%);
-    }
-
-    @keyframes movPelota3 {
-
-        0%,
-        100% {
-            transform: translateY(1780%);
-        }
-
-        50% {
-            transform: translateY(1770%);
-        }
-
-    } */
 
     /*PRECIOS*/
 
@@ -731,31 +664,6 @@ video {
         font-size: 4rem;
     }
 
-    /*PRECIOS*/
-
-}
-
-@media only screen and (min-width:800px) {
-
-    /*Pelotas*/
-/* 
-    .pelota3 {
-        transform: translateY(1820%);
-    }
-
-    @keyframes movPelota3 {
-
-        0%,
-        100% {
-            transform: translateY(1820%);
-        }
-
-        50% {
-            transform: translateY(1810%);
-        }
-
-    } */
-
 }
 
 @media only screen and (min-width:900px) {
@@ -786,9 +694,6 @@ video {
         animation-delay: 0.5s;
     }
     
-    
-    
-
     .pelota3 {
         display: flex;
         width: 5rem;
@@ -798,6 +703,7 @@ video {
         animation-delay: 1s;
         left: 75%;
     }
+
     @keyframes movPelota1 {
 
         0%,
@@ -810,7 +716,6 @@ video {
         }
     
     }
-    
     
     @keyframes movPelota2 {
     
@@ -839,9 +744,7 @@ video {
     }
 
     .portada {
-
         height: 77vh;
-
     }
 
     .proyectoDestacado h4 {
@@ -883,7 +786,6 @@ video {
         margin-block: 10%;
         margin-bottom: 5%;
         height: 8rem;
-
     }
 
     #p2 {
@@ -892,13 +794,11 @@ video {
 
     #p1,
     #p2 {
-
         font-size: 6rem;
     }
 
-
-
     /*FOOTER*/
+
     footer {
         font-size: 100%;
     }
@@ -913,14 +813,12 @@ video {
 
     /*FOOTER*/
 
-
     .burger {
         display: none;
     }
 
     .menu {
         display: flex;
-
     }
 
     .menu ul {
@@ -949,13 +847,10 @@ video {
 
 }
 
-
-
 @media only screen and (min-width:1200px) {
     video {
         display: flex;
         width: 50%;
-        /* Ajusta el tamaño del video */
         transform: translateX(20%);
     }
 
@@ -1021,23 +916,10 @@ video {
         width: 90%;
     }
 
-    #cajaRobot {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        transform: translate(50%, -17%);
-        position: absolute;
-        width: 65rem;
-
-        /* Ajusta según sea necesario */
-        height: 45rem;
-    }
-
     /* PROYECTOS DESTACADOS */
 
     #destacadosTitulo {
         position: absolute;
-        /* font-size: 5.5rem; */
         transform: rotate(-90deg) translateY(-450%);
         margin: 0;
     }
@@ -1058,14 +940,7 @@ video {
 
 @media only screen and (min-width:1300px) {
 
-    #cajaRobot {
-        transform: translate(45%, -17%);
-        width: 70rem;
-        height: 45rem;
-    }
-
     /*PROYECTOS DESTACADOS*/
-
 
     h2 {
         font-size: 5.8rem;
@@ -1093,23 +968,18 @@ video {
         height: 8rem;
         transform: translateY(230%);
         left: 10%;
-
     }
 
     .pelota2 {
         width: 6rem;
         height: 6rem;
         transform: translateY(230%);
-
-
     }
 
     .pelota3 {
         width: 7rem;
         height: 7rem;
         transform: translateY(1280%);
-
-
     }
 
     @keyframes movPelota3 {
@@ -1129,25 +999,14 @@ video {
 
     #precios-cartas {
         justify-content: space-evenly;
-
     }
 
     .carta {
         width: 20%;
     }
 
-    /*PRECIOS*/
-
-
-    /*
-
-    #cajaRobot {
-        transform: translate(45%, -17%);
-        width: 75rem;
-        height: 45rem;
-    }
-
     /*PROYECTOS DESTACADOS*/
+
     #destacadosTitulo {
         font-size: 5.4rem;
         transform: rotate(-90deg) translateY(-470%);
@@ -1161,12 +1020,6 @@ video {
 
 @media only screen and (min-width:1500px) {
 
-    #cajaRobot {
-        transform: translate(45%, -17%);
-        width: 80rem;
-        height: 45rem;
-    }
-
     /*PROYECTOS DESTACADOS*/
 
     #destacadosTitulo {
@@ -1179,6 +1032,7 @@ video {
 @media only screen and (min-width:1600px) {
 
     /*Pelotas*/
+
     .pelota3 {
         transform: translateY(1310%);
     }
@@ -1197,15 +1051,7 @@ video {
     }
 
     .portada {
-
         height: 59vh;
-
-    }
-
-    #cajaRobot {
-        transform: translate(45%, -17%);
-        width: 85rem;
-        height: 45rem;
     }
 
     /*PROYECTOS DESTACADOS*/
@@ -1218,11 +1064,6 @@ video {
 
 @media only screen and (min-width:1700px) {
 
-    #cajaRobot {
-        width: 65rem;
-        height: 45rem;
-    }
-
     /*PROYECTOS DESTACADOS*/
 
     #destacadosTitulo {
@@ -1234,6 +1075,7 @@ video {
 @media only screen and (min-width:1800px) {
 
     /*Pelotas*/
+
     .pelota3 {
         width: 7rem;
         height: 7rem;
@@ -1255,12 +1097,6 @@ video {
         height: 54vh;
     }
 
-    #cajaRobot {
-        transform: translate(80%, -17%);
-        width: 65rem;
-        height: 45rem;
-    }
-
     #destacadosTitulo {
         transform: rotate(-90deg) translateY(-580%);
     }
@@ -1271,7 +1107,6 @@ video {
 
     #destacadosTitulo {
         transform: rotate(-90deg) translateY(-590%);
-
     }
 
 }

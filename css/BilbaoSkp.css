@@ -10,9 +10,6 @@ body {
     scroll-behavior: smooth;
     background-color: #141414;
     overflow-x: hidden;
-    /* background-image: url(../img/fondo.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 /* Menú */
@@ -141,7 +138,6 @@ nav.open {
 #headerMv {
     display: flex;
     justify-content: center;
-
 }
 
 header {
@@ -157,7 +153,6 @@ header {
 }
 
 header.abajo {
-    /* background-color: rgb(255, 255, 255); */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -219,9 +214,6 @@ header.abajo span {
 /* Portada */
 
 .portada {
-    /* background-image: url(../img/portada.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
     color: #fff;
     text-align: center;
     height: 57.5rem;
@@ -289,7 +281,6 @@ header.abajo span {
     background-color: #141414;
     height: 14rem;
     clip-path: circle(150% at 50% 325%);
-
 }
 .circle2 {
     background-color: #141414;
@@ -303,7 +294,6 @@ header.abajo span {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 }
 #soluciones{
     background-color: #141414;
@@ -338,7 +328,6 @@ footer {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     font-size: 80%;
-
 }
 
 footer a {
@@ -369,7 +358,6 @@ footer a {
     flex-direction: column;
     align-items: center;
     width: 90%;
-
 }
 
 .container-objetivo h2 {
@@ -385,10 +373,7 @@ footer a {
     font-weight: 700 !important;
 }
 
-
-
 /*FOOTER*/
-
 
 /*SECCION CARROUSELL IMAGENES*/
 
@@ -416,7 +401,6 @@ footer a {
 
 .carousel-slide {
     min-width: 100%;
-    /* Ajusta el ancho para tener en cuenta el gap */
     transition: transform 0.5s ease-in-out;
     display: flex;
     justify-content: center;
@@ -439,6 +423,7 @@ footer a {
 }
 
 @keyframes scroll {
+
     0% {
         transform: translateX(86%);
     }
@@ -470,6 +455,7 @@ footer a {
     100% {
         transform: translateX(86%);
     }
+
 }
 
 /* Animacón para arriba */
@@ -485,6 +471,42 @@ footer a {
     transform: translateY(0);
 }
 
+/* Flecha parriba*/
+
+.flecha {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #141414;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(255, 220, 132, 0.35);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+  
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+  
+.svgIcon path {
+    fill: white;
+}
+
+.flecha:hover{
+    background-color: rgb(50, 50, 50);
+}
+
 @media only screen and (min-width:660px) {
 
     /* OBJETIVOS */
@@ -494,7 +516,6 @@ footer a {
     }
 
 }
-
 
 @media only screen and (min-width:795px) {
 
@@ -506,11 +527,12 @@ footer a {
 
 }
 
-
 @media only screen and (min-width:900px) {
+
     #soluciones h2, .container-objetivo h2{
         font-size: 3rem;
     }
+
     #soluciones{
         padding-top: 4rem;
     }
@@ -520,9 +542,11 @@ footer a {
         justify-content: center;
         gap: 10rem;
     }
+
     #solucionesBloque img, #solucionesBloque div{
         width: 50rem;
     }
+
     #solucionesBloque img{
         width: 18rem;
     }
@@ -578,6 +602,7 @@ footer a {
     }
 
     @keyframes scroll {
+
         0% {
             transform: translateX(66%);
         }
@@ -609,6 +634,7 @@ footer a {
         100% {
             transform: translateX(66%);
         }
+
     }
 
 }
@@ -620,7 +646,6 @@ footer a {
     .circle, .circle2  {
         clip-path: circle(200% at 50% 745%);
     }
-
 
     /*SOLUCIONES*/
 
@@ -656,6 +681,7 @@ footer a {
     .portada {
         height: 58rem;
     }
+
     /* OBJETIVOS */
 
     .container-objetivo{
@@ -673,7 +699,6 @@ footer a {
     .carousel-slide {
         margin: 0 -23%;
     }
-
 
     @keyframes scroll {
         0% {
@@ -777,7 +802,6 @@ footer a {
 
 }
 
-
 @media only screen and (min-width:1280px) {
 
     /* OBJETIVOS */
@@ -789,7 +813,9 @@ footer a {
 }
 
 @media only screen and (min-width:1350px) {
+
     /*SOLUCIONES*/
+    
     #soluciones h2{
         font-size: 4rem;
     }

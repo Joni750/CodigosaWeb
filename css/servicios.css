@@ -133,7 +133,6 @@ nav.open {
 #headerMv {
     display: flex;
     justify-content: center;
-
 }
 
 header {
@@ -314,14 +313,12 @@ header.abajo span {
 .carousel-images a{
     width: 300px;
     padding: 0 40px;
-  
 }
 
 .carousel-images img {
     width: 100%; 
     height: auto;
     transition: transform 0.5s ease; 
-
     box-shadow: 0.3rem 0.3rem 1rem #0005;
 }
     
@@ -349,21 +346,25 @@ header.abajo span {
 }
     
 @keyframes scroll2 {
+
     0% {
         transform: translateX(0);
     }
     100% {
         transform: translateX(-66.7%);
     }
+
 }
     
 @keyframes scroll {
+
     0% {
         transform: translateX(0);
     }
     100% {
         transform: translateX(-75%);
     }
+    
 }
 
 /*PELOTAS*/
@@ -391,6 +392,42 @@ header.abajo span {
 .animar.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Flecha parriba*/
+
+.flecha {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #141414;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(255, 220, 132, 0.35);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+  
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+  
+.svgIcon path {
+    fill: white;
+}
+
+.flecha:hover{
+    background-color: rgb(50, 50, 50);
 }
 
 /*FOOTER*/

@@ -6,9 +6,6 @@ body {
     scroll-behavior: smooth;
     background-color: #141414;
     overflow-x: hidden;
-    /* background-image: url(../img/fondo.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 /* Menú */
@@ -137,7 +134,6 @@ nav.open {
 #headerMv {
     display: flex;
     justify-content: center;
-
 }
 
 header {
@@ -153,7 +149,6 @@ header {
 }
 
 header.abajo {
-    /* background-color: rgb(255, 255, 255); */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -217,12 +212,10 @@ header.abajo span {
 
 .pelota1 {
     display: none;
-
 }
 
 .pelota2 {
     display: none;
-
 }
 
 /* Portada */
@@ -246,7 +239,6 @@ header.abajo span {
     justify-content: space-evenly;
 }
 
-
 .content-portada h1 {
     margin: 0;
     font-size: 2.5em;
@@ -256,7 +248,6 @@ header.abajo span {
 
 .content-portada img {
     filter: grayscale(1);
-    /* Aplica el filtro de escala de grises completo */
     object-fit: contain;
 }
 
@@ -265,7 +256,6 @@ header.abajo span {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-
 }
 
 .foto-lonja {
@@ -280,10 +270,8 @@ header.abajo span {
 .foto-trabajando {
     width: 20rem;
     transform: translate(-10%, 30%);
-    /* Para centrar la imagen */
     z-index: 2;
 }
-
 
 .bernadette {
     font-family: 'bernadette';
@@ -305,7 +293,6 @@ header.abajo span {
     align-items: center;
     background-color: #FFDC84;
 }
-
 
 #p1 {
     font-size: 3em;
@@ -396,6 +383,42 @@ header.abajo span {
     transform: translateY(0);
 }
 
+/* Flecha parriba*/
+
+.flecha {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #141414;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(255, 220, 132, 0.35);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+  
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+  
+.svgIcon path {
+    fill: white;
+}
+
+.flecha:hover{
+    background-color: rgb(50, 50, 50);
+}
+
 /*FOOTER*/
 
 footer {
@@ -428,7 +451,6 @@ footer a {
 }
 
 #derechos span {
-
     color: #FFDC84;
 }
 
@@ -444,9 +466,6 @@ footer a {
 .carousel {
     overflow: hidden;
     width: 100%;
-
-
-
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -458,12 +477,10 @@ footer a {
     justify-content: center;
     animation: scroll 15s ease-in-out infinite;
     padding-block: 10rem;
-
 }
 
 .carousel-slide {
     min-width: 100%;
-    /* Ajusta el ancho para tener en cuenta el gap */
     transition: transform 0.5s ease-in-out;
     display: flex;
     justify-content: center;
@@ -475,8 +492,8 @@ footer a {
     display: block;
 }
 
-
 @keyframes scroll {
+
     0% {
         transform: translateX(86%);
     }
@@ -508,6 +525,7 @@ footer a {
     100% {
         transform: translateX(86%);
     }
+
 }
 
 /*SECCION CARROUSELL IMAGENES*/
@@ -524,7 +542,6 @@ footer a {
     width: 100%;
     padding-block: 4rem;
     padding-top: 0rem;
-
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -599,7 +616,6 @@ footer a {
 }
 
 .card:hover {
-    /* transform: translateY(5%); */
     background-color: rgb(0, 0, 0, 0.4);
 }
 
@@ -625,39 +641,22 @@ footer a {
 
 .triangle1 {
     width: 170%;
-    /*que ocupe el 100% de la pantalla en ancho*/
     height: 2rem;
-    /*Altura del triangulo*/
     background-color: #141414;
-    /* Cambia el color a tu gusto */
     clip-path: polygon(-10% -16%, 50% 100%, 104% 0%);
-    /*
-    1 y 2 parametro = vertice superior, el 1 de los dos es posicion ejeX
-    2 eje Y
-
-    3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y
-    */
 }
 
 .triangle2 {
     width: 30%;
-    /*que ocupe el 100% de la pantalla en ancho*/
     height: 1.5rem;
-    /*Altura del triangulo*/
     background-color: #141414;
-    /* Cambia el color a tu gusto */
     clip-path: polygon(-23% -10%, 100% 100%, 200% 0%);
-    /*
-    1 y 2 parametro = vertice superior, el 1 de los dos es posicion ejeX
-    2 eje Y
-
-    3 y 4 parametro = vertice izquierdo, 3  es posicion eje X,  2 eje Y
-    */
 }
 
 @media only screen and (min-width:600px) {
 
     /*Pelotas*/
+
     .pelota2 {
         transform: translateY(-200%);
     }
@@ -687,6 +686,7 @@ footer a {
         }
 
     }
+
 }
 
 @media only screen and (min-width:700px) {
@@ -720,7 +720,6 @@ footer a {
     }
 
     #precios-cartas {
-
         width: 250%;
     }
 
@@ -729,14 +728,10 @@ footer a {
         max-width: calc(125% / 3);
     }
 
-    /*carrousell*/
-
-
     #titulo {
         margin-block: 15%;
         margin-bottom: 5%;
         height: 10rem;
-
     }
 
     #p2 {
@@ -745,17 +740,15 @@ footer a {
 
     #p1,
     #p2 {
-
         font-size: 4rem;
     }
-
-    /*PRECIOS*/
 
 }
 
 @media only screen and (min-width:900px) {
 
     /*Pelotas*/
+
     .pelotaAmarilla {
         position: absolute;
         background: radial-gradient(circle at 30% 28%, #FFDC84, #807048 55%);
@@ -820,7 +813,6 @@ footer a {
     }
 
     .content-portada h1 {
-
         width: 60%;
     }
 
@@ -837,7 +829,6 @@ footer a {
         font-family: 'bernadette';
     }
 
-
     /*METODOLOGIA*/
 
     #seccionTextosMetodologia {
@@ -849,8 +840,6 @@ footer a {
         flex-direction: row;
         justify-content: center;
         gap: 5rem;
-
-
     }
 
     .articulo1 img,
@@ -862,8 +851,6 @@ footer a {
         flex-direction: row-reverse;
         justify-content: center;
         gap: 5rem;
-
-
     }
 
     .textoArticulo2 {
@@ -871,7 +858,6 @@ footer a {
         flex-direction: column;
         align-items: flex-end;
     }
-
 
     /*SECCION INTEGRANTES*/
 
@@ -891,34 +877,10 @@ footer a {
         font-size: 3rem;
     }
 
-    /*SECCION INTEGRANTES*/
-
-    /*METODOLOGIA*/
-
-
-
-
-
-
-    /*METODOLOGIA*/
-
-
-
-    /*PRECIOS*/
-
-    /*carrousel*/
-
-
-
-    /*carrousel*/
-
-    /*PRECIOS*/
-
     #titulo {
         margin-block: 5%;
         margin-bottom: 2%;
         height: 13rem;
-
     }
 
     #p2 {
@@ -927,11 +889,11 @@ footer a {
 
     #p1,
     #p2 {
-
         font-size: 6rem;
     }
 
     /*FOOTER*/
+
     footer {
         font-size: 100%;
     }
@@ -944,16 +906,12 @@ footer a {
         font-size: 155%;
     }
 
-    /*FOOTER*/
-
-
     .burger {
         display: none;
     }
 
     .menu {
         display: flex;
-
     }
 
     .menu ul {
@@ -985,19 +943,15 @@ footer a {
 @media only screen and (min-width:1000px) {
 
     .content-portada h1 {
-
         margin-top: -3rem;
     }
 
     .foto-lonja {
-
         transform: translate(50%, 10%);
     }
 
     .foto-trabajando {
-
         transform: translate(-10%, 50%);
-
     }
 
     .portada {
@@ -1005,9 +959,9 @@ footer a {
     }
 
     /*CARROUSELL IMAGENES*/
+
     .carousel-slide img {
         width: 60%;
-
     }
 
     .carousel-slide {
@@ -1015,6 +969,7 @@ footer a {
     }
 
     @keyframes scroll {
+
         0% {
             transform: translateX(66%);
         }
@@ -1046,14 +1001,10 @@ footer a {
         100% {
             transform: translateX(66%);
         }
+
     }
 
-    /*CARROUSELL IMAGENES*/
-
-
 }
-
-
 
 @media only screen and (min-width:1200px) {
 
@@ -1065,7 +1016,6 @@ footer a {
         transform: translateY(160%);
         left: 45%;
     }
-
 
     @keyframes movPelota2 {
 
@@ -1095,10 +1045,8 @@ footer a {
         font-size: 3rem;
     }
 
-    /*SECCION INTEGRANTES*/
-
-
     /*CARROUSELL IMAGENES*/
+
     .carousel-slide img {
         width: 50%;
         display: block;
@@ -1108,8 +1056,8 @@ footer a {
         margin: 0 -23%;
     }
 
-
     @keyframes scroll {
+
         0% {
             transform: translateX(54%);
         }
@@ -1141,15 +1089,13 @@ footer a {
         100% {
             transform: translateX(54%);
         }
+
     }
 
     /*CARROUSELL IMAGENES*/
 
-
     .content-portada {
-
         flex-direction: row;
-
     }
 
     .foto-lonja {
@@ -1160,7 +1106,6 @@ footer a {
     .foto-trabajando {
         width: 20rem;
         transform: translate(-30%, 30%);
-        /* Para centrar la imagen */
         z-index: 2;
     }
 
@@ -1169,6 +1114,7 @@ footer a {
     /*PRECIOS*/
 
     /*carrousel desactivado*/
+
     .punto,
     .puntos {
         display: none;
@@ -1176,17 +1122,12 @@ footer a {
 
     #precios-cartas {
         justify-content: space-between;
-
         width: 100%;
     }
 
     .carta {
         width: 23%;
     }
-
-    /*carrousel desactivado*/
-
-    /*PRECIOS*/
 
     header {
         padding-inline: 4%;
@@ -1211,20 +1152,6 @@ footer a {
         width: 100%;
         line-height: 4.3rem;
         margin-left: 5rem;
-    }
-
-
-
-    #cajaRobot {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        transform: translate(50%, -17%);
-        position: absolute;
-        width: 65rem;
-
-        /* Ajusta según sea necesario */
-        height: 45rem;
     }
 
     /* PROYECTOS DESTACADOS */
@@ -1260,13 +1187,8 @@ footer a {
         width: 20%;
     }
 
-    #cajaRobot {
-        transform: translate(45%, -17%);
-        width: 70rem;
-        height: 45rem;
-    }
-
     /*PROYECTOS DESTACADOS*/
+
     #destacado h2 {
         position: absolute;
         transform: rotate(-90deg) translate(57%, -390%);
@@ -1294,7 +1216,6 @@ footer a {
         width: 100%;
     }
 
-
     /*SECCION INTEGRANTES*/
 
     .cajaIntegrantes img {
@@ -1302,13 +1223,7 @@ footer a {
         filter: grayscale(1);
     }
 
-
-    /*SECCION INTEGRANTES*/
-
-
-
     /*AGENCIA PORTADA*/
-
 
     .foto-lonja {
         width: 15rem;
@@ -1318,11 +1233,8 @@ footer a {
     .foto-trabajando {
         width: 20rem;
         transform: translate(-40%, 30%);
-        /* Para centrar la imagen */
         z-index: 2;
     }
-
-    /*AGENCIA PORTADA*/
 
     /*PRECIOS*/
 
@@ -1335,18 +1247,8 @@ footer a {
         width: 20%;
     }
 
-    /*PRECIOS*/
-
-
-    /*
-
-    #cajaRobot {
-        transform: translate(45%, -17%);
-        width: 75rem;
-        height: 45rem;
-    }
-
     /*PROYECTOS DESTACADOS*/
+
     #destacado h2 {
         transform: rotate(-90deg) translate(58%, -430%);
     }
@@ -1368,14 +1270,6 @@ footer a {
 
     #bloqueIntegrantes {
         gap: 0rem;
-    }
-
-    /*SECCION INTEGRANTES*/
-
-    #cajaRobot {
-        transform: translate(45%, -17%);
-        width: 80rem;
-        height: 45rem;
     }
 
     /*PROYECTOS DESTACADOS*/
@@ -1424,7 +1318,6 @@ footer a {
     }
 
     .content-portada h1 {
-
         width: 70%;
     }
 
@@ -1438,16 +1331,7 @@ footer a {
     .foto-trabajando {
         width: 30rem;
         transform: translate(-40%, 30%);
-        /* Para centrar la imagen */
         z-index: 2;
-    }
-
-    /*AGENCIA PORTADA*/
-
-    #cajaRobot {
-        transform: translate(45%, -17%);
-        width: 85rem;
-        height: 45rem;
     }
 
     /*PROYECTOS DESTACADOS*/
@@ -1459,13 +1343,9 @@ footer a {
 }
 
 @media only screen and (min-width:1700px) {
+
     .portada {
         height: 32rem;
-    }
-
-    #cajaRobot {
-        width: 65rem;
-        height: 45rem;
     }
 
     /*PROYECTOS DESTACADOS*/
@@ -1477,13 +1357,6 @@ footer a {
 }
 
 @media only screen and (min-width:1800px) {
-
-
-    #cajaRobot {
-        transform: translate(80%, -17%);
-        width: 65rem;
-        height: 45rem;
-    }
 
     #destacado h2 {
         transform: rotate(-90deg) translate(58%, -505%);
