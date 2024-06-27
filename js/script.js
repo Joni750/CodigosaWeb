@@ -128,7 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
 
     var carta1 = document.getElementById('carta1');
@@ -158,10 +157,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
-
-
-
-
 
 /*PRUEBA CARROUSELL*/
 
@@ -193,7 +188,6 @@ punto.forEach((cadaPunto, i) => {
             punto[h].classList.remove('activo')
         })
         punto[i].classList.add('activo');
-
 
     })
 });
